@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Group;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/db', function () {
+    //DB::insert('insert into status (name) values (?)', ['Expelled']);
+
+    /*$gr = new Group();
+    $gr->name = 'IVT-163';
+    $gr->education_form = 2;
+    $gr->level_education = 2;
+    $gr->save();*/
+    $groups = App\Models\Group::all();
+    foreach ($groups as $group) {
+        return $group;
+    }
 });
