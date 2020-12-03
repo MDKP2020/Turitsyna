@@ -13,10 +13,10 @@ class CreateEducationFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('education_forms', function (Blueprint $table) {
+        Schema::create('education_form', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

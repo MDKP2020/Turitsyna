@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGroupTable extends Migration
+class CreateStudyYearTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateGroupTable extends Migration
      */
     public function up()
     {
-        Schema::create('group', function (Blueprint $table) {
+        Schema::create('study_year', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->foreign('education_form_id')->references('id')->on('education_form');
-            $table->foreign('level_education_id')->references('id')->on('level_education');
-
-            //$table->timestamps();
+            $table->integer('start_year');
+            $table->unsignedBigInteger('period_id');
+            $table->foreign('period_id')->references('id')->on('period');
+            $table->timestamps();
         });
     }
 
@@ -30,6 +29,6 @@ class CreateGroupTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('group');
+        Schema::dropIfExists('study_year');
     }
 }

@@ -31,4 +31,5 @@ Route::get('/db', function () {
     foreach ($groups as $group) {
         return $group;
     }
+    return null;
 });

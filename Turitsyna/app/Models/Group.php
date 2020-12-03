@@ -9,6 +9,5 @@ class Group extends Model
 {
     use HasFactory;
     protected $table = 'group';
-    public $timestamps = false;
 
 }

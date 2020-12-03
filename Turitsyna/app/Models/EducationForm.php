@@ -9,5 +9,4 @@ class EducationForm extends Model
 {
     use HasFactory;
     protected $table = 'education_form';
-    public $timestamps = false;
 }
