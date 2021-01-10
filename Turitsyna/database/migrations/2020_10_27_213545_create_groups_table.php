@@ -22,6 +22,7 @@ class CreateGroupsTable extends Migration
             $table->foreign('educ_form_id')->references('id')->on('education_form');
             $table->foreign('lvl_education_id')->references('id')->on('level_education');
             $table->foreign('study_year_id')->references('id')->on('study_year');
+            $table->integer('course');
             $table->timestamps();
         });
     }
