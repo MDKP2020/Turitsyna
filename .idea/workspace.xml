@@ -19,14 +19,64 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:prototype1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/prototype1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e618af39-29df-4f52-985d-92854e5880d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Turitsyna/_ide_helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/ExpulsionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/TransferController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Requests/GroupRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/ModelFilters/GroupFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Direction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Models/NotORM/StudentList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Period.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Models/StudyYear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/app/Providers/StudentGroupService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/composer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_26_134114_create_study_year_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_27_213545_create_groups_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/routes/enrollment-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/routes/expulsion-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/routes/transfer-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Презентация/Otchislenie.asta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Презентация/Perevod_studentov.asta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Презентация/Zachislenie_avtomaty.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Turitsyna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Turitsyna.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/EducationForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/LevelEducation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/LevelEducation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/StudentGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/StudentGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turitsyna/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_063716_create_statuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_21_063716_create_statuses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_063743_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_063743_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_063755_create_student_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_28_213941_create_student_group_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_063817_create_education_forms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_20_234210_create_direction_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_064013_create_level_education_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_25_064013_create_level_education_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_22_064022_create_group_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_24_133351_create_period_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.phar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Презентация/Ссылка на презентацию.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Презентация/Ссылка на презентацию.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +265,7 @@
       <workItem from="1610544204258" duration="7809000" />
       <workItem from="1610630828973" duration="697000" />
       <workItem from="1610699411881" duration="2350000" />
+      <workItem from="1610899146456" duration="689000" />
     </task>
     <servers />
   </component>
@@ -232,7 +283,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="prototype1" />
+                        <option value="origin/prototype1" />
                       </list>
                     </value>
                   </entry>

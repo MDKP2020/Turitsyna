@@ -15,11 +15,9 @@ class CreateLevelEducationTable extends Migration
     {
         Schema::create('level_education', function (Blueprint $table) {
             $table->id();
-
             $table->string('name');
             $table->integer('period_of_study');
-
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 
