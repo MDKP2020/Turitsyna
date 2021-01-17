@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 import Paper from '@material-ui/core/Paper';
 import { StudentList } from '../StudentList'
 import Typography from '@material-ui/core/Typography';
@@ -9,10 +10,40 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Link } from 'react-router-dom';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import TextField from '@material-ui/core/TextField';
+import CloseIcon from '@material-ui/icons/Close';
 
 export class ApplicantsPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            addGroupOpen: false,
+        };
+    }
+
+    handleClickAddGroup = () => {
+        this.setState({
+            addGroupOpen: true,
+        })
+    }
+
+    handleCloseDialogAddGroup = () => {
+        this.setState({
+            addGroupOpen: false,
+        })
+    }
+
+    handleDialogAddGroup = () => {
+        this.setState({
+            addGroupOpen: false,
+        })
+    }
+
     render() {
-        return (
+        return (<div>
             <Paper elevation={3} className="paperContainer">
                 <Grid container spacing={0}>
                     <Grid item xs={11} spacing={0}>
@@ -33,7 +64,7 @@ export class ApplicantsPage extends React.Component {
 
                 <Grid container spacing={0}>
                     <Grid item xs={1} spacing={0}>
-                        <IconButton>
+                        <IconButton onClick={this.handleClickAddGroup}>
                             <AddRoundedIcon color="primary" fontSize="large" />
                         </IconButton>
 
@@ -51,6 +82,27 @@ export class ApplicantsPage extends React.Component {
                     fiz={["Ф-169"]}
                     iit={["ИИТ-173"]} />
             </Paper>
+            <Dialog open={this.state.addGroupOpen} aria-labelledby="form-dialog-add-student">
+                    <Grid container spacing={0}>
+                        <Grid item xs={10} spacing={0}>
+                            <DialogTitle>Добавить группу</DialogTitle>
+                        </Grid>
+                        <Grid item xs={1} spacing={0} justify='flex-end'>
+                            <IconButton className="dialogAddCloseButton">
+                                <CloseIcon onClick={this.handleCloseDialogAddGroup} />
+                            </IconButton>
+                        </Grid>
+                    </Grid>
+                    <DialogContent>
+                        <TextField label="Группа" className="dialogAddItem"/>
+
+                        <Grid item spacing={0} container justify="center">
+                            <Button variant="contained" color="primary" className='tranferButton' onClick={this.handleDialogAddGroup}> Добавить </Button>
+                        </Grid>
+                    </DialogContent>
+                </Dialog>
+        </div>
+
         )
     }
 }

@@ -10,9 +10,7 @@ import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
 import IconButton from '@material-ui/core/IconButton';
 import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -180,20 +178,20 @@ export class StudentList extends React.Component {
                     {listGridIit}
                 </Grid>
                 {showGroup}
-                <Dialog open={this.state.addStudentOpen} aria-labelledby="form-dialog-title" className="dialogAddStudent">
+                <Dialog open={this.state.addStudentOpen} aria-labelledby="form-dialog-add-student">
                     <Grid container spacing={0}>
                         <Grid item xs={10} spacing={0}>
                             <DialogTitle>Добавить студента</DialogTitle>
                         </Grid>
                         <Grid item xs={1} spacing={0} justify='flex-end'>
-                            <IconButton className="dialogAddStudentCloseButton">
+                            <IconButton className="dialogAddCloseButton">
                                 <CloseIcon onClick={this.handleCloseDialogAddStudent} />
                             </IconButton>
                         </Grid>
                     </Grid>
                     <DialogContent>
-                        <TextField label="ФИО" className="dialogAddStudentItem"/>
-                        <FormControl className="dialogAddStudentItem">
+                        <TextField label="ФИО" className="dialogAddItem"/>
+                        <FormControl className="dialogAddItem">
                             <InputLabel id="demo-simple-select-label">Группа</InputLabel>
                             <Select
                                 labelId="demo-simple-select-label"

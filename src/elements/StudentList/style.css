@@ -7,15 +7,15 @@
     width: 120px;
 }
 
-.dialogAddStudent {
+.dialogAdd {
     overflow: hidden;
 }
 
-.dialogAddStudentItem{
+.dialogAddItem{
     width: 100%;
     display: flex;
 }
 
-.dialogAddStudentCloseButton{
+.dialogAddCloseButton{
     padding-top: 18px !important;
 }

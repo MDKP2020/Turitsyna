@@ -12,7 +12,29 @@ import Divider from '@material-ui/core/Divider';
 import { Link } from 'react-router-dom';
 
 export class StudentPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            academicYear: 0,
+            course: [],
+            trainingProgrammes: []
+        };
+    }
+
+    filterChange(academicYear, course, trainingProgrammes) {
+        this.setState({
+            academicYear: academicYear,
+            course: course,
+            trainingProgrammes: trainingProgrammes
+        })
+    }
+
+    handleClickFilters = () => {
+        console.log(this.state)
+    }
+
     render() {
+        const { academicYear, course, trainingProgrammes } = this.state;
         return (<div>
             <Paper elevation={3} className="paperContainer">
                 <Grid container spacing={0}>
@@ -33,7 +55,12 @@ export class StudentPage extends React.Component {
                 </Grid>
                 <Search />
                 <Divider variant="middle" />
-                <Filters />
+                <Filters
+                    academicYear={academicYear}
+                    course={course}
+                    trainingProgrammes={trainingProgrammes}
+                    onClick={this.handleClickFilters}
+                    onChange={(academicYear, course, trainingProgrammes) => this.filterChange(academicYear, course, trainingProgrammes)} />
                 <Divider variant="middle" />
 
                 <StudentList ivt={["ИВТ-160", "ИВТ-161", "ИВТ-162", "ИВТ-163", "ИВТ-260", "ИВТ-261", "ИВТ-262",

@@ -1,5 +1,6 @@
 .paperContainer{
-    padding-left: 24px;
+    padding: 20px 0px 20px 24px;
+    overflow: hidden;
 }
 
 .iconButtonLabel{
