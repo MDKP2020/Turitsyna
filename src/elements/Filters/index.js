@@ -9,42 +9,8 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 export class Filters extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            academicYear: 0,
-            course: "",
-            trainingProgrammes: ""
-        };
-    }
-
-    academicYearHandleChange = (event) => {
-        this.setState({
-            academicYear: event.target.value,
-        })
-    }
-
-    courseHandleChange = (event) => {
-        this.setState({
-            course: event.target.value,
-        })
-    }
-
-    trainingProgrammesHandleChange = (event) => {
-        this.setState({
-            trainingProgrammes: event.target.value,
-        })
-    }
-
-    deleteHandleClick = () => {
-        this.setState({
-            academicYear: 0,
-            course: "",
-            trainingProgrammes: ""
-        })
-    }
-
     render() {
+        const { academicYear, course, trainingProgrammes } = this.props;
         return (<div>
             <Typography variant="h5" noWrap>
                 Фильтры
@@ -57,8 +23,8 @@ export class Filters extends React.Component {
                         <Select
                             labelId="academicYearLabel"
                             id="academicYear"
-                            value={this.state.academicYear}
-                            onChange={this.academicYearHandleChange}
+                            value={this.props.academicYear}
+                            onChange={event => this.props.onChange(event.target.value, course, trainingProgrammes)}
                             label="Учебный год"
                         >
                             <MenuItem value="0">2020/2021</MenuItem>
@@ -70,8 +36,9 @@ export class Filters extends React.Component {
                         <Select
                             labelId="courseLabel"
                             id="course"
-                            value={this.state.course}
-                            onChange={this.courseHandleChange}
+                            multiple
+                            value={this.props.course}
+                            onChange={event => this.props.onChange(academicYear, event.target.value, trainingProgrammes)}
                             label="Курс"
                         >
                             <MenuItem value="1">1</MenuItem>
@@ -86,26 +53,27 @@ export class Filters extends React.Component {
                         <Select
                             labelId="trainingProgrammesLabel"
                             id="trainingProgrammes"
-                            value={this.state.trainingProgrammes}
-                            onChange={this.trainingProgrammesHandleChange}
+                            multiple
+                            value={this.props.trainingProgrammes}
+                            onChange={event => this.props.onChange(academicYear, course, event.target.value)}
                             label="Направление"
                         >
-                            <MenuItem value="1">ИВТ</MenuItem>
-                            <MenuItem value="2">ПрИн</MenuItem>
-                            <MenuItem value="3">Физика</MenuItem>
-                            <MenuItem value="4">ИИТ</MenuItem>
+                            <MenuItem value="IVT">ИВТ</MenuItem>
+                            <MenuItem value="PRIN">ПрИн</MenuItem>
+                            <MenuItem value="F">Физика</MenuItem>
+                            <MenuItem value="IIT">ИИТ</MenuItem>
                         </Select>
                     </FormControl>
                 </Grid>
 
                 <Grid item xs={1} spacing={2}>
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" color="primary" onClick={this.props.onClick}>
                         Применить
                     </Button>
                 </Grid>
 
                 <Grid item xs={1} spacing={2}>
-                    <Button variant="contained" color="primary" onClick={this.deleteHandleClick}>
+                    <Button variant="contained" color="primary" onClick={event =>this.props.onChange(0, [], [])}>
                         Сбросить
                     </Button>
                 </Grid>
