@@ -16,12 +16,12 @@ class CreateGroupsTable extends Migration
         Schema::create('group', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('educ_form_id');
             $table->unsignedBigInteger('lvl_education_id');
             $table->unsignedBigInteger('study_year_id');
-            $table->foreign('educ_form_id')->references('id')->on('education_form');
+            $table->unsignedBigInteger('direction');
             $table->foreign('lvl_education_id')->references('id')->on('level_education');
             $table->foreign('study_year_id')->references('id')->on('study_year');
+            $table->foreign('direction_id')->references('id')->on('direction');
             $table->integer('course');
             $table->timestamps();
         });

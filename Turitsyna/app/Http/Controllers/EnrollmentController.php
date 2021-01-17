@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Group;
 use App\Models\Period;
 use App\Models\Status;
 use App\Models\Student;
 use App\Models\Student_group;
+use App\Models\StudyYear;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -17,7 +19,6 @@ class EnrollmentController extends Controller
     protected static function isEnrolmentPeriod() : bool{
         return self::currentPeriod()->name == 'Enrollment';
     }
-
 
     /*
      * Добавляет студента в бд и зачисляет его в группу
@@ -50,40 +51,57 @@ class EnrollmentController extends Controller
      *
      * request - name, surname, patronomyc, group_id
      */
-    public function deleteStudentFromGroup($student_id, $group_id){
-        if($this->currentPeriod()->name != 'Enrollment'){
+    public function deleteStudentFromGroup(int $student_id,int $group_id){
+        /*if($this->currentPeriod()->name != 'Enrollment'){
             return response(["Not enrollment period"], 400);
-        }
+        }*/
 
-        $student_group = Student_group::all()
-                                ->where("student_id", '=', $student_id )
-                                ->where("group_id", '=', $group_id )
-                                ->first()
-                                ->delete();
+        Student_group::all()
+                ->where("student_id", '=', $student_id )
+                ->where("group_id", '=', $group_id )
+                ->first()
+                ->delete();
     }
 
+    //
     public function changeStudentsGroup($student_id, $old_group_id, $new_group_id )
     {
         if ($this->currentPeriod()->name != 'Enrollment') {
             return response(["Not enrollment period"], 400);
         }
 
-        //Почему-то не хочет вызывать свои же методы. Не надо их делать статик
-        //delete old
+        $student = Student::find($student_id);
 
-        //add new
+        $this->deleteStudentFromGroup($student_id, $old_group_id);
+
+        $this->addStudentToGroup(Request::create(null, null, array(
+            "name"     => $student->name,
+            "surname"     => $student->surname,
+            "patronomyc"     => $student->patronomyc,
+            "group_id"    => $new_group_id,
+        )));
+        return response()->json(null,200);
     }
 
+    //NOT NEEDED
     public function checkEmptyGroups(){
-        //запрос на пустые группы
+        //запрос на пустые группы в текущем году
+        $groups = Group::all()->where('study_year_id', '=', $this->currentYear()->id);
+        $emptyGroups = array();
+
+        foreach ($groups as $group){
+            if($group->student_group()->count() == 0){
+                $emptyGroups[] = $group;
+            }
+        }
+        if(count($emptyGroups) == 0 ){
+            return response(null, 200);
+        } else {
+            return response()->json($emptyGroups, 200);
+        }
     }
 
-    public function changeSystemPeriod(){
-        $this->current_year->period_id = Period::all()->where("name", '=', "Expulsion")
-                                                        ->first()
-                                                        ->id;
-        $this->current_year->save();
-    }
+
 
 
 

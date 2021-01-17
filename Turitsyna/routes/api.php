@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\GroupController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Period
+Route::post('/changePeriod/{new_period}', [Controller::class, 'changeSystemPeriod']);
 
-//Route::prefix('groups')->group(base_path('/routes/groups-api.php'));
+//Groups
+Route::get('/group', [GroupController::class, 'getAllGroups']);
+
+Route::get('/group/{id}', [GroupController::class, 'getGroup']);
+
+Route::post('/group/changeGroupName', [GroupController::class, 'changeGroupName']);
+
+Route::get('/group/getStudentsList/{group_id}', [GroupController::class, 'getListOfStudents']);

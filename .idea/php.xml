@@ -34,7 +34,6 @@
       <path value="$PROJECT_DIR$/Turitsyna/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/Turitsyna/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/hamcrest/hamcrest-php" />
@@ -52,7 +51,6 @@
       <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/polyfill-intl-idn" />
@@ -87,7 +85,6 @@
       <path value="$PROJECT_DIR$/Turitsyna/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/Turitsyna/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/nesbot/carbon" />
@@ -109,9 +106,20 @@
       <path value="$PROJECT_DIR$/Turitsyna/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/tucker-eric/eloquentfilter" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/Turitsyna/vendor/symfony/filesystem" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/Turitsyna/vendor/autoload.php" />
