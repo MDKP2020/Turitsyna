@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateGroupRequest;
+use App\Http\Requests\GroupRequest;
 use App\Models\Direction;
 use App\Models\Group;
 use App\Providers\StudentGroupService;
@@ -15,7 +15,7 @@ class GroupController extends Controller
 
     //Дописать метод получения списка групп с фильтрацией
     //список курсов, учебный год
-    public function createGroup(CreateGroupRequest $request){
+    public function createGroup(GroupRequest $request){
         $group = new Group();
         $group->name = $request->name;
         $group->lvl_education_id = $request->lvl_education_id;
@@ -27,12 +27,12 @@ class GroupController extends Controller
             return response()->json(['Group already exists'], 400);
         }
         $group->save();
-        return response()->json($group, 200);
+        return response()->json($group);
     }
 
     public function getGroup(int $id){
         if($id != null)
-        return Group::find($id);
+            return response()->json(Group::find($id));
     }
 
     /*
@@ -50,6 +50,6 @@ class GroupController extends Controller
 
         $group->name = $request->name;
         $group->update();
-        return response()->json($group, 200);
+        return response()->json($group);
     }
 }

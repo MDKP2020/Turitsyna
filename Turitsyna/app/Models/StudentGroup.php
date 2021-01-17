@@ -18,19 +18,19 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \App\Models\Group $group
  * @property-read \App\Models\Status $status
  * @property-read \App\Models\Student $student
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group query()
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereGroupId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereStatusId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereStudentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student_group whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup query()
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereGroupId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereStatusId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereStudentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|StudentGroup whereUpdatedAt($value)
  * @mixin \Eloquent
  */
-class Student_group extends Model
+class StudentGroup extends Model
 {
     use HasFactory;
     protected $table = 'student_group';

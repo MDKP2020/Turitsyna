@@ -5,6 +5,22 @@ namespace App\Models;
 
 
 class StudentList{
+    /**
+     * @return string
+     */
+    public function getGroup(): string
+    {
+        return $this->group;
+    }
+
+    /**
+     * @return array
+     */
+    public function getStudents(): array
+    {
+        return $this->students;
+    }
+
     private string $group;
     private array $students = array();
 

@@ -7,6 +7,7 @@ namespace App\Providers;
 use App\Http\Controllers\Controller;
 use App\Models\Direction;
 use App\Models\Group;
+use App\Models\Status;
 use App\Models\Student;
 use App\Models\StudentList;
 use App\Models\StudyYear;
@@ -44,6 +45,12 @@ class StudentGroupService
                         ->where('study_year_id','=', StudyYear::all()->where('start_year', '=', $year)->first()->id)
                         ->where('course','=', $course)
                         ->first();
+    }
+
+    public function lastStudentGroup(Student $student) : Group{
+        return $student->student_group()
+                            ->where('status_id', '=', Status::find('Enrolled')->id)
+                            ->max('date');
     }
 
 }

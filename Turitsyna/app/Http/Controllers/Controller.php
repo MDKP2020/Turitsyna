@@ -2,17 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Direction;
-use App\Models\Group;
 use App\Models\Period;
-use App\Models\StudentList;
 use App\Models\StudyYear;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use PhpParser\Node\Expr\Array_;
 
 class Controller extends BaseController
 {

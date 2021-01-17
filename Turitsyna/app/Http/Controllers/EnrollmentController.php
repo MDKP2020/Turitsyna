@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Group;
-use App\Models\Period;
 use App\Models\Status;
 use App\Models\Student;
-use App\Models\Student_group;
-use App\Models\StudyYear;
+use App\Models\StudentGroup;
 use App\Providers\StudentGroupService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -15,11 +13,6 @@ use Illuminate\Http\Request;
 class EnrollmentController extends Controller
 {
     private StudentGroupService $service;
-
-    //NOT NEEDED
-    protected static function isEnrolmentPeriod() : bool{
-        return self::currentPeriod()->name == 'Enrollment';
-    }
 
     /*
      * Добавляет студента в бд и зачисляет его в группу
@@ -52,11 +45,11 @@ class EnrollmentController extends Controller
         $student->save();
 
         //Создаем  привязку к группе
-        $student_group = new Student_group();
+        $student_group = new StudentGroup();
         $student_group->date = Carbon::now()->format('d-m-Y');
         $student_group->student_id = $student->id;
         $student_group->group_id = $request->group_id;
-        $student_group->status_id = $request->Status::find('Enrolled')->id;
+        $student_group->status_id = Status::whereName('Enrolled')->id;
         $student_group->save();
 
         return response()->json([$student, $student_group], 201);
@@ -68,7 +61,7 @@ class EnrollmentController extends Controller
         if($student_id == null || $group_id == null){
             return response()->json(['Not enough information'], 400);
         }
-        Student_group::all()
+        StudentGroup::all()
                 ->where("student_id", '=', $student_id )
                 ->where("group_id", '=', $group_id )
                 ->first()
@@ -88,7 +81,7 @@ class EnrollmentController extends Controller
             "patronomyc"     => $student->patronomyc,
             "group_id"    => $new_group_id,
         )));
-        return response()->json([''],200);
+        return response()->json(['']);
     }
 
     //NOT NEEDED
@@ -103,9 +96,9 @@ class EnrollmentController extends Controller
             }
         }
         if(count($emptyGroups) == 0 ){
-            return response(null, 200);
+            return response([]);
         } else {
-            return response()->json($emptyGroups, 200);
+            return response()->json($emptyGroups);
         }
     }
 

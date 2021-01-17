@@ -2,37 +2,97 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Direction;
 use App\Models\Group;
+use App\Models\Status;
+use App\Models\Student;
+use App\Models\StudentGroup;
 use App\Models\StudentList;
 use App\Providers\StudentGroupService;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use SebastianBergmann\Environment\Console;
+use Carbon\Carbon;
 
 class ExpulsionController extends Controller
 {
     private StudentGroupService $service;
-    //
+    //kinda useless
     public function createExpulsionList(){
         //Выбирем группы 4-го курса
         $groups = Group::all()->where('course','=',4)
                               ->where('study_year_id','=', Controller::currentYear()->id);
 
-        return response()->json($this->service->getStudentsAndGroups($groups), 200);
+        return response()->json($this->service->getStudentsAndGroups($groups));
     }
 
-    // request - Student
-    public function expulsionStudent(Request $request){
-        // Сначала удалить привязку, Проверить единственный ли в группе и удалить группу, потом студента
+    //
+    public function expulsionStudent(int $student_id){
+        $student = Student::find($student_id);
+        //Проверяем на наличие студента
+        if($student == null){
+            return response()->json(['Student not found'], 404);
+        }
 
+        // Создаем запись о том, что студент был отчислен
+        $student_group = new StudentGroup();
+        $student_group->date = Carbon::now()->format('d-m-Y');
+        $student_group->student_id = $student->id;
+        $student_group->group_id = $this->service->lastStudentGroup($student);
+        $student_group->status_id = Status::whereName('Expelled')->id;
+        $student_group->save();
+
+        return response()->json([]);
     }
 
-    public function expulsionGroup(Request $request){
+    //
+    public function expulsionGroup(int $group_id){
+        $group = Group::find($group_id);
+        if($group == null){
+            return response()->json(['Group not found'], 404);
+        }
 
+        //Получаем список студентов для группы
+        $students = StudentList::createStudList($group)->getStudents();
+
+        //Для каждого студента, который не отчислился, создаем запись об отчислении
+        foreach ($students as $student){
+            if($student->student_group()->count() % 2 == 1){
+                $student_group = new StudentGroup();
+                $student_group->date = Carbon::now()->format('d-m-Y');
+                $student_group->student_id = $student->id;
+                $student_group->group_id = $group_id;
+                $student_group->status_id = Status::whereName('Expelled')->id;
+                $student_group->save();
+            }
+        }
+        return response()->json([]);
     }
 
-    public function expulsionAll(Request $request){
 
+    public function expulsionGraduates(){
+        //Выбирем группы 4-го курса.
+        //Магистратура и специалитет не поддерживаются
+        $groups = Group::all()->where('course','=',4)
+            ->where('study_year_id','=', Controller::currentYear()->id);
+
+        if($groups == null){
+            return response()->json(['Not found 4-th course groups'],404);
+        }
+
+        foreach ($groups as $group){
+            //Получаем список студентов
+            $students = StudentList::createStudList($group)->getStudents();
+
+            //Для каждого студента, который не отчислился, создаем запись об отчислении
+            foreach ($students as $student){
+                if($student->student_group()->count() % 2 == 1){
+                    $student_group = new StudentGroup();
+                    $student_group->date = Carbon::now()->format('d-m-Y');
+                    $student_group->student_id = $student->id;
+                    $student_group->group_id = $group->id;
+                    $student_group->status_id = Status::whereName('Expelled')->id;
+                    $student_group->save();
+                }
+            }
+
+        }
+        return response()->json([]);
     }
 }

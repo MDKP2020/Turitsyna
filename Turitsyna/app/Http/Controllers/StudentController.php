@@ -26,7 +26,7 @@ class StudentController extends Controller
         $group = Group::find($group_id);
         $student_list = StudentList::createStudList($group);
 
-        return response()->json($student_list, 200);
+        return response()->json($student_list);
     }
 
     //
@@ -39,6 +39,6 @@ class StudentController extends Controller
         // Фильтруем записи по указанным фильтрам
         $groups = Group::filter($request->all())->get();
 
-        return response()->json($this->service->getStudentsAndGroups($groups), 200);
+        return response()->json($this->service->getStudentsAndGroups($groups));
     }
 }

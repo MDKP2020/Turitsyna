@@ -13,17 +13,17 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $period_of_study
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education query()
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education wherePeriodOfStudy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Level_education whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation query()
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation wherePeriodOfStudy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LevelEducation whereUpdatedAt($value)
  * @mixin \Eloquent
  */
-class Level_education extends Model
+class LevelEducation extends Model
 {
     use HasFactory;
     protected $table = 'level_education';
