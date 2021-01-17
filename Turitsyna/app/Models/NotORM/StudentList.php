@@ -5,8 +5,8 @@ namespace App\Models;
 
 
 class StudentList{
-    public string $group;
-    public array $students = array();
+    private string $group;
+    private array $students = array();
 
     public static function createStudList(Group $group){
         $student_list = new StudentList();

@@ -8,14 +8,15 @@ use App\Models\Status;
 use App\Models\Student;
 use App\Models\Student_group;
 use App\Models\StudyYear;
+use App\Providers\StudentGroupService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class EnrollmentController extends Controller
 {
-    // Контроллер для методов зачисления
+    private StudentGroupService $service;
 
-    //Проверяет какой сейчас период
+    //NOT NEEDED
     protected static function isEnrolmentPeriod() : bool{
         return self::currentPeriod()->name == 'Enrollment';
     }
@@ -23,19 +24,34 @@ class EnrollmentController extends Controller
     /*
      * Добавляет студента в бд и зачисляет его в группу
      *
-     * request - name, surname, patronomyc, group_id
+     * request - name, surname, patronomyc, group_name
      */
     public function addStudentToGroup(Request $request){
-        if(!self::isEnrolmentPeriod()){
-            return response(["Not enrollment period"], 400);
+
+        if($request->name == null || $request->surname == null || $request->patronomyc == null || $request->group_name == null){
+            return response()->json(['Not enough information'], 400);
         }
 
+        //Создаем студента
         $student = new Student();
         $student->name = $request->name;
         $student->surname = $request->surname;
         $student->patronomyc = $request->patronomyc;
+
+        //Проверяем наличие студента в базе
+        $tmp_student = $this->service->getStudentByFIO($request->name, $request->surname, $request->patronomyc);
+        if( $tmp_student != null) {
+            //Проверяем обучается ли студент на данный момент
+            $enrolled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Enrolled')->id)->count();
+            $expelled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Expelled')->id)->count();
+            if($enrolled_cnt > $expelled_cnt){
+                return response()->json(['Student is studying'], 400);
+            }
+        }
+        //Сохраняем студента в бд
         $student->save();
 
+        //Создаем  привязку к группе
         $student_group = new Student_group();
         $student_group->date = Carbon::now()->format('d-m-Y');
         $student_group->student_id = $student->id;
@@ -43,19 +59,15 @@ class EnrollmentController extends Controller
         $student_group->status_id = $request->Status::find('Enrolled')->id;
         $student_group->save();
 
-        return response()->json($student_group, 201);
+        return response()->json([$student, $student_group], 201);
     }
 
-    /*
-     * Удаляет студента из группы
-     *
-     * request - name, surname, patronomyc, group_id
-     */
+    // request - name, surname, patronomyc, group_id
+    // Для ошибочно занесенных
     public function deleteStudentFromGroup(int $student_id,int $group_id){
-        /*if($this->currentPeriod()->name != 'Enrollment'){
-            return response(["Not enrollment period"], 400);
-        }*/
-
+        if($student_id == null || $group_id == null){
+            return response()->json(['Not enough information'], 400);
+        }
         Student_group::all()
                 ->where("student_id", '=', $student_id )
                 ->where("group_id", '=', $group_id )
@@ -66,10 +78,6 @@ class EnrollmentController extends Controller
     //
     public function changeStudentsGroup($student_id, $old_group_id, $new_group_id )
     {
-        if ($this->currentPeriod()->name != 'Enrollment') {
-            return response(["Not enrollment period"], 400);
-        }
-
         $student = Student::find($student_id);
 
         $this->deleteStudentFromGroup($student_id, $old_group_id);
@@ -80,7 +88,7 @@ class EnrollmentController extends Controller
             "patronomyc"     => $student->patronomyc,
             "group_id"    => $new_group_id,
         )));
-        return response()->json(null,200);
+        return response()->json([''],200);
     }
 
     //NOT NEEDED

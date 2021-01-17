@@ -4,11 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Models\Direction;
 use App\Models\Group;
+use App\Models\Student;
 use App\Models\StudentList;
+use App\Providers\StudentGroupService;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+    private StudentGroupService $service;
+
+    // request - name, surname, patronomyc
+    public function getStudentByFIO(Request $request){
+        if($request->name == null || $request->surname == null || $request->patronomyc == null){
+            return response()->json(['Not enough information'], 400);
+        }
+        return response()->json($this->service->getStudentByFIO($request->name, $request->surname, $request->patronomyc), 200);
+    }
+
     //
     public function getStudentsFromGroup(int $group_id){
         $group = Group::find($group_id);
@@ -27,20 +39,6 @@ class StudentController extends Controller
         // Фильтруем записи по указанным фильтрам
         $groups = Group::filter($request->all())->get();
 
-        //Итоговый массив
-        $result_list = array();
-        $directions = Direction::all();
-
-        //По всем направлениям обучения
-        foreach ($directions as $direction){
-            $tmp_arr = array();
-            //По всем группам по этому направлению формируем список студентов {name: "IVT-260"; students: [..]}
-            foreach($groups->where('direction_id', '=', $direction->id) as $group){
-                $tmp_arr[] = StudentList::createStudList($group);
-            }
-            //Добавляем список групп и студентов в данном направлении в итоговый массив
-            $result_list[$direction->name] = $tmp_arr;
-        }
-        return response()->json($result_list, 200);
+        return response()->json($this->service->getStudentsAndGroups($groups), 200);
     }
 }

@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateGroupRequest;
 use App\Models\Direction;
 use App\Models\Group;
+use App\Providers\StudentGroupService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class GroupController extends Controller
 {
+    private StudentGroupService $service;
 
     //Дописать метод получения списка групп с фильтрацией
     //список курсов, учебный год
@@ -20,7 +22,12 @@ class GroupController extends Controller
         $group->study_year_id = $request->study_year_id;
         $group->course = $request->course;
         $group->direction_id = $request->directioin_id;
+
+        if($this->service->getGroupByNameYearCourse($group->name, $group->study_year_id, $group->course) != null){
+            return response()->json(['Group already exists'], 400);
+        }
         $group->save();
+        return response()->json($group, 200);
     }
 
     public function getGroup(int $id){
@@ -28,49 +35,21 @@ class GroupController extends Controller
         return Group::find($id);
     }
 
-
-
-    // Вернуть все группы по направлениям
-    // map: direction : array<groups>
-    public function getAllGroups(){
-        $directions = Direction::all();
-        $groups = array();
-        foreach ($directions as $direction){
-            $groups[$direction->name] = Group::all()->where("direction_id", '=', $direction->id);
-        }
-        return $groups;
-    }
-
-
     /*
      * Изменяет название группы
      * request - id(group), name
      */
     public function changeGroupName(Request $request){
         $group = Group::find($request->id);
+
         if($group == null)
             return response(["Group not found"], 404);
-        if(Group::all()->where("name", '=', $request->name)
-                       ->first() != null)
+
+        if(Group::whereName($request->name)->first() != null)
             return response(["Group with this name is already exists"], 400);
+
         $group->name = $request->name;
-        $group->save();
-    }
-
-    /*
-     * Получить список студентов конкретной группы
-     */
-    public function getListOfStudents($group_id){
-        if( Group::find($group_id) == null){
-            return response(["Group not found"], 404);
-        }
-        $student_list = DB::table('group')
-            ->join('student_group', 'group.id', '=', 'student_group.group_id')
-            ->join('student', 'student.id', '=', 'student_group.student_id')
-            ->select('students.*')
-            ->where('group.id', '=', $group_id)
-            ->get();
-
-        return response($student_list, 200);
+        $group->update();
+        return response()->json($group, 200);
     }
 }

@@ -2,18 +2,37 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Direction;
+use App\Models\Group;
+use App\Models\StudentList;
+use App\Providers\StudentGroupService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use SebastianBergmann\Environment\Console;
 
 class ExpulsionController extends Controller
 {
+    private StudentGroupService $service;
+    //
     public function createExpulsionList(){
-        //return DB::statement('select * from student inner join student_group on student.id = student_group.student_id inner join `group` on `group`.id = student_group.proup_id inner join level_education on level_education.id = `group`.lvl_education_id where `group`.course = level_education.period_of_study  and student_group.status_id = 2');
+        //Выбирем группы 4-го курса
+        $groups = Group::all()->where('course','=',4)
+                              ->where('study_year_id','=', Controller::currentYear()->id);
+
+        return response()->json($this->service->getStudentsAndGroups($groups), 200);
+    }
+
+    // request - Student
+    public function expulsionStudent(Request $request){
+        // Сначала удалить привязку, Проверить единственный ли в группе и удалить группу, потом студента
 
     }
 
-    // request -
-    public function expulsion(Request $request){
+    public function expulsionGroup(Request $request){
+
+    }
+
+    public function expulsionAll(Request $request){
 
     }
 }
