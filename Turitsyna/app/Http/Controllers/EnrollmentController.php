@@ -12,8 +12,6 @@ use Illuminate\Http\Request;
 
 class EnrollmentController extends Controller
 {
-    private StudentGroupService $service;
-
     /*
      * Добавляет студента в бд и зачисляет его в группу
      *
@@ -21,6 +19,7 @@ class EnrollmentController extends Controller
      */
     public function addStudentToGroup(Request $request){
 
+        $this->service = new StudentGroupService();
         if($request->name == null || $request->surname == null || $request->patronomyc == null || $request->group_name == null){
             return response()->json(['Not enough information'], 400);
         }
@@ -49,7 +48,7 @@ class EnrollmentController extends Controller
         $student_group->date = Carbon::now()->format('d-m-Y');
         $student_group->student_id = $student->id;
         $student_group->group_id = $request->group_id;
-        $student_group->status_id = Status::whereName('Enrolled')->id;
+        $student_group->status_id = Status::whereName('Enrolled')->first()->id;
         $student_group->save();
 
         return response()->json([$student, $student_group], 201);
@@ -86,12 +85,13 @@ class EnrollmentController extends Controller
 
     //NOT NEEDED
     public function checkEmptyGroups(){
+        $this->service = new StudentGroupService();
         //запрос на пустые группы в текущем году
-        $groups = Group::all()->where('study_year_id', '=', $this->currentYear()->id);
+        $groups = Group::all()->where('study_year_id', '=', $this->service->currentYear()->id);
         $emptyGroups = array();
 
         foreach ($groups as $group){
-            if($group->student_group()->count() == 0){
+            if($group->studentGroup()->count() == 0){
                 $emptyGroups[] = $group;
             }
         }
@@ -101,11 +101,4 @@ class EnrollmentController extends Controller
             return response()->json($emptyGroups);
         }
     }
-
-
-
-
-
-
-
 }

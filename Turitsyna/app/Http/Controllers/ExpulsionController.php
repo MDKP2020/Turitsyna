@@ -12,18 +12,19 @@ use Carbon\Carbon;
 
 class ExpulsionController extends Controller
 {
-    private StudentGroupService $service;
     //kinda useless
     public function createExpulsionList(){
+        $this->service = new StudentGroupService();
         //Выбирем группы 4-го курса
         $groups = Group::all()->where('course','=',4)
-                              ->where('study_year_id','=', Controller::currentYear()->id);
+                              ->where('study_year_id','=', $this->service->currentYear()->id);
 
         return response()->json($this->service->getStudentsAndGroups($groups));
     }
 
     //
     public function expulsionStudent(int $student_id){
+        $this->service = new StudentGroupService();
         $student = Student::find($student_id);
         //Проверяем на наличие студента
         if($student == null){
@@ -58,7 +59,7 @@ class ExpulsionController extends Controller
                 $student_group->date = Carbon::now()->format('d-m-Y');
                 $student_group->student_id = $student->id;
                 $student_group->group_id = $group_id;
-                $student_group->status_id = Status::whereName('Expelled')->id;
+                $student_group->status_id = Status::whereName('Expelled')->first()->id;
                 $student_group->save();
             }
         }
@@ -67,10 +68,11 @@ class ExpulsionController extends Controller
 
 
     public function expulsionGraduates(){
+        $this->service = new StudentGroupService();
         //Выбирем группы 4-го курса.
         //Магистратура и специалитет не поддерживаются
         $groups = Group::all()->where('course','=',4)
-            ->where('study_year_id','=', Controller::currentYear()->id);
+            ->where('study_year_id','=', $this->service->currentYear()->id);
 
         if($groups == null){
             return response()->json(['Not found 4-th course groups'],404);
@@ -87,7 +89,7 @@ class ExpulsionController extends Controller
                     $student_group->date = Carbon::now()->format('d-m-Y');
                     $student_group->student_id = $student->id;
                     $student_group->group_id = $group->id;
-                    $student_group->status_id = Status::whereName('Expelled')->id;
+                    $student_group->status_id = Status::whereName('Expelled')->first()->id;
                     $student_group->save();
                 }
             }

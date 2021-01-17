@@ -3,19 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\GroupRequest;
-use App\Models\Direction;
 use App\Models\Group;
 use App\Providers\StudentGroupService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class GroupController extends Controller
 {
-    private StudentGroupService $service;
-
     //Дописать метод получения списка групп с фильтрацией
     //список курсов, учебный год
     public function createGroup(GroupRequest $request){
+        $this->service = new StudentGroupService();
+
         $group = new Group();
         $group->name = $request->name;
         $group->lvl_education_id = $request->lvl_education_id;

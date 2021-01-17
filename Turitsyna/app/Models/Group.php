@@ -14,8 +14,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property int $lvl_education_id
  * @property int $study_year_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
  * @property int $course
  * @property int $direction_id
  * @property-read \App\Models\Direction $direction
@@ -28,16 +26,13 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Group simplePaginateFilter(?int $perPage = null, ?int $columns = [], ?int $pageName = 'page', ?int $page = null)
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereBeginsWith(string $column, string $value, string $boolean = 'and')
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereCourse($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Group whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereDirectionId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Group whereEducFormId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereEndsWith(string $column, string $value, string $boolean = 'and')
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereLike(string $column, string $value, string $boolean = 'and')
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereLvlEducationId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Group whereStudyYearId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Group whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Group extends Model
@@ -46,6 +41,8 @@ class Group extends Model
     use HasFactory;
     protected $table = 'group';
     protected $primaryKey = 'id';
+
+    public $timestamps = false;
 
     public function direction(){
         return $this->belongsTo('App\Models\Direction');
@@ -59,8 +56,8 @@ class Group extends Model
         return $this->belongsTo('App\Models\LevelEducation');
     }
 
-    public function student_group(){
-        return $this->hasMany('App\Model\StudentGroup');
+    public function studentGroup(){
+        return $this->hasMany('App\Models\StudentGroup');
     }
 
     public function modelFilter()

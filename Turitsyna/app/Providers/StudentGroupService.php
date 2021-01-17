@@ -1,17 +1,15 @@
 <?php
 
-
 namespace App\Providers;
 
-
-use App\Http\Controllers\Controller;
 use App\Models\Direction;
 use App\Models\Group;
 use App\Models\Status;
 use App\Models\Student;
-use App\Models\StudentList;
 use App\Models\StudyYear;
-use Illuminate\Http\Request;
+use App\Models\StudentGroup;
+use App\Models\StudentList;
+use Illuminate\Database\Eloquent\Collection;
 
 class StudentGroupService
 {
@@ -22,7 +20,28 @@ class StudentGroupService
             ->first();
     }
 
-    public function getStudentsAndGroups($groups){
+    public function getStudentsAndGroups(Collection $groups){
+        //Итоговый массив
+
+        $result_list = array();
+        $directions = Direction::all();
+
+        //По всем направлениям обучения
+        foreach ($directions as $direction){
+
+            $tmp_arr = array();
+            //По всем группам по этому направлению формируем список студентов {name: "IVT-260"; students: [..]}
+            foreach($groups->where('direction_id', '=', $direction->id) as $group){
+                $tmp_arr[] = StudentList::createStudList($group);
+            }
+
+            //Добавляем список групп и студентов в данном направлении в итоговый массив
+            $result_list[$direction->name] = $tmp_arr;
+        }
+        return $result_list;
+    }
+
+    public function getStudentsAndGroupsNextCourse(Collection $groups){
         //Итоговый массив
         $result_list = array();
         $directions = Direction::all();
@@ -30,9 +49,15 @@ class StudentGroupService
         //По всем направлениям обучения
         foreach ($directions as $direction){
             $tmp_arr = array();
-            //По всем группам по этому направлению формируем список студентов {name: "IVT-260"; students: [..]}
-            foreach($groups->where('direction_id', '=', $direction->id) as $group){
-                $tmp_arr[] = StudentList::createStudList($group);
+
+            foreach($groups->where('direction_id','=',$direction->id) as $group){
+
+                $tmp_list = StudentList::createStudList($group);
+
+                $pos = strpos($tmp_list->getGroup(), '-');
+                $tmp_list->setGroup(substr_replace($tmp_list->getGroup(), strval($group->course + 1),  $pos+1, 1));
+
+                $tmp_arr[] = $tmp_list;
             }
             //Добавляем список групп и студентов в данном направлении в итоговый массив
             $result_list[$direction->name] = $tmp_arr;
@@ -50,7 +75,15 @@ class StudentGroupService
     public function lastStudentGroup(Student $student) : Group{
         return $student->student_group()
                             ->where('status_id', '=', Status::find('Enrolled')->id)
-                            ->max('date');
+                            ->where('date', '=', max('date'))->first()->group;
+    }
+
+    public function currentYear(){
+        return StudyYear::where('start_year', '=', StudyYear::max('start_year'))->first();
+    }
+
+    protected function groupNameTemplate(string $direction, int $course) : string{
+            //
     }
 
 }
