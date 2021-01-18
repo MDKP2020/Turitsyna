@@ -19,7 +19,7 @@ class ExpulsionController extends Controller
         $groups = Group::all()->where('course','=',4)
                               ->where('study_year_id','=', $this->service->currentYear()->id);
 
-        return response()->json($this->service->getStudentsAndGroups($groups));
+        return response()->json($this->service->getExpulsionStudentsAndGroups($groups));
     }
 
     //

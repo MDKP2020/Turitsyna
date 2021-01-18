@@ -15,7 +15,7 @@ class AddDestinationToGroupTable extends Migration
     {
         Schema::table('group', function (Blueprint $table) {
             $table->foreignId('study_year_id');
-            $table->foreign('study_year_id')->references('id')->on('study_years');
+            $table->foreign('study_year_id')->references('id')->on('study_year');
 
             $table->foreignId('direction_id');
             $table->foreign('direction_id')->references('id')->on('direction');
