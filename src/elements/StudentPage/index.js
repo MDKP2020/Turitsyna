@@ -11,6 +11,8 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { Link } from 'react-router-dom';
 
+const axios = require('axios');
+
 export class StudentPage extends React.Component {
     constructor(props) {
         super(props);
@@ -20,6 +22,12 @@ export class StudentPage extends React.Component {
             trainingProgrammes: []
         };
     }
+
+    componentDidMount() {
+        axios.get("/student-api/getGroupStudentsList")
+            .then(result => console.log("response", result.data))
+    }
+
 
     filterChange(academicYear, course, trainingProgrammes) {
         this.setState({
