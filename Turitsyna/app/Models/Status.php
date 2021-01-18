@@ -24,7 +24,7 @@ class Status extends Model
     protected $table = 'status';
     protected $primaryKey = 'id';
     public $timestamps = false;
-    /*public function student_group(){
+    public function student_group(){
         return $this->hasMany('App\Models\StudentGroup');
-    }*/
+    }
 }

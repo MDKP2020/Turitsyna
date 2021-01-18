@@ -13,10 +13,10 @@ class StudentController extends Controller
     public function getStudentByFIO(Request $request){
         $this->service = new StudentGroupService();
 
-        if($request->name == null || $request->surname == null || $request->patronomyc == null){
+        if($request['name'] == null || $request['surname'] == null || $request['patronomyc'] == null){
             return response()->json(['Not enough information'], 400);
         }
-        return response()->json($this->service->getStudentByFIO($request->name, $request->surname, $request->patronomyc), 200);
+        return response()->json($this->service->getStudentByFIO($request['name'], $request['surname'], $request['patronomyc']));
     }
 
     //
@@ -29,7 +29,6 @@ class StudentController extends Controller
             'name' => $student_list->getGroup(),
             'students' => $student_list->getStudents(),
         ]);
-        //return response(json_encode(($student_list)));
     }
 
     //
@@ -37,28 +36,28 @@ class StudentController extends Controller
         $this->service = new StudentGroupService();
 
         // Если год не указан, то ставим текущий
-        if($request->study_year_id == null){
-            $request->study_year_id = $this->service->currentYear()->id;
+        if($request['study_year_id'] == null){
+            $request['study_year_id'] = $this->service->currentYear()->id;
         }
 
         // Фильтруем записи по указанным фильтрам
         $groups = Group::filter($request->all())->get();
-        $list = $this->service->getStudentsAndGroups($groups);
 
+        $list = $this->service->getStudentsAndGroups($groups);
+        //return response()->json($str);
         return response()->json([
             "PRIN" => [
-                       'name' => array_values(array_values($list)[0])[0]->group,
-                       'students' => array_values(array_values($list)[0])[0]->students],
+                'name' => in_array( 1, $request["direction_id"]) ? array_values(array_values($list)[0])[0]->group : null,
+                'students' => in_array( 1, $request["direction_id"]) ? array_values(array_values($list)[0])[0]->students : null],
             "IVT" => [
-                'name' => array_values(array_values($list)[1])[0]->group,
-                'students' => array_values(array_values($list)[1])[0]->students],
+                'name' => in_array( 2, $request["direction_id"]) ? array_values(array_values($list)[1])[0]->group: null,
+                'students' => in_array( 2, $request["direction_id"]) ? array_values(array_values($list)[1])[0]->students : null],
             "IIT" => [
-                'name' => array_values(array_values($list)[2])[0]->group,
-                'students' => array_values(array_values($list)[2])[0]->students],
+                'name' => in_array( 3, $request["direction_id"]) ? array_values(array_values($list)[2])[0]->group: null,
+                'students' => in_array( 4, $request["direction_id"]) ? array_values(array_values($list)[2])[0]->students: null],
             "FIZ" => [
-                'name' => array_values(array_values($list)[3])[0]->group,
-                'students' => array_values(array_values($list)[3])[0]->students]
+                'name' => in_array( 4, $request["direction_id"]) ? array_values(array_values($list)[3])[0]->group : null,
+                'students' => in_array( 4, $request["direction_id"]) ? array_values(array_values($list)[3])[0]->students : null]
         ]);
-        //return response()->json($this->service->getStudentsAndGroups($groups));
     }
 }
