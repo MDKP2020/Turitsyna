@@ -26,6 +26,7 @@ class ExpulsionController extends Controller
     public function expulsionStudent(int $student_id){
         $this->service = new StudentGroupService();
         $student = Student::find($student_id);
+
         //Проверяем на наличие студента
         if($student == null){
             return response()->json(['Student not found'], 404);
@@ -35,11 +36,11 @@ class ExpulsionController extends Controller
         $student_group = new StudentGroup();
         $student_group->date = Carbon::now()->format('d-m-Y');
         $student_group->student_id = $student->id;
-        $student_group->group_id = $this->service->lastStudentGroup($student);
-        $student_group->status_id = Status::whereName('Expelled')->id;
+        $student_group->group_id = $this->service->lastStudentGroup($student)->group->id;
+        $student_group->status_id = Status::whereName('Expelled')->first()->id;
         $student_group->save();
 
-        return response()->json([]);
+        return response()->json(['']);
     }
 
     //

@@ -16,8 +16,6 @@ class CreateStudyYearTable extends Migration
         Schema::create('study_year', function (Blueprint $table) {
             $table->id();
             $table->integer('start_year');
-            $table->unsignedBigInteger('period_id');
-            $table->foreign('period_id')->references('id')->on('period');
             $table->timestamps();
         });
     }

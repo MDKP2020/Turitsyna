@@ -25,6 +25,6 @@ class Direction extends Model
     protected $connection = 'pgsql';
     public $timestamps = false;
     public function groups(){
-        return $this->hasMany('App\Model\Group');
+        return $this->hasMany('App\Models\Group');
     }
 }

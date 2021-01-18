@@ -27,7 +27,7 @@ class StudyYear extends  Model
     public $timestamps = false;
 
     public function groups(){
-        return $this->hasMany('App\Model\Group');
+        return $this->hasMany('App\Models\Group');
     }
 
 }

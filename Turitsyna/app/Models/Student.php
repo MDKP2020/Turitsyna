@@ -28,6 +28,6 @@ class Student extends Model
     protected $primaryKey = 'id';
     public $timestamps = false;
     public function student_group(){
-        return $this->hasMany('App\Model\StudentGroup');
+        return $this->hasMany('App\Models\StudentGroup');
     }
 }

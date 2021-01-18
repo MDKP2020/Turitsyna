@@ -77,10 +77,13 @@ class StudentGroupService
 
     }
 
-    public function lastStudentGroup(Student $student) : ?Group{
-        return $student->student_group()
-                            ->where('status_id', '=', Status::find('Enrolled')->id)
-                            ->where('date', '=', max('date'))->first()->group;
+    public function lastStudentGroup(Student $student) :?StudentGroup{
+        $date = StudentGroup::all()->where('student_id', '=', $student->id)
+            ->where('status_id', '=', Status::whereName('Enrolled')->first()->id)->max('date');
+
+        return $student->student_group->first(function($item) use ($date) {
+            return $item->status_id == Status::whereName('Enrolled')->first()->id && $item->date == $date;
+        });
     }
 
     public function currentYear(){
