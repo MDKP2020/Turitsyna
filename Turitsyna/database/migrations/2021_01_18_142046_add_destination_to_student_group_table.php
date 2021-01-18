@@ -14,13 +14,13 @@ class AddDestinationToStudentGroupTable extends Migration
     public function up()
     {
         Schema::table('student_group', function (Blueprint $table) {
-            $table->foreignId('student_id');
+            $table->foreignId('student_id')->nullable();
             $table->foreign('student_id')->references('id')->on('student');
 
-            $table->foreignId('group_id');
+            $table->foreignId('group_id')->nullable();
             $table->foreign('group_id')->references('id')->on('group');
 
-            $table->foreignId('status_id');
+            $table->foreignId('status_id')->nullable();
             $table->foreign('status_id')->references('id')->on('status');
         });
     }
