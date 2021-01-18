@@ -12,27 +12,27 @@ use Illuminate\Http\Request;
 
 class EnrollmentController extends Controller
 {
-    private StudentGroupService $service;
-
     /*
      * Добавляет студента в бд и зачисляет его в группу
      *
-     * request - name, surname, patronomyc, group_name
+     * request - name, surname, patronomyc, group_id
      */
     public function addStudentToGroup(Request $request){
 
-        if($request->name == null || $request->surname == null || $request->patronomyc == null || $request->group_name == null){
+        $this->service = new StudentGroupService();
+        if($request["name"] == null || $request["surname"] == null || $request["patronomyc"] == null || $request["group_id"] == null){
             return response()->json(['Not enough information'], 400);
         }
 
         //Создаем студента
         $student = new Student();
-        $student->name = $request->name;
-        $student->surname = $request->surname;
-        $student->patronomyc = $request->patronomyc;
+        $student->name = $request["name"];
+        $student->surname = $request['surname'];
+        $student->patronomyc = $request['patronomyc'];
 
         //Проверяем наличие студента в базе
-        $tmp_student = $this->service->getStudentByFIO($request->name, $request->surname, $request->patronomyc);
+        $tmp_student = $this->service->getStudentByFIO($request['name'], $request['surname'], $request['patronomyc']);
+
         if( $tmp_student != null) {
             //Проверяем обучается ли студент на данный момент
             $enrolled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Enrolled')->id)->count();
@@ -41,6 +41,7 @@ class EnrollmentController extends Controller
                 return response()->json(['Student is studying'], 400);
             }
         }
+
         //Сохраняем студента в бд
         $student->save();
 
@@ -48,14 +49,14 @@ class EnrollmentController extends Controller
         $student_group = new StudentGroup();
         $student_group->date = Carbon::now()->format('d-m-Y');
         $student_group->student_id = $student->id;
-        $student_group->group_id = $request->group_id;
-        $student_group->status_id = Status::whereName('Enrolled')->id;
+        $student_group->group_id = $request['group_id'];
+        $student_group->status_id = Status::whereName('Enrolled')->first()->id;
         $student_group->save();
 
         return response()->json([$student, $student_group], 201);
     }
 
-    // request - name, surname, patronomyc, group_id
+
     // Для ошибочно занесенных
     public function deleteStudentFromGroup(int $student_id,int $group_id){
         if($student_id == null || $group_id == null){
@@ -69,29 +70,29 @@ class EnrollmentController extends Controller
     }
 
     //
-    public function changeStudentsGroup($student_id, $old_group_id, $new_group_id )
+    public function changeStudentsGroup(int $student_id,int  $old_group_id,int  $new_group_id )
     {
-        $student = Student::find($student_id);
+        $stud_groups = StudentGroup::all();
 
-        $this->deleteStudentFromGroup($student_id, $old_group_id);
+        $tmp = $stud_groups->first(function ($item) use ($student_id, $old_group_id) {
+            return $item->student_id == $student_id && $item->group_id == $old_group_id;
+        });
 
-        $this->addStudentToGroup(Request::create(null, null, array(
-            "name"     => $student->name,
-            "surname"     => $student->surname,
-            "patronomyc"     => $student->patronomyc,
-            "group_id"    => $new_group_id,
-        )));
-        return response()->json(['']);
+        $tmp->group_id = $new_group_id;
+        $tmp->save();
+
+        return response()->json($tmp);
     }
 
     //NOT NEEDED
     public function checkEmptyGroups(){
+        $this->service = new StudentGroupService();
         //запрос на пустые группы в текущем году
-        $groups = Group::all()->where('study_year_id', '=', $this->currentYear()->id);
+        $groups = Group::all()->where('study_year_id', '=', $this->service->currentYear()->id);
         $emptyGroups = array();
 
         foreach ($groups as $group){
-            if($group->student_group()->count() == 0){
+            if($group->studentGroup()->count() == 0){
                 $emptyGroups[] = $group;
             }
         }
@@ -101,11 +102,4 @@ class EnrollmentController extends Controller
             return response()->json($emptyGroups);
         }
     }
-
-
-
-
-
-
-
 }

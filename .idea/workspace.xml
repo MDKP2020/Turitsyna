@@ -27,10 +27,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e618af39-29df-4f52-985d-92854e5880d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2021_01_18_141727_add_destination_to_group_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2021_01_18_142046_add_destination_to_student_group_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/ExpulsionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/ExpulsionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/TransferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/TransferController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Requests/GroupRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Requests/GroupRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Direction.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Direction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/LevelEducation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/LevelEducation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/NotORM/StudentList.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/StudentList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Period.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/StudentGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/StudentGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Models/StudyYear.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Models/StudyYear.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Providers/StudentGroupService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Providers/StudentGroupService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turitsyna/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_24_133351_create_period_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_26_134114_create_study_year_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_26_134114_create_study_year_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_27_213545_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_27_213545_create_groups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_28_213941_create_student_group_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2020_10_28_213941_create_student_group_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/routes/enrollment-api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/routes/expulsion-api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/routes/transfer-api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +291,7 @@
       <workItem from="1610911499294" duration="2678000" />
       <workItem from="1610914187529" duration="545000" />
       <workItem from="1610914740650" duration="3249000" />
-      <workItem from="1610970193373" duration="2672000" />
+      <workItem from="1610970193373" duration="2839000" />
     </task>
     <servers />
   </component>
@@ -378,12 +405,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Turitsyna/routes/web.php</url>
-          <line>25</line>
+          <line>27</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php</url>
-          <line>23</line>
+          <line>21</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

@@ -23,8 +23,8 @@ class Direction extends Model
     protected $table = 'direction';
     protected $primaryKey = 'id';
     protected $connection = 'pgsql';
-
+    public $timestamps = false;
     public function groups(){
-        return $this->hasMany('App\Model\Group');
+        return $this->hasMany('App\Models\Group');
     }
 }

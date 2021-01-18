@@ -12,17 +12,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property string $surname
  * @property string $patronomyc
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Student newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Student newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Student query()
- * @method static \Illuminate\Database\Eloquent\Builder|Student whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Student whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Student whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Student wherePatronomyc($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Student whereSurname($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Student whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Student extends Model
@@ -30,8 +26,8 @@ class Student extends Model
     use HasFactory;
     protected $table = 'student';
     protected $primaryKey = 'id';
-
+    public $timestamps = false;
     public function student_group(){
-        return $this->hasMany('App\Model\StudentGroup');
+        return $this->hasMany('App\Models\StudentGroup');
     }
 }
