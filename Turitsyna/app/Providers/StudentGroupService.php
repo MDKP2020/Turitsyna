@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Collection;
 
 class StudentGroupService
 {
-    public function getStudentByFIO(string $name, string $surname, string $patronomyc) : Student{
+    public function getStudentByFIO(string $name, string $surname, string $patronomyc) : ?Student{
         return Student::all()->where('name', '=', $name )
             ->where('surname', '=', $surname)
             ->where('patronomyc', '=', $patronomyc)
@@ -77,7 +77,7 @@ class StudentGroupService
 
     }
 
-    public function lastStudentGroup(Student $student) : Group{
+    public function lastStudentGroup(Student $student) : ?Group{
         return $student->student_group()
                             ->where('status_id', '=', Status::find('Enrolled')->id)
                             ->where('date', '=', max('date'))->first()->group;
@@ -86,9 +86,4 @@ class StudentGroupService
     public function currentYear(){
         return StudyYear::where('start_year', '=', StudyYear::max('start_year'))->first();
     }
-
-    protected function groupNameTemplate(string $direction, int $course) : string{
-            //
-    }
-
 }
