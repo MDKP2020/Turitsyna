@@ -15,12 +15,12 @@ class EnrollmentController extends Controller
     /*
      * Добавляет студента в бд и зачисляет его в группу
      *
-     * request - name, surname, patronomyc, group_name
+     * request - name, surname, patronomyc, group_id
      */
     public function addStudentToGroup(Request $request){
 
         $this->service = new StudentGroupService();
-        if($request->name == null || $request->surname == null || $request->patronomyc == null || $request->group_name == null){
+        if($request["name"] == null /*|| $request["surname"] == null || $request["patronomyc"] == null || $request["group_id"] == null*/){
             return response()->json(['Not enough information'], 400);
         }
 

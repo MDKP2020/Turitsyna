@@ -12,6 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        "/enrollment-api/addStud",
+        "/group-api/create",
+        "/group-api/changeGroupName/*"
     ];
 }

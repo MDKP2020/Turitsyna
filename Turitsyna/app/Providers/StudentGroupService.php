@@ -65,11 +65,16 @@ class StudentGroupService
         return $result_list;
     }
 
-    public function getGroupByNameYearCourse(string $name, int $year, int $course) : Group{
-        return Group::all()->where('name','=', $name)
-                        ->where('study_year_id','=', StudyYear::all()->where('start_year', '=', $year)->first()->id)
-                        ->where('course','=', $course)
-                        ->first();
+    public function getGroupByNameYearCourse(string $name, int $year, int $course) : ?Group{
+        $year_id = StudyYear::all()->where('start_year', '=', $year)->first->id;
+        $groups = Group::all();
+        return $groups->first(function ($item) use ($year_id, $course, $name) {
+           return $item->name == $name && $item->study_year_id == $year_id && $item->couse == $course;
+        });
+//        $groups = Group::all()->where('name','=', $name )
+//                        ->where('study_year_id','=', $year_id )
+//                        ->where('course','=', $course)->get();
+
     }
 
     public function lastStudentGroup(Student $student) : Group{

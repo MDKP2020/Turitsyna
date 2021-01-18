@@ -11,6 +11,7 @@ class TransferController extends Controller
 {
     public function createTransferList(){
         $this->service = new StudentGroupService();
+        //TODO сделать проверку на наличие групп 4-го курса
 
         // Выбирем группы 4-го курса
         // Магистратура и специалитет не поддерживаются
