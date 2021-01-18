@@ -24,7 +24,7 @@ export class StudentPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("/student-api/getGroupStudentsList")
+        axios.get("http://localhost:8000/student-api/getGroupStudentsList")
             .then(result => console.log("response", result.data))
     }
 
