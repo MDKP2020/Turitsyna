@@ -24,10 +24,15 @@ class StudentController extends Controller
         $group = Group::find($group_id);
 
         $student_list = StudentList::createStudList($group);
-        //ddd($student_list);
+
+        if($student_list == null) return response()->json([
+            'name' => $group->name,
+            'students' => []
+        ]);
+
         return response()->json([
             'name' => $student_list->getGroup(),
-            'students' => $student_list->getStudents(),
+            'students' => $student_list->getStudents()
         ]);
     }
 
@@ -44,20 +49,22 @@ class StudentController extends Controller
         $groups = Group::filter($request->all())->get();
 
         $list = $this->service->getStudentsAndGroups($groups);
-        //return response()->json($str);
+
+        $direction_id = $request["direction_id"] != null ? $request["direction_id"] : array();
+
         return response()->json([
             "PRIN" => [
-                'name' => in_array( 1, $request["direction_id"]) ? array_values(array_values($list)[0])[0]->group : null,
-                'students' => in_array( 1, $request["direction_id"]) ? array_values(array_values($list)[0])[0]->students : null],
+                'name' => in_array( 1, $direction_id) ? array_values(array_values($list)[0])[0]->group : null,
+                'students' => in_array( 1, $direction_id) ? array_values(array_values($list)[0])[0]->students : null],
             "IVT" => [
-                'name' => in_array( 2, $request["direction_id"]) ? array_values(array_values($list)[1])[0]->group: null,
-                'students' => in_array( 2, $request["direction_id"]) ? array_values(array_values($list)[1])[0]->students : null],
+                'name' => in_array( 2, $direction_id) ? array_values(array_values($list)[1])[0]->group: null,
+                'students' => in_array( 2, $direction_id) ? array_values(array_values($list)[1])[0]->students : null],
             "IIT" => [
-                'name' => in_array( 3, $request["direction_id"]) ? array_values(array_values($list)[2])[0]->group: null,
-                'students' => in_array( 4, $request["direction_id"]) ? array_values(array_values($list)[2])[0]->students: null],
+                'name' => in_array( 3, $direction_id) ? array_values(array_values($list)[2])[0]->group: null,
+                'students' => in_array( 4, $direction_id) ? array_values(array_values($list)[2])[0]->students: null],
             "FIZ" => [
-                'name' => in_array( 4, $request["direction_id"]) ? array_values(array_values($list)[3])[0]->group : null,
-                'students' => in_array( 4, $request["direction_id"]) ? array_values(array_values($list)[3])[0]->students : null]
+                'name' => in_array( 4, $direction_id) ? array_values(array_values($list)[3])[0]->group : null,
+                'students' => in_array( 4, $direction_id) ? array_values(array_values($list)[3])[0]->students : null]
         ]);
     }
 }

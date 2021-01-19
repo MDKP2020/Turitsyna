@@ -20,7 +20,7 @@ class StudentGroupService
             ->first();
     }
 
-    public function getStudentsAndGroups(Collection $groups){
+    /*public function getStudentsAndGroups(Collection $groups){
         //Итоговый массив
 
         $result_list = array();
@@ -33,6 +33,30 @@ class StudentGroupService
             //По всем группам по этому направлению формируем список студентов {name: "IVT-260"; students: [..]}
             foreach($groups->where('direction_id', '=', $direction->id) as $group){
                 $tmp_arr[] = StudentList::createStudList($group);
+            }
+
+            //Добавляем список групп и студентов в данном направлении в итоговый массив
+            $result_list[$direction->name] = $tmp_arr;
+        }
+        return $result_list;
+    }*/
+
+    public function getStudentsAndGroups(Collection $groups){
+        //Итоговый массив
+
+        $result_list = array();
+        $directions = Direction::all();
+
+        //По всем направлениям обучения
+        foreach ($directions as $direction){
+
+            $tmp_arr = array();
+            //По всем группам по этому направлению формируем список студентов {name: "IVT-260"; students: [..]}
+            foreach($groups->where('direction_id', '=', $direction->id) as $group){
+                $tmp = StudentList::createStudList($group);
+                if($tmp != null ){
+                    $tmp_arr[] = $tmp;
+                }
             }
 
             //Добавляем список групп и студентов в данном направлении в итоговый массив
@@ -71,9 +95,6 @@ class StudentGroupService
         return $groups->first(function ($item) use ($year_id, $course, $name) {
            return $item->name == $name && $item->study_year_id == $year_id && $item->couse == $course;
         });
-//        $groups = Group::all()->where('name','=', $name )
-//                        ->where('study_year_id','=', $year_id )
-//                        ->where('course','=', $course)->get();
 
     }
 

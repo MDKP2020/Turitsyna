@@ -32,12 +32,29 @@ class StudentList{
 
     public string $group;
     public array $students = array();
-
-    public static function createStudList(Group $group) : StudentList{
+/*
+    public static function createStudList(Group $group) : ?StudentList{
         $student_list = new StudentList();
         $student_list->group = $group->name;
         foreach ($group->studentGroup as $item){
             $student_list->students[] = $item->student;
+        }
+        return $student_list;
+    }*/
+
+    public static function createStudList(Group $group) : ?StudentList{
+        $student_list = new StudentList();
+        $student_list->group = $group->name;
+        foreach ($group->studentGroup as $item){
+            if( in_array($item->student, $student_list->students) ){
+                $student_list->students = array_diff($student_list->students, [$item->student]);
+            }
+            else {
+                $student_list->students[] = $item->student;
+            }
+        }
+        if(empty($student_list->students)){
+            return null;
         }
         return $student_list;
     }
