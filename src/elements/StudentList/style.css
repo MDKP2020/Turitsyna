@@ -1,0 +1,21 @@
+.studentListGrid {
+    margin-top: 15px;
+    margin-right: 7px;
+}
+
+.groupButton {
+    width: 120px;
+}
+
+.dialogAdd {
+    overflow: hidden;
+}
+
+.dialogAddItem{
+    width: 100%;
+    display: flex;
+}
+
+.dialogAddCloseButton{
+    padding-top: 18px !important;
+}
