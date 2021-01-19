@@ -3,6 +3,51 @@ Accept: application/json
 Content-Type: application/json
 
 {
+  "name": "Ivan",
+  "surname" : "Ivanov",
+  "patronomyc": "Ivanovich",
+  "group_id": 1
+}
+
+<> 2021-01-19T011304.201.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Виталя",
+  "surname" : "В",
+  "patronomyc": "В",
+  "group_id": 1
+}
+
+<> 2021-01-19T124606.201.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Дима",
+  "surname" : "Дмитриев",
+  "patronomyc": "Дмитриевич",
+  "group_id": 1
+}
+
+<> 2021-01-19T123207.400.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
   "name": "Дима",
   "surname" : "Дмитриев",
   "patronomyc": "Дмитриевич",
@@ -467,27 +512,6 @@ POST http://localhost:8000/expulsion-api/student/4
 Accept: application/json
 
 <> 2021-01-18T061142.500.json
-
-###
-
-POST http://localhost:8000/expulsion-api/student/4
-Accept: application/json
-
-<> 2021-01-18T061011.500.json
-
-###
-
-POST http://localhost:8000/expulsion-api/student/4
-Accept: application/json
-
-<> 2021-01-18T060912.500.json
-
-###
-
-POST http://localhost:8000/expulsion-api/student/4
-Accept: application/json
-
-<> 2021-01-18T055823.500.json
 
 ###
 
