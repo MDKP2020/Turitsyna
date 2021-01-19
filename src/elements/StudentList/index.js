@@ -12,7 +12,7 @@ export class StudentList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("http://turitsyna.test1.seschool.ru/student-api/getStudentsFromGroup/" + this.props.groupId)
+        axios.get("http://127.0.0.1:8000/student-api/getStudentsFromGroup/" + this.props.groupId)
             .then(result => this.setState({ students: result.data.students }))
     }
 
