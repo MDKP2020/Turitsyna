@@ -6,6 +6,7 @@ use App\Http\Controllers\GroupController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TransferController;
 use App\Models\Group;
+use App\Models\Student;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,4 +51,3 @@ Route::get('/group-api/getDirection/{name}', [GroupController::class, 'getDirect
 Route::get('/group-api/getStudyYear/{year}', [GroupController::class, 'getStudyYearByYear']);
 Route::get('/group-api/getLeveEduc/{name}', [GroupController::class, 'getLevelEducation']);
 Route::post('/group-api/changeGroupName/{group_id}/{name}', [GroupController::class, 'changeGroupName']);
-
