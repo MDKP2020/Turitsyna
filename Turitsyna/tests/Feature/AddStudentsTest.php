@@ -103,4 +103,47 @@ class AddStudentsTest extends TestCase
 
         $response->assertStatus(500);
     }
+
+    /**
+     * Тест на изменение группы студента
+     *
+     * @return void
+     */
+    public function testChangeStudentGroup()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/14/1/2',
+            [], []);
+
+        $response->assertStatus(200);
+        $this->assertDatabaseHas('student_group', [
+            "student_id" => 14,
+            'group_id' => 2
+        ]);
+    }
+
+    /**
+     * Тест на изменение группы несуществующего студента
+     *
+     * @return void
+     */
+    public function testChangeUnknownStudentGroup()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/15/1/2',
+            [], []);
+
+        $response->assertStatus(500);
+    }
+
+    /**
+     * Тест на изменение группы студента на несуществующую
+     *
+     * @return void
+     */
+    public function testChangeStudentGroupToUnknownGroup()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/14/1/10',
+            [], []);
+
+        $response->assertStatus(500);
+    }
 }
