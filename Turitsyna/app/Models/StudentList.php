@@ -32,7 +32,7 @@ class StudentList{
 
     public string $group;
     public array $students = array();
-
+/*
     public static function createStudList(Group $group) : ?StudentList{
         $student_list = new StudentList();
         $student_list->group = $group->name;
@@ -40,9 +40,9 @@ class StudentList{
             $student_list->students[] = $item->student;
         }
         return $student_list;
-    }
+    }*/
 
-    public static function createExpulsionStudList(Group $group) : ?StudentList{
+    public static function createStudList(Group $group) : ?StudentList{
         $student_list = new StudentList();
         $student_list->group = $group->name;
         foreach ($group->studentGroup as $item){
