@@ -20,7 +20,7 @@ class StudentGroupService
             ->first();
     }
 
-    public function getStudentsAndGroups(Collection $groups){
+    /*public function getStudentsAndGroups(Collection $groups){
         //Итоговый массив
 
         $result_list = array();
@@ -39,9 +39,9 @@ class StudentGroupService
             $result_list[$direction->name] = $tmp_arr;
         }
         return $result_list;
-    }
+    }*/
 
-    public function getExpulsionStudentsAndGroups(Collection $groups){
+    public function getStudentsAndGroups(Collection $groups){
         //Итоговый массив
 
         $result_list = array();
@@ -53,7 +53,7 @@ class StudentGroupService
             $tmp_arr = array();
             //По всем группам по этому направлению формируем список студентов {name: "IVT-260"; students: [..]}
             foreach($groups->where('direction_id', '=', $direction->id) as $group){
-                $tmp = StudentList::createExpulsionStudList($group);
+                $tmp = StudentList::createStudList($group);
                 if($tmp != null ){
                     $tmp_arr[] = $tmp;
                 }
