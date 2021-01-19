@@ -25,7 +25,7 @@ class ExpulsionTest extends TestCase
             [
                 "PRIN" => [
                     [
-                        'group' => '66',
+                        'group' => 'PRIN-466',
                         "students" => [
                             [
                                 "id" => 4,

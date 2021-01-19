@@ -26,15 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="488eaf8a-5a71-4a6f-909f-4f7ce58ca8e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T055823.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T060912.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061011.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061142.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061519.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061727.500.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/tests/Feature/ExpulsionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/tests/Feature/ExpulsionTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +188,82 @@
           <option name="biscuits">
             <list>
               <Biscuit>
+                <option name="date" value="1611063536000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ikt1S3NFTUI0STVGczVySHpyY1BvcFE9PSIsInZhbHVlIjoiZmZJSnFJVy9CQlRIS0RBQkJIOUNUOHpsbEw4ZnNTM3JOaVNnUTdSWFIvMC9GdmlUWSs2NUU3YlQ1SURlaUdvcHVSZFJGUmlYSXFTMG5POU93TEFpWUE1SHk0djVMQ0MzZTdBVUtFSzJaY3ozVmoxdCtlZ1ozZU9iV0Z3ejNNMUoiLCJtYWMiOiI5NDNjZWVjZDUyMmQyYzExZDg0OGI5YzBjYzk4NzAwNDhiNjQ1ZmJlNDc2YmEwMmQyOTYxOTM4MDMwY2RmOGJiIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611063536000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ims5Sk9HZHEwVnBkcHRBcXc0Q2UzZXc9PSIsInZhbHVlIjoiS3hZbHpUWHlUdWRmM3g1eXBLMkdQeFRPWVpNYW1SN0xVbzlIZFhObk4zVFlLK0g2aWp0RlpMTEoxMUFJcitQZ2FLeElsQ3cvQ2ZWRHN4ZDRWOVFkSlloeFJBSWV2MUt1MVlyVWhtbXNydDJlZ2lUNmdSVHJoRE1oU0VKWFVZUzUiLCJtYWMiOiI0NzlmYjFmMDYyNWUzOWVkOWI5NjIxZGQ5ZjI3ZDMzZGUxZTZhYTNiYmEzOWUxZDIyMjBjMGNkOGRjMDdjZWJjIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 5&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611058384000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InI0TlVncGIwVWtmYk4rMXRxNC9GckE9PSIsInZhbHVlIjoiQnFmbC9MNHRSbnRDMWxmOGVKeXJBUkhhRHJkYlUxQW1HNkRYaUNoTzFVbDgvdEZSVkFOQWxMd3hCUUI3dGRlMDZHUUhsb0xqNytXT084cHRqVVdyR3NvOUMrSmM2enM5TEtNaXMzVnVFMHoyYnpwR0UzZFJ1eHcyTGxCNVc5bmEiLCJtYWMiOiI2NWY3OWEzNGZkMzZhNzk4NDUzYjlkNzc0OTdkNjVkN2ZmNmYzODUyMWNiYzU4YWJiZTk4M2Y0OGM4ZTE1NmY4In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611058384000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjkxZHhkaXFzaHJFR2VtM3JUZHZIa1E9PSIsInZhbHVlIjoiUFRSNkE3ako3dkhTRnV1cEt3QzljK0N2Y3MyR1FKTVBBVjROL1BvL0MzS2VJekJTUzViYmJnVUpJaGJWR2hEektDNlNuQ1UwODBIRWpKenFVd0QvOW96aHlUakdZRS9ZUjZ0d093c0JCVFN2UW9wRW1oZE9tU1B3S0Z0dUljaEQiLCJtYWMiOiJjOGFiZGEzYjM5MmZkODNkYjc1N2ZhOGIwNDkzZWFmYWMwYjUxYjA1YTlhYjliY2UzODFjMzFlYjJiYjg5OTA4In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
                 <option name="date" value="1611056766000" />
                 <option name="domain" value="localhost" />
                 <option name="name" value="XSRF-TOKEN" />
@@ -301,10 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.AddStudentsTest.testDeleteStudentWithoutData">
-    <configuration name="scratch#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.AddStudentsTest">
     <configuration name="AddStudentsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -314,47 +387,56 @@
       <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AddStudentsTest.testDeleteStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="ExpulsionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testDeleteStudent" scope="Method" />
+      <TestRunner class="Tests\Feature\ExpulsionTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/ExpulsionTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="AddStudentsTest.testDeleteStudentWithoutData" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="ExpulsionTest.testGroupSmallExpulsion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testDeleteStudentWithoutData" scope="Method" />
+      <TestRunner class="Tests\Feature\ExpulsionTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/ExpulsionTest.php" method="testGroupSmallExpulsion" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="AddStudentsTest.testDeleteUnknownStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="ExpulsionTest.testStudentExpulsion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testDeleteUnknownStudent" scope="Method" />
+      <TestRunner class="Tests\Feature\ExpulsionTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/ExpulsionTest.php" method="testStudentExpulsion" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExpulsionTest.testUnknownStudentExpulsion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\ExpulsionTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/ExpulsionTest.php" method="testUnknownStudentExpulsion" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.scratch#1" />
-      <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudent" />
-      <item itemvalue="PHPUnit.AddStudentsTest.testDeleteUnknownStudent" />
+      <item itemvalue="PHPUnit.ExpulsionTest" />
+      <item itemvalue="PHPUnit.ExpulsionTest.testStudentExpulsion" />
+      <item itemvalue="PHPUnit.ExpulsionTest.testUnknownStudentExpulsion" />
+      <item itemvalue="PHPUnit.ExpulsionTest.testGroupSmallExpulsion" />
       <item itemvalue="PHPUnit.AddStudentsTest" />
-      <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudentWithoutData" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudentWithoutData" />
-        <item itemvalue="PHPUnit.AddStudentsTest.testDeleteUnknownStudent" />
         <item itemvalue="PHPUnit.AddStudentsTest" />
-        <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudent" />
-        <item itemvalue="HTTP Request.scratch#1" />
+        <item itemvalue="PHPUnit.ExpulsionTest" />
+        <item itemvalue="PHPUnit.ExpulsionTest.testGroupSmallExpulsion" />
+        <item itemvalue="PHPUnit.ExpulsionTest.testUnknownStudentExpulsion" />
+        <item itemvalue="PHPUnit.ExpulsionTest.testStudentExpulsion" />
       </list>
     </recent_temporary>
   </component>
@@ -398,25 +480,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611055099438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611055099438" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1611048811530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611048811530" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1611051889443">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1611057079030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1611051889443">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611057079030" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1611057079030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1611051889443">
+    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611057079030" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1611057079030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1611051889443">
+    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611057079030" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1611057079030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611057079030" />
   </component>
 </project>

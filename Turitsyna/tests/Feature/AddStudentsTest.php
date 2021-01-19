@@ -30,16 +30,16 @@ class AddStudentsTest extends TestCase
     public function testCorrectStudent()
     {
         $response = $this->post('/enrollment-api/addStudent', [
-            'name' => 'Виталий',
-            'surname' => 'Витальев',
-            'patronomyc' => 'Витальевич',
-            'group_id' => 1
+            'name' => 'Ivan',
+            'surname' => 'Ivanov',
+            'patronomyc' => 'Ivanovich',
+            'group_id' => 2
         ], []);
 
         $response->assertStatus(201);
-        $this->assertDatabaseHas('student', ['name' => 'Виталий',
-            'surname' => 'Витальев',
-            'patronomyc' => 'Витальевич']);
+        $this->assertDatabaseHas('student', ['name' => 'Ivan',
+            'surname' => 'Ivanov',
+            'patronomyc' => 'Ivanovich']);
 
     }
 
@@ -68,15 +68,13 @@ class AddStudentsTest extends TestCase
     public function testDeleteStudent()
     {
 
-        $response = $this->delete('/enrollment-api/delStudFromGroup/14/1', [], []);
+        $response = $this->delete('/enrollment-api/delStudFromGroup/1/1', [], []);
 
         $this->assertDatabaseMissing('student_group', [
-            "student_id" => 14,
+            "student_id" => 1,
             'group_id' => 1
         ],
         );
-        /*$response->assertStatus(400);
-        $response->assertJson(['Student is studying']);*/
     }
 
     /**
@@ -87,7 +85,7 @@ class AddStudentsTest extends TestCase
     public function testDeleteUnknownStudent()
     {
 
-        $response = $this->delete('/enrollment-api/delStudFromGroup/15/1', [], []);
+        $response = $this->delete('/enrollment-api/delStudFromGroup/33/1', [], []);
 
         $response->assertStatus(500);
     }
@@ -111,12 +109,12 @@ class AddStudentsTest extends TestCase
      */
     public function testChangeStudentGroup()
     {
-        $response = $this->post('/enrollment-api/changeStudGroup/14/1/2',
+        $response = $this->post('/enrollment-api/changeStudGroup/1/1/2',
             [], []);
 
         $response->assertStatus(200);
         $this->assertDatabaseHas('student_group', [
-            "student_id" => 14,
+            "student_id" => 1,
             'group_id' => 2
         ]);
     }
@@ -141,7 +139,7 @@ class AddStudentsTest extends TestCase
      */
     public function testChangeStudentGroupToUnknownGroup()
     {
-        $response = $this->post('/enrollment-api/changeStudGroup/14/1/10',
+        $response = $this->post('/enrollment-api/changeStudGroup/1/1/10',
             [], []);
 
         $response->assertStatus(500);
