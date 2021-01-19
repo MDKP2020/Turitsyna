@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:prototype1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="488eaf8a-5a71-4a6f-909f-4f7ce58ca8e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2021_01_18_141727_add_destination_to_group_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2021_01_18_141727_add_destination_to_group_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/database/migrations/2021_01_18_142046_add_destination_to_student_group_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/migrations/2021_01_18_142046_add_destination_to_student_group_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T055823.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T060912.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061011.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +168,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nFnJkjlvymbFpXio7soD6CYzG7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -152,6 +180,183 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611056766000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IndaYTlYTWE2Uk55L2JsdXpqdDBka2c9PSIsInZhbHVlIjoiVlF2Ti9aL2pHMXVQbmUvUnU2bmU5WWJxM1FHS2xqdzQ0VXllYXNyVWc1SklMeDlnenF6eW1jUWF2RTAranB4S1M2MkhtOUxWSWlrc3BKV0Q1TC8wNnQzNHBBR0F5K3loZHJxdER2SW5HU3JtRVU3Z3VLMzFLakxZdnRqc2k3QU8iLCJtYWMiOiIzNzc2ZmFhYjUzMzJiOWYxNjBmMzNjOTQyNGY4MzAzYzc3NmJmNTliYTA0MWI3YjhkY2NkM2RhYTA1ZjJhNzNmIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611056766000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IklleU1sblNRRVJlZmVzb1dQNlN2Vnc9PSIsInZhbHVlIjoiQ2Z2MkRsa0RSajB2Mlp3N01lRFh2KzFkMDR3MFNFczd3ZlQvc0dNeDBjSEIyRDFLcFh6SEt0dUF4cjRFck9rT3J4Vld2RFFZNm9yZksrd2Y2VGxkbnQ0aWNNdmUrbW5UK1Z0QnA0WlhZZS9IS1o0RVY0aVJ2Lyt3YW8xeXJIMisiLCJtYWMiOiI4YzI2MWY0OTQ3YmEzNWQyYTY2MjE2ZTQxY2YxMzlhMTVlNjE4MzRmNjA4YjZlMjYzNzdkNzgyMTdhZWZiODQxIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611055927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkZ2RWtMME5XNmplSytYUzhwL015cWc9PSIsInZhbHVlIjoiWE84WUJ6TzhNVWZBRExrL0Q0V0RWN1V1ZHdiQzR2UDhydk9yc0d0b1Jxd3kwWlYxaVNna2VzcTNGTkFWTkZ3Y2hLZUFFTjRrZHFUVmhRTUxNc1RXSU5QS1Z5SVJuY0VSeFB1MFZZWTRqQUZzVUZxanBQUTFuZ3hKNzc3R2Q1OHgiLCJtYWMiOiIzNDcyZjU1NzU0YjA1OTE0NjE4OTg0ZmRhOTY5MDM2OWRjNzgwMjZmMTA0ZWJmOWQ0ZDhkZDM4NWI1MjA0ZDRjIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611055927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlN3ZGVjKzRicFFvZWZYRlR0eGtpa2c9PSIsInZhbHVlIjoibDZiMTZIa2NOWVUwYVZzOEtNMGNRYXE0bnJQS2FmTEoweDYxbnpQaHZ4azRZMVRhRm1nOXZkLys3ZzFQa0lMckFhcDdCb0tRUThCSUpacnpkVkpmcU9wclhIUW9vbEFsTEF0b0xQMU4zK3ZkaXdZUWhHSW5rc0MySTN6QVVyM2IiLCJtYWMiOiJlOTI0ZGJlMDliZGEyMzRjZWFiM2Q5MDZkZTcyNjU0MTlmYWZmNzRiMGI0MmE4MGNjODViMGE1MzZhOGQyYWQ5In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Виталя&quot;,&#10;  &quot;surname&quot; : &quot;В&quot;,&#10;  &quot;patronomyc&quot;: &quot;В&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611053734000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InM4RWlhZ3BvT2JkMGhsUnRnalFJZ2c9PSIsInZhbHVlIjoidU9VcFYreE9JMHZtSXpxTUptUGJ0NTJOSkdrR2ZNUzVnOUNrYXNjU3RYZ1N0ZkkwQWpMejBrOC9vWFM3aGtjTFdBRDdVRnVyS1FoTStrNVppUzRNU2ZxMEdyMFZPcDVTRXJvNUR1QWpZWDBUc2xodGVtOGZZVFc0L2R5Ry9IMDAiLCJtYWMiOiJhMjY3YjdjZWRmZTdkNTYxN2U5ZjQyZjVjYWY1YTliYmFhMGI2NzJlM2M1OWIzNDY2OWY2ODZjNWUzMTY3YTM4In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611053734000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Iit5WExudTVKTGUvbDlqK09kYUYxakE9PSIsInZhbHVlIjoicm5iRWJNMUFCUzFSQlA2RG5MYzBvaWpiN1VIbnlPRWpyS1VrQzYwN3Q2KzRWVS9nazdESzZWa1NzK3cwN1IvbXEwVXd6b1R3TmF6cXQwNnRsVW1vbE9rTFp6SFRXTUgxMFYwelI3OWNjU0pXOWJmeXl6OHlPSW0zbUhKZ2FyU0giLCJtYWMiOiJkZWJjN2JhODVkOTE1ZGFhZDg4ZDAxMmVmODNhNGIyNWIxYTI1NTdlNDFlZmYyYTM4YTZiYzJhMWY2NGQwMmY5In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Дима&quot;,&#10;  &quot;surname&quot; : &quot;Дмитриев&quot;,&#10;  &quot;patronomyc&quot;: &quot;Дмитриевич&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.AddStudentsTest.testDeleteStudentWithoutData">
+    <configuration name="scratch#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AddStudentsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AddStudentsTest.testDeleteStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testDeleteStudent" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AddStudentsTest.testDeleteStudentWithoutData" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testDeleteStudentWithoutData" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AddStudentsTest.testDeleteUnknownStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testDeleteUnknownStudent" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.scratch#1" />
+      <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudent" />
+      <item itemvalue="PHPUnit.AddStudentsTest.testDeleteUnknownStudent" />
+      <item itemvalue="PHPUnit.AddStudentsTest" />
+      <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudentWithoutData" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudentWithoutData" />
+        <item itemvalue="PHPUnit.AddStudentsTest.testDeleteUnknownStudent" />
+        <item itemvalue="PHPUnit.AddStudentsTest" />
+        <item itemvalue="PHPUnit.AddStudentsTest.testDeleteStudent" />
+        <item itemvalue="HTTP Request.scratch#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -173,10 +378,45 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="prototype1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1611048811530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611048811530" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1611051889443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1611051889443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1611051889443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1611051889443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611051889443" />
   </component>
 </project>
