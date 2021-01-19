@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import Paper from '@material-ui/core/Paper';
-import { StudentList } from '../StudentList'
+import { StudentTableList } from '../StudentTableList'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -16,13 +16,21 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import TextField from '@material-ui/core/TextField';
 
+import axios from 'axios'
+
 export class TransferStudent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             transferStudentDialogOpen: false,
             renameGroupDialog: false,
+            currentGroup: "ИВТ-160",
         };
+    }
+
+    componentDidMount() {
+        axios.get("http://turitsyna.test1.seschool.ru/student-api/getGroupStudentsList")
+            .then(result => console.log("response", result.data))
     }
 
     handleClickDialogTransfer = () => {
@@ -61,6 +69,12 @@ export class TransferStudent extends React.Component {
         })
     }
 
+    handleChangeGroup = (event) => {
+        this.setState({
+            currentGroup: event.value,
+        })
+    }
+
     render() {
         return (
             <Paper elevation={3} className="paperContainer">
@@ -72,7 +86,7 @@ export class TransferStudent extends React.Component {
                     </Grid>
                 </Grid>
 
-                <StudentList ivt={["ИВТ-260", "ИВТ-261", "ИВТ-262", "ИВТ-263", "ИВТ-360", "ИВТ-363", "ИВТ-364", "ИВТ-365",
+                <StudentTableList ivt={["ИВТ-260", "ИВТ-261", "ИВТ-262", "ИВТ-263", "ИВТ-360", "ИВТ-363", "ИВТ-364", "ИВТ-365",
                     "ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
                     prin={["ПрИн-266", "ПрИн-267", "ПрИн-366", "ПрИн-367", "ПрИн-466", "ПрИн-467"]}
                     fiz={["Ф-269", "Ф-369", "Ф-469"]}
@@ -99,12 +113,12 @@ export class TransferStudent extends React.Component {
                             <Select
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
-                                value={160}
-                                onChange={this.handleChangeGroup}
+                                value={this.state.currentGroup}
+                                onChange={event => this.handleChangeGroup(event)}
                             >
-                                <MenuItem value={160}>ИВТ-160</MenuItem>
-                                <MenuItem value={161}>ИВТ-161</MenuItem>
-                                <MenuItem value={162}>ИВТ-162</MenuItem>
+                                <MenuItem value={"ИВТ-160"}>ИВТ-160</MenuItem>
+                                <MenuItem value={"ИВТ-161"}>ИВТ-161</MenuItem>
+                                <MenuItem value={"ИВТ-162"}>ИВТ-162</MenuItem>
                             </Select>
                         </FormControl>
 
@@ -133,7 +147,7 @@ export class TransferStudent extends React.Component {
                         </Grid>
                     </Grid>
                     <DialogContent>
-                        <TextField label="Группа" className="dialogAddItem"/>
+                        <TextField label="Группа" defaultValue={this.state.currentGroup} className="dialogAddItem"/>
 
                         <Grid item spacing={0} container justify="center">
                             <Button variant="contained" color="primary" className='tranferButton' onClick={this.handleDialogRenameGroup}> Переименовать </Button>

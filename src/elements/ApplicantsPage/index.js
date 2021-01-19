@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import Paper from '@material-ui/core/Paper';
-import { StudentList } from '../StudentList'
+import { StudentTableList } from '../StudentTableList'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
@@ -16,12 +16,19 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import TextField from '@material-ui/core/TextField';
 import CloseIcon from '@material-ui/icons/Close';
 
+import axios from 'axios'
+
 export class ApplicantsPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             addGroupOpen: false,
         };
+    }
+
+    componentDidMount() {
+        axios.get("http://turitsyna.test1.seschool.ru/student-api/getGroupStudentsList")
+            .then(result => console.log("response", result.data))
     }
 
     handleClickAddGroup = () => {
@@ -76,7 +83,7 @@ export class ApplicantsPage extends React.Component {
                     </Grid>
                 </Grid>
 
-                <StudentList redact={true}
+                <StudentTableList redact={true}
                     ivt={["ИВТ-160", "ИВТ-161", "ИВТ-162", "ИВТ-163"]}
                     prin={["ПрИн-166", "ПрИн-167"]}
                     fiz={["Ф-169"]}

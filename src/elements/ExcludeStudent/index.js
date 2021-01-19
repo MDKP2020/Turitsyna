@@ -1,11 +1,19 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
-import { StudentList } from '../StudentList'
+import { StudentTableList } from '../StudentTableList'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
+import axios from 'axios'
+
 export class ExcludeStudent extends React.Component {
+
+    componentDidMount() {
+        axios.get("http://turitsyna.test1.seschool.ru/student-api/getGroupStudentsList")
+            .then(result => console.log("response", result.data))
+    }
+
     render(){
          return(
             <Paper elevation={3} className="paperContainer">
@@ -17,7 +25,7 @@ export class ExcludeStudent extends React.Component {
                 </Grid>
             </Grid>
 
-            <StudentList ivt={["ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
+            <StudentTableList ivt={["ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
                 prin={["ПрИн-466", "ПрИн-467"]}
                 fiz={["Ф-469"]}
                 iit={["ИИТ-473"]} />

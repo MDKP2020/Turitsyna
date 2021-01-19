@@ -3,7 +3,7 @@ import './style.css'
 import Paper from '@material-ui/core/Paper';
 import { Search } from '../Search'
 import { Filters } from '../Filters'
-import { StudentList } from '../StudentList'
+import { StudentTableList } from '../StudentTableList'
 import IconButton from '@material-ui/core/IconButton';
 import CreateIcon from '@material-ui/icons/Create';
 import Typography from '@material-ui/core/Typography';
@@ -11,7 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { Link } from 'react-router-dom';
 
-const axios = require('axios');
+import axios from 'axios'
 
 export class StudentPage extends React.Component {
     constructor(props) {
@@ -24,7 +24,7 @@ export class StudentPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:8000/student-api/getGroupStudentsList")
+        axios.get("http://turitsyna.test1.seschool.ru/student-api/getGroupStudentsList")
             .then(result => console.log("response", result.data))
     }
 
@@ -71,7 +71,7 @@ export class StudentPage extends React.Component {
                     onChange={(academicYear, course, trainingProgrammes) => this.filterChange(academicYear, course, trainingProgrammes)} />
                 <Divider variant="middle" />
 
-                <StudentList ivt={["ИВТ-160", "ИВТ-161", "ИВТ-162", "ИВТ-163", "ИВТ-260", "ИВТ-261", "ИВТ-262",
+                <StudentTableList ivt={["ИВТ-160", "ИВТ-161", "ИВТ-162", "ИВТ-163", "ИВТ-260", "ИВТ-261", "ИВТ-262",
                     "ИВТ-263", "ИВТ-360", "ИВТ-363", "ИВТ-364", "ИВТ-365", "ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
                     prin={["ПрИн-166", "ПрИн-167", "ПрИн-266", "ПрИн-267", "ПрИн-366", "ПрИн-367", "ПрИн-466", "ПрИн-467"]}
                     fiz={["Ф-169", "Ф-269", "Ф-369", "Ф-469"]}
