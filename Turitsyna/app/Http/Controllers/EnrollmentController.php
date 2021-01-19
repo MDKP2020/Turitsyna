@@ -35,11 +35,15 @@ class EnrollmentController extends Controller
 
         if( $tmp_student != null) {
             //Проверяем обучается ли студент на данный момент
-            $enrolled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Enrolled')->id)->count();
-            $expelled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Expelled')->id)->count();
+            $enrolled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Enrolled')->first()->id)->count();
+            $expelled_cnt = $tmp_student->student_group()->where('status_id','=', Status::whereName('Expelled')->first()->id)->count();
             if($enrolled_cnt > $expelled_cnt){
                 return response()->json(['Student is studying'], 400);
             }
+        }
+
+        if(Group::find($request['group_id']) == null){
+            return response()->json(['Not Found Group'], 404);
         }
 
         //Сохраняем студента в бд
