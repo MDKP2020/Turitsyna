@@ -1,0 +1,17 @@
+{
+  "name": "PRIN-266",
+  "students": [
+    {
+      "id": 2,
+      "name": "Dmitrii",
+      "surname": "Sasov",
+      "patronomyc": "Alexandrovich"
+    },
+    {
+      "id": 3,
+      "name": "Alina",
+      "surname": "Turitsyna",
+      "patronomyc": "Vitalyevna"
+    }
+  ]
+}

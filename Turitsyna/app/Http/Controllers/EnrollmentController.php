@@ -41,13 +41,13 @@ class EnrollmentController extends Controller
                 return response()->json(['Student is studying'], 400);
             }
         }
+        else {
+            $student->save();
+        }
 
         if(Group::find($request['group_id']) == null){
             return response()->json(['Not Found Group'], 404);
         }
-
-        //Сохраняем студента в бд
-        $student->save();
 
         //Создаем  привязку к группе
         $student_group = new StudentGroup();

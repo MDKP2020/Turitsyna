@@ -52,6 +52,7 @@ class StudentController extends Controller
 
         $direction_id = $request["direction_id"] != null ? $request["direction_id"] : array();
 
+
         return response()->json([
             "PRIN" => [
                 'name' => in_array( 1, $direction_id) ? array_values(array_values($list)[0])[0]->group : null,

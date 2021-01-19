@@ -1,0 +1,18 @@
+{
+  "PRIN": [
+    {
+      "group": "PRIN-469",
+      "students": [
+        {
+          "id": 4,
+          "name": "Maxim",
+          "surname": "Ilmenskiy",
+          "patronomyc": "Vladimirovich"
+        }
+      ]
+    }
+  ],
+  "IVT": [],
+  "IIT": [],
+  "FIZ": []
+}

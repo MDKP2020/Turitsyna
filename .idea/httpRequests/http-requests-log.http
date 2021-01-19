@@ -1,0 +1,493 @@
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Дима",
+  "surname" : "Дмитриев",
+  "patronomyc": "Дмитриевич",
+  "group_id": 1
+}
+
+<> 2021-01-19T115534.400.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Дима",
+  "surname" : "Дмитриев",
+  "patronomyc": "Дмитриевич",
+  "group_id": 1
+}
+
+<> 2021-01-19T114641.201.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Иван",
+  "surname" : "Алексеев",
+  "patronomyc": "Алексеевич",
+  "group_id": 13
+}
+
+<> 2021-01-19T114236.404.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Алексей",
+  "surname" : "Алексеев",
+  "patronomyc": "Алексеевич",
+  "group_id": 1
+}
+
+<> 2021-01-19T114106.201.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T103932.200.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T064403.200.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T064253.500.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T064200.500.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T064143.500.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T064017.200.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T063546.500.json
+
+###
+
+GET http://localhost:8000/student-api/getGroupStudentsList
+Accept: application/json
+Content-Type: application/json
+
+{
+  "direction_id": null,
+  "course" : null ,
+  "study_year_id" : null
+}
+
+<> 2021-01-19T063206.500.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "surname" : "Ivanov",
+  "patronomyc": "Ivanovich",
+  "group_id": 6
+}
+
+<> 2021-01-19T063127.201.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Petr",
+  "surname" : "Petrov",
+  "patronomyc": "Petrovich",
+  "group_id": 6
+}
+
+<> 2021-01-19T063050.201.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/6
+Accept: application/json
+
+<> 2021-01-19T063031.200.json
+
+###
+
+POST http://localhost:8000/expulsion-api/group/6
+Accept: application/json
+
+<> 2021-01-19T063021.200.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Petr",
+  "surname" : "Petrov",
+  "patronomyc": "Petrovich",
+  "group_id": 6
+}
+
+<> 2021-01-19T062934.201.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "surname" : "Ivanov",
+  "patronomyc": "Ivanovich",
+  "group_id": 6
+}
+
+<> 2021-01-19T062908.201.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "surname" : "Ivanov",
+  "patronomyc": "Ivanovich",
+  "group_id": 12
+}
+
+<> 2021-01-19T062833.404.json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "surname" : "Ivanov",
+  "patronomyc": "Ivanovich",
+  "group_id": 12
+}
+
+<> 2021-01-19T062708.500.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/6
+Accept: application/json
+
+<> 2021-01-19T062539.200.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/6
+Accept: application/json
+
+<> 2021-01-19T062420.200.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/6
+Accept: application/json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/6
+Accept: application/json
+
+<> 2021-01-19T062219.500.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/6
+Accept: application/json
+
+<> 2021-01-19T061808.200.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/1
+Accept: application/json
+
+<> 2021-01-19T061732.200.json
+
+###
+
+GET http://localhost:8000/student-api/getStudentsFromGroup/1
+Accept: application/json
+
+###
+
+POST http://localhost:8000/enrollment-api/addStudent
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "surname" : "Ivanov",
+  "patronomyc": "Ivanovich",
+  "group_id": 12
+}
+
+<> 2021-01-18T213112.500.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T185318.200.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184859.200.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184834.200.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184805.500.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184710.200.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184431.200.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184247.200.html
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184218.200.html
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T184013.200.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T182624.500.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T181244.500.json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+###
+
+GET http://localhost:8000/expulsion-api/createList
+Accept: application/json
+
+<> 2021-01-18T062000.200.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T061948.200.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T061914.200.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T061727.500.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T061519.500.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T061142.500.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T061011.500.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T060912.500.json
+
+###
+
+POST http://localhost:8000/expulsion-api/student/4
+Accept: application/json
+
+<> 2021-01-18T055823.500.json
+
+###
+

@@ -14,13 +14,13 @@ class GroupSeeder extends Seeder
      */
     public function run()
     {
-        $arr = [['id' => 1, 'name'=> '66', 'lvl_education_id' => 1,
+        $arr = [['id' => 1, 'name'=> 'PRIN-166', 'lvl_education_id' => 1,
             'study_year_id' => 4, 'course' => 1, 'direction_id' => 1],
-            ['id' => 2, 'name'=> '66', 'lvl_education_id' => 1,
+            ['id' => 2, 'name'=> 'PRIN-266', 'lvl_education_id' => 1,
                 'study_year_id' => 4, 'course' => 2, 'direction_id' => 1],
-            ['id' => 3, 'name'=> '66', 'lvl_education_id' => 1,
+            ['id' => 3, 'name'=> 'PRIN-366', 'lvl_education_id' => 1,
                 'study_year_id' => 4, 'course' => 3, 'direction_id' => 1],
-            ['id' => 4, 'name'=> '66', 'lvl_education_id' => 1,
+            ['id' => 4, 'name'=> 'PRIN-466', 'lvl_education_id' => 1,
                 'study_year_id' => 4, 'course' => 4, 'direction_id' => 1]];
 
         foreach ($arr as &$element) {

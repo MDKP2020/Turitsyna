@@ -19,18 +19,64 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/prototype1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:prototype1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e618af39-29df-4f52-985d-92854e5880d3" name="Default Changelist" comment="">
+    <list default="true" id="92beb458-4276-474e-b1c4-693d048169cd" name="Default Changelist" comment="Smth wrong">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T055823.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T060912.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061011.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061142.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061519.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061727.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061914.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T061948.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T062000.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T181244.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T182624.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184013.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184218.200.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184247.200.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184431.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184710.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184805.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184834.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T184859.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T185318.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-18T213112.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T061732.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T061808.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062219.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062420.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062539.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062708.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062833.404.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062908.201.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T062934.201.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T063021.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T063031.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T063050.201.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T063127.201.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T063206.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T063546.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T064017.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T064143.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T064200.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T064253.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T064403.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-01-19T103932.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/EnrollmentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turitsyna/database/seeders/GroupSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Turitsyna/database/seeders/GroupSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +85,17 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/Turitsyna/composer.json</pharConfigPath>
-    <execution>
-      <phar pharPath="F:\Dima\Универ\Семестр 7\MKP\Turitsyna\Turitsyna\composer.phar" interpreterId="dd7149df-2a17-49b0-b34c-feac83e2dc53" />
-    </execution>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -50,11 +104,16 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="PhpDebugGeneral" ignore_connections_through_unregistered_servers="true" />
-  <component name="PhpWebServerValidation" path_to_validation_script="F:\Dima\Универ\Семестр 7\MKP\Turitsyna\Turitsyna" selected_validation_type="LOCAL" web_path_to_validation_script="http://localhost" />
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/Turitsyna/vendor/composer" />
       <path value="$PROJECT_DIR$/Turitsyna/vendor/voku/portable-ascii" />
@@ -173,91 +232,1979 @@
       <path value="$PROJECT_DIR$/Turitsyna/vendor/seld/phar-utils" />
     </include_path>
   </component>
-  <component name="PhpXdebugProxy" ide_key="phpstorm" host="localhost" port="9000" />
-  <component name="ProjectId" id="1jgYN0Kt94DOGiCBkouXUDteTEq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1kmiMpKQZ8LwXl2VftNPQPLLqs6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Turitsyna" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTTP Request" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.AddStudentsTest.testCorrectStudent">
-    <configuration name="AddStudentsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" scope="Class" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fork\PhpstormProjects\Turitsyna\Turitsyna\app\Models" />
+      <recent name="C:\Users\Fork\PhpstormProjects\Turitsyna\Turitsyna\app\Models\NotORM" />
+      <recent name="C:\Users\Fork\PhpstormProjects\Turitsyna\Turitsyna" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611053201000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkZrM3M5ZFlHLzZwaW9PRmNRRUlVY2c9PSIsInZhbHVlIjoiNDdSNTRaeU5DNXoxZ2xvZU5kS0VXMU1kQmtVWDNhRlM4SkRTSElmeHlEQ1VSajVlelI3dHpJOHVVY255eVJsS1c3RTE3Z2RnSjJ0NlVOOHN3VTFleDcvdDV2RVdFYkJBS2prMTNOTkxCd3liQWtzT1ZYa0F0WmVES0ZHVUZGVFciLCJtYWMiOiI2ZTkyZGZmMDViZmQ3MDkwZTNmM2UwMWYzNzRjYmI0MTViOTVlNTYxMjgwOWU2MWI2NWEzNDkwMTU5MjU5YmY5In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611053201000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImFGb21ZcWlFMzhScmZheFlseE1SR2c9PSIsInZhbHVlIjoiT1N5U1dNNmZMOW5Wc2hpM2dvUzdmZVlVbTF0SC9uc3FKYW84STI4U0NBN0dKNGNvR0cxaEo3a0N4M0JkQm5telZMSUtrVGJiNEk3WXB2UHl5ckhwTWhHY1ZZeWRHWjBkZ1R2TzM5NGNvTkJ5OE81amo0M2QzeVFCVHVKUFRZKy8iLCJtYWMiOiJjMjY3MDg4YmI0NDY1MDkzMTAzZWNkZGUwMzUwMjcyZTUyMmNiYmM1YzdjOGEzMTJhYmJkNTc4NmQzNTNkMmFhIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Дима&quot;,&#10;  &quot;surname&quot; : &quot;Дмитриев&quot;,&#10;  &quot;patronomyc&quot;: &quot;Дмитриевич&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611052956000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InRlaTFibjMxQUk0eGM2R2pUUWh1enc9PSIsInZhbHVlIjoiUGFvTEpvRUE0blB1UXpaSXJzOTdkMlJid0xadzJsOGl0My85aGhUSHV1a2hlTUZ5K3VJZnNTZXIwRWVlVHh1eG53Z3JkZVMxZHQwTmc0eHV1bGNpYkNHeFJ3Vm9wZ1cxVmFIQzROK3FaQlc2RDRqM25rVUNYdmtKZ0xxK0JNRUEiLCJtYWMiOiJjOWFhZTZhMDYyYzIzMTM3NWFhNjQ5ODAwZjYxMThjNzdjZTBjMDEzZmNkZWQ5M2Q4YWM4ZjExMTkyNTExYjBiIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611052956000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkNoTm0zbVBjalVmbFZVazE4UmZKUXc9PSIsInZhbHVlIjoidlN6TGZMcEl5UFE3MGZuRVFYYjNpWll3UDk2KytyUVpvWm9OMUM0U2xSOWY2NWlyN2xQNDIzZXBTMjF2TkpvbkpweWVBTi9OaVMxTy9jajhOTjQyVVIxMDJRdW9VOC9DRldKWUNydVMzamExMTlMZ1BnVkZiUEZpT21RWkErTXoiLCJtYWMiOiJmOWNlYmVlNTg5NDJiNWM0OTJiZWIyZGQzYzZiMzRiZjg5NTY2YThlYTNmNDNiMTExMzBmMTQ4ZTdiNjMyMjk5In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Дима&quot;,&#10;  &quot;surname&quot; : &quot;Дмитриев&quot;,&#10;  &quot;patronomyc&quot;: &quot;Дмитриевич&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611052866000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ild1OVhLR0ZUakRLajhkWGZmWXZ3Y2c9PSIsInZhbHVlIjoiS3pRdTR1R2FvSXY4TXBRYkNCSEphaTBQbUM3THNyZE0xY0E4NFpNM0o1ZHpPUmo1aFVJYmZiNFNrUkY2VDJObE1RRHZ1WWVpVmVJVkdRS21lTnorbzVvSFEwaVBsUXhvSVhSNGxEakExVnBBSkI0QkxzRWRlZG5CSkZGWDJsMGkiLCJtYWMiOiJmZGJhMTMwMTZmMWIzYTQ5MTQ2YWRiNDE3ZWFjNDM0ZGE3MzIwN2E2ZmJjZGU3NzdhNTA4YmVjNGY2MDk4MWYzIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611052866000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkRROHVtSXVrd2FicEplR0RJaTBsdVE9PSIsInZhbHVlIjoiNmJycjB2RFJHcHFmTmpFMU5xbi83UnYxM1RjaTRmQWdtL2pCTXhucnVZRXhXc3RGR1BaR0tudGxPTFp6akN4L2N6dTFhajZJWmF5Mzl2RlA4QTdhV3RYRnp3LzlHWTVEZ04zRkVDQk84VkFuaXVuZm44bTg4N1R3ZlVXaDRKWjIiLCJtYWMiOiIyYmI1MmMyZTdkODE2ZjMzMmQ1NWU3MmZjNjdkMzU0ZTI0YjllOTZlMzI2ZmQ5MTVkYmE0YWEyZjVjNzFkNTY3In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Иван&quot;,&#10;  &quot;surname&quot; : &quot;Алексеев&quot;,&#10;  &quot;patronomyc&quot;: &quot;Алексеевич&quot;,&#10;  &quot;group_id&quot;: 13&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611049171000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImhZaEdqZVFBNE91cjZ3UE5VQWN3aFE9PSIsInZhbHVlIjoiY1VuYktNZ081LzNlUmY4Sm44ZW9maU1YeGQzZzI2OFZjS0xwZVZTSkJ2Vk9nVzAwbnUveVovdkR4UkZNWUdERkQwTVVkUGNRTlZQVHVhWjQ0VmxPalRZV1lpY2ZiWUtOZ3FkTnVDWUpyN1NxTGdlVDAwREhqTjJIQ0ZheTVObEMiLCJtYWMiOiI5MTZkMTlhZTc1ZjE4YTM2OTJlMzQwNTdjNTc0NDdiZDVmYjRhMDg5ZDU3MDRjYTcyMWE0ZTM2YzVjZDM2NmViIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611049171000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImRXcjRndWFwVjYwMTQ5V3poYlppR0E9PSIsInZhbHVlIjoiSGpZNjhSRzNHN3ZVWFQ1R25BZmErc29nVHF1eGZVQ0tEdTF1dHgrMllTVDd6TGEydGgrS2pETmV2bk5yMHNCWGdmYUEzaGFLMUtsUktjU2ZyazJEQUEzMjBXS3dFMjRuTDZjclVaVlNPUnRtUlg5YnNmL2NkdHlRczNqbkp2VXEiLCJtYWMiOiI0NmJkMmNjMGRiYWVjMWJiODQ5NmJhNzVmNmU2N2EzNzM2Zjg0ODMwZDI0MDE3MmFiYTRlMWE2Mzc3OGJjM2Q1In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Алексей&quot;,&#10;  &quot;surname&quot; : &quot;Алексеев&quot;,&#10;  &quot;patronomyc&quot;: &quot;Алексеевич&quot;,&#10;  &quot;group_id&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611035043000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Imoxd1ppS1lDQ2YyeTgyTzVXOHk5UUE9PSIsInZhbHVlIjoiVWszQThtNlVwUDcrbTB6ZGFQTkVBUjBzdFpqMWFWZzJLSFdWeWpiVUlCeDh0c0txYWtpOTJ6MW9BZW1vczRrQjBUS0gyVGU0bDBJcGdzU00xcGlKakNBM1dLTndOVWJjMks3bVlYdWl3Ry9ONjAzQmRKOTBHWjZ3TW43ZjR6cWEiLCJtYWMiOiI2NTk5OTRkZjZmMmIxNzA5MzdhZjEyNjkzNTQzMjA4MDU3NmM2YjI2ZjAwYzYzZjQxNWRmMWI3ZDNlZmU3MTNhIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611035043000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImR6UVFjbTgxWnd2cThzYklER1lFcWc9PSIsInZhbHVlIjoiQXRDZnpielBpVm5mYjJVKzBDQzhwSXVnK01oV3FYcXBvQzBuZ2tXWk9od1JZa3JCQTlEYVZBU1lWOWcwYjBDSUNEMjk3UWUweTNhSGErZkZFZ3M0MmhmZzIrR1NRb2FjcjdhNFo4U2twY1Vrd0lPdHJqakJ1RDg0T0Z0bjF6ZnQiLCJtYWMiOiIwODMxNTE2MzQ4NzhhMWQ1ZWE1ZDBmYzA3OGU1ZDU3NmUxNWIwMDFkMWYyZDQ2NGM1YzQzZTdlNDc2NjgxOTdkIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034973000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im5pbC9XUzFQcTIyclZuaDYwV3hORkE9PSIsInZhbHVlIjoianVFR0F4elliSmZaMlNoRnpzOCs4K0FXcEFacmR4cWltQ2NhOHIxcEpKeE1RK2IwN3JzalR3RlAvTTA2eCtTWlRUVW1lbmNTdXk3MWxXSmxaV0ppcDBJQWx3SURWQU1KemlFc1J6WStQVWFUeWg2UW9DbUVNZllralZtZ3RORmMiLCJtYWMiOiI2Mzc0NGIxNmNhMTI1Y2NhZGU0MmQ4M2Y1NTMwZjcwZWQxYjBmNGE1NjhjZmQ5ZWY4MjMwNDY3ZTQ2YWQ2NzlkIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034973000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjR4RVkxaDBWTExrZFJtT04wbzN1dFE9PSIsInZhbHVlIjoiK09mRExjL2d1Y2hWMVFRUjRrUFdGbjQ2S0UySDZBWThHYXA4VUNXb2RZTGkzaytWUUZXSzVYVThaK0ExUmhZNHAraUdIL2hMdnJuTWF3ZGZ3QVgyMnNIWXNvY1QvWU12RUZ3Vms4ZE00aGY0aENHamt1Y1NsUXdIa3FTTG5EMHQiLCJtYWMiOiJlNDQxNDBhMTZjMWE1M2YxZmVhYmE1ZDdkZTQyNzkzNjZiNjVkODFiMzAwNTQ1NDZlZTNmM2U1ZWM4ZDdjN2QxIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034920000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImNqMzNZallxc3IxSTQ4QktSdjE2YWc9PSIsInZhbHVlIjoiNkpMYmsxQXNXTDN2SDMrSWoxTU9ibTR5eVY2eTY0ejlkQTA2MXB5Uys4SVlYL1dvUHVPRjRpL1Q1aThMWXB1dXY0MitDVHZCTFNsUFErbDNLT0pKOHgxTzUxbGxNTzhFbk14ZzJsYXFyWTd6Y1FNYUxrakRhRm0rMmdNNmNwdnkiLCJtYWMiOiJkY2ZhOGMyNTE4ODkwZTYxY2Q1ODU2YjUxMWZjODJjMDE0NGEyODFjYjE4MmY2YmEzZDE1ZDhiZjZjMjBmYzIzIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034920000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IldmcFJ5VFdlRjkzcHlkMXkwdFdJbHc9PSIsInZhbHVlIjoiN3Q5clpaRzJMc1FUYkl2NUllbFRHbS9iOC9FM3JNSGVjVVNXL2hncldseWQweWhxbXpqck85aklWb2J3OGFEQlZVK3l0U3E5MEVTclZzdDdGcjRrRWVrVGNTTytLV1VMZ1Z4a1VQZ2xvNlZ4NFc5RUhpTVpZclA3NFp6YWZhT2giLCJtYWMiOiJjOTdjYTkyMWJhMzk0MTliYzUyMjNkZTMxNmFjNWNkM2VlMmU1MzY3ZTMwMTljNTQwYjM0NmQ3ZGQ0MDczMWU5In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034903000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im1hRW9TZHFSanl0WUlCRVg1dk04VFE9PSIsInZhbHVlIjoiVHFvUXdZOGRmRHg1MEJadnZIamx0MmdvSTlWaUdzM0h0R1g0RGFDdmo2bEFWemFEUFFPS3VEVURZUVBGTzJnckRYQ2hWUlVsU2d2eU85V3BTRndlLy81UUZXVmM3SzJOdllzcXhRTVFYZG5wc3UvTzlCWHhkY3VuS0hLek5GTkYiLCJtYWMiOiI0MzZmMjY3ZGE2NzkwMjNkZDQxMWIxMzNhZWNlMWQ2YTI0NzhhNzJjZTliNWQ1YTNlMzA2ZjIxOWIzZDRhYTBiIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034903000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlFEUWlZblFnbmZjcU1iUDh3UVNpZ2c9PSIsInZhbHVlIjoiUnFBTEw0ZUMxNVJ1OGJSK09xYS9wNkZEbUx5RGcyNk9DS1Nqd2RYQVFkV2s2QktqRlJkOG41V0dHWXRheDJCYkYzYkM5NjlZc1FRRTVZNzgwMWVnc2FXMm8xd0g0QVdMcWtNcVc1dnNQTnJ5cFNrSlUyWE1ySmtzblV0ZjdXMFkiLCJtYWMiOiJkNWZkMmM3YjY3OTUzNWUzMjFiOThkNmJhMTVjZjkyODYxMmMzNzEwMWI3OWFkMDVlMmI5MGU5YmQ4MzFjZjFhIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034817000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkRpVFI3dG5VeDR3TDJKcVYrRzg4dGc9PSIsInZhbHVlIjoicldmdjRIYU11Vi93andETEhPNkF1WFFXd05EakVFMnFIbzdIZERtcnBLSHptVytQOXpMQTVDZHc2R250aWltajRCREdueFNOYzVoYVU2Z0xocGtZUUN3MFZHSmZkV0hPNmdmU0Fvb0hLb1dBdmFtZ1lvRTZnMHYzbUVJZkk5Z2MiLCJtYWMiOiJiMjk4NTJlMmI2MmE1MjNkNjhmODBkOTIyOTc5Y2M1YzFlMzUxODZlMDE3MzRjOWUwMmMwOTE0MjEzZjYwOTMyIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034817000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjRGQXpUeGxJMlZqS1pwVXdYMytscmc9PSIsInZhbHVlIjoiRFBOUjI2V0dBeUNvTHlxZ010UDZVdEtOeVVjdXZ1b1J0WXh4NlVDeGhtUDdsaUtwL0ZrWFI5bngzSVZQU3g1RFNxTlBQcGRJajBLZDdJaWxJY0VhbnB5cG1FQmE3WldXeFpZTDMvZEVKMVJ4OE16Q0lkamFiNW5heWZ4ZTJXd1ciLCJtYWMiOiI3Y2E0ZGFlNmI4M2JmODllYTE3NTZiZGY1NGMzZGFkODRhY2RhZmVjZGIwNTA0NmNlYTQ2NDlkMTY3MGQ1M2RkIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034546000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjlPbnQyWG1KYnZPSHljbUltaW5mZmc9PSIsInZhbHVlIjoiM0JrVHhPblh3OU8xS3pzZVRvZGtFVDBreUwyUXk3Uld5VldXVVJleUJPMWFDMjN5SytyMFdCdXV4a0JPU1dVYm03OGlzNDh1NmlhVlJ6OWl2TFcweTYzdC9FU05iN3dlZDJQSGFlNEk3cisvUjNQcGw3QjlRR2VBVk1QSVR5U2EiLCJtYWMiOiJlZDhhOTk0NGRkOWZhZThmMTZjYzQ4OGYwOGE2MWQ1YTQxMWYzMDZiMmFmZjU1OTdlNzgzZDExOTY5MTQwNjAwIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034546000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImFQQXVoTFErUU9hQ2xVa0Z4cWJoV3c9PSIsInZhbHVlIjoidi9DZktVRllUeFhocUFwYzd6N1VPc2FaUVBVa0trRFVGYXBPY0tidEVvK2dwcENXK0VxMkZHR0ZtK1VUZE5BNmwrcURtcmFza3VTbjNEckx4c0NNdWpqQkFmSDdsRVFuY3doQzIwbUFnVDdLWE1GR3FWQXk1Zld6eVg3bHY5MVQiLCJtYWMiOiJjYmM0NWYyNmY4MWM4OGUyODE0Y2I0OTBhMmRiNGNmMjIzZGYzMGE1ZWIxNjNjOWU4YjgwZGE0YTY1MDRhNzIwIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034326000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InFFWFAwK21samU4WmxQNC9pdGhPTWc9PSIsInZhbHVlIjoiTTZDbm51K0lKWGNjOGltZUhEU0NSQW8vd2pXL09ycjhncndGeEZXTHBjV0kyZ2JTdk9qbVlpcVRDa1pHdzA3QkRwYml4QS9LdzZIYmtNTzNFVlBlVzljUkcxajB3N0V4MktVanhBZ1ZkL3FwUk9iK0M4QzlPWHpIT1BtY2FENy8iLCJtYWMiOiI2MTk2MzU3ZmE1MTY5OTMzMTk1MmUwODRkZjEwNWIyYzlmODA4OTZkOTZlODE3ZWUxOWRkODRhM2QyMGFlZjhhIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034326000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkNJUXBIWXhXVytiZmNhQllEdW1hOWc9PSIsInZhbHVlIjoiMy9QSnE0SGhNVkwxY3NPWHNsTFBrakJOYXlZUDVETWJod042SDFEenNOMUhHV2tranlpekpiMEVkb0d1RituSUlZMGpILzNiaFNuWU1EbG5wSnJmQnN4cHNoOUQ5VXBTTS9jU3JKMG5HeS9CbFd1cjg3K2dTUzF2aHhOL3FVTlIiLCJtYWMiOiI0ZWMzNjNkYWNjZTZhMjQxZDIzZmRhYWM1NjBiOTk3YjQ3Mjk1YzE5ODUyNjc3ZmVkMmQ2ODdhYjVjZTZlM2I2In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034287000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkZQRzJXeG5qcnZIT2w1OXRlM3B5d1E9PSIsInZhbHVlIjoiK2RsUHFtQTRKT2JoeXR4cnZHNFJ3aHBDdjVoUGtuUzFueVRJWDMycFROcDVscWpkTW92NWFmY1cydUIxNWd3Q29Ebmx3bklTKzhJU2xFV3gzMHFScXR3REVXQnhReWw1Q1VlMUJtL3dCNjIzQkxhOFFEdGIwMlhNQjZ6dkpqQ2oiLCJtYWMiOiIwNjQ2ZDMzNGM2MWIyM2IzMmUzYTY4YjU1NTAxMzE4ZDNjOWRmYmU4OWMzMDVhZTUzOGE2ZjlmYjE5YjJlNTA0In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034287000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImJGNVlXeExnNmlOaFhGc0E2U0NEcXc9PSIsInZhbHVlIjoiRG1TUFFwT3F0RktyRmJTcEI2OEVKckY3aHprbkhiblNFbjBNSWFUMzgwVUwvQ2Nabk5WZStVU2cwMkd4bm9oU2RGQUtPbTNGWDVYUi9xbnVuRFo0TVdJQ2ZKL040SmUxRjlyOWZVdzVJWHM3bXIwNEdadTVDU1RzS3pkVm1pVTgiLCJtYWMiOiJlYTgyNjM2YWEyZDY0Njk0ZTNhMjg3ZTFmMzVmMDRmMjgwMDMwYjUzYTYyYzY3ZTAyNmJiYWI0OGRiN2EzMzViIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getGroupStudentsList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;direction_id&quot;: null,&#10;  &quot;course&quot; : null ,&#10;  &quot;study_year_id&quot; : null&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034250000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImZ2SW5vS3ROUVllWGdXYmFDZFRWK2c9PSIsInZhbHVlIjoiWVVLTlJpUWhRcm9KMVp2RVV2RVBhM2wzbFNiY0FRWElxWXJ1Sk9sQnZEQ3hVd0ZGWkNveGtQMkU2TFVoK3o0WmtCSjRVVkdBRW15RzdJNXo5N1VmOHMwdDJJbk5NcGNYRmlPdHB0NVkwdkY1clNJc0QzMGswSkp1Riszd0tlRmIiLCJtYWMiOiI0ODUzZDFiZmRjMDBjY2EyOWQ3ZmZhMjZjMTQ3YjRiMGIxYTAyNDQ2MjFlZWFhNzYzMGNlNDkxOWEzYmE5MmVkIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034250000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ii8zOThMSTdaYmhQRThzbnhxWWplWmc9PSIsInZhbHVlIjoiTTArbnFkNXNIMG4wMU1EeXkwU0RnTHNhRXA3aHZraUlnbURRRE5kVzJxZXhjd0UrejM0TDRUdWVVSHE1Tk1kRmR0NXNSQittOXB3OWJLWkNRb1kxRFIxdjdOT2swNENocnlsRjJGclNhMHFWajk2dlhTT29BaXJIL0VMeGVuWGciLCJtYWMiOiI0NDllMjU4NGY2NGY4NzRhMDcwN2JhOWYyMzBkN2QyYTQ1MzRlZTYzMjEyNmM2MDdhMDA2ZmM3NDcyZWRmMGQxIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 6&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034231000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImJiTFJTbHlXUFZWODN6OGFsL0tRRkE9PSIsInZhbHVlIjoiRDFadzdndGgrUlF0RG1mRHVkQ25IbHBTanZSN3dtUDFvZXNSY0x6OUhvd3RFZlFRT0FjK1czVEdaVnh6Y29ncGtHWmZ6OGRQMU9uaFR1WUNkRG40R2QzdEllN2dwNmhvOTNUaDdhQm9uakZrdjlWbnR0ZDFQa3U3b1JVaHZUV0siLCJtYWMiOiI2YzBiNmIyY2M3MTQ1ZGYxYmI0Nzk1OGJlNTc5MzdmNzhmYWFhZjBkYTUyZmUwMGQyNGY2NjZkNjQwODBjNjhmIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034231000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjU0L3FTcnl5NGlzNGtjWmZUTG9Lamc9PSIsInZhbHVlIjoiWk5qVVViOFYxS1ZIcXpNbGNiaWlkckRiN0lpWUhYZEhZVk5mNjRaR3cvWUdwRGxjWGRqM1RhVGlVbFlQLzVGQU9nQjZ1WDcwR1YvQlNLRDZWS1QwSVErNGJob29JRTZoWUc1ckM2VUhzaThMcHVzZGl4Q2k4N3VtdndhbEduWjYiLCJtYWMiOiJlYzQ3OGNkYmJjYTU1YWJmMWI5NTY2YmE1MTc3YWY2OWU2MWU0MWM5MjYzNzI2ZWMwNzdmZWY4NjhiZjg5NTFiIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Petr&quot;,&#10;  &quot;surname&quot; : &quot;Petrov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Petrovich&quot;,&#10;  &quot;group_id&quot;: 6&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034221000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkZpZFp6d0V2cWJ4NTc4NGpJZEpmR0E9PSIsInZhbHVlIjoibjR1OFJydXNlS0c1MHY4WGIvTHY2SFY3R3JMZ0ZQQVZrUTd1ZUh2aTBUV3FqcDhxVTMzZkUzVWloVDUwTW50NDFMRHpyUDlycThBajlEWEdXemE1b1RucHBBNDZxb2RUTGFDeGZQMDQxOEJuTUw0Yk5zQVlKS2tCdGZUSlVoVUwiLCJtYWMiOiI0MjdhZGRjOGJjNGMxNGQzZTUzODc2MDQ4ZmY0ODAxMjgzZDAyOGM0YzA4ZmU0NjY0ZmUzZTMxNGM5ODg5NDUwIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034221000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjBOUHlDQ1ZCeER4TEhnc09OZStYOUE9PSIsInZhbHVlIjoiOEZJRzRNVzE3TzQwSS9qV1VaT2hWNnZiWWFCT0RxeWwwVmZDdmcxUHRiNUdtTEh0T25pM0FKbE9tcE4rSy95T05HS3NzL2dEK2dMQXg4YXdnb0R4Yi9pYlpwQmd3RzVFTHZaQzM3REJNemFPWlhOWnN1QWtxT3NMOFZudGI5enUiLCJtYWMiOiJlOTMyYjAwMmQ2MmRlYmUyYmIyNzMzMDYzYjIxNjAwN2IzMDIzMzBkMTg4ZDBhZTJmMzU5ZTBhZDNkNDAyNGE0In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034174000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjZjT3p5ZHFNQmpIR0prSjR5YWI1MkE9PSIsInZhbHVlIjoiWmY2ekR2NlgrS291aFVpVlJ4TlRnb011aUxIaGp3azlPWSsweEsyQlhxNXJyWEpRNVVNU2d6Vm5OR0w0anlhRlBENmZHZFlTeVlKc0Q5bGt3T1JlbzRvYUg3eTJwR2ptVDBBb3A3QVdwaHVKQzRwTktCSlVxZ0JvWUNFSUFsbFoiLCJtYWMiOiJkYjVmZTM0NDU5ZmRmZTlhY2ViZGEyY2NkNDBlZjkyZTYxNTBjYjFmMTZmNGUyYzExZjE1NGY3MDNlMzczYmYxIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034174000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InhVb1JRK3RWdTV5UnZaRng1K2p5U1E9PSIsInZhbHVlIjoiWkV3OURQM2s0VDNMVTNkVWQvbVNVMVVlangzMGFmbTIvclBFQ3ZROS9jbnJDRzE1ZVphRDI2ZmRwVDdJS01VcjZtdGFDRXN1MFFFT3BoSnNBMVhMMXJ0NWh5bzVFUlM3dklRZkFiUDB1OUZkR3hsa0w4TThFM0FJWi85Y2xsZmYiLCJtYWMiOiI2ZjQ4YmY5MWRjZDk1MzY5NzFkOWY0YTM0NWMzNGUwNDAzNzM2ZDIwY2M3MDNkNDlkNmJmYTkxMWMwYjA3Y2VmIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/group/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034148000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjhRK1pVdnY3dDE1U3hUYjFabjlrd0E9PSIsInZhbHVlIjoiTDlHRUtpemJQSitaU0pTM2hyYVFxcGR2NWJ6c0hBMUYweEVGTUxBNlRPZHduZVRBOWJNMk9PdEF5M2VhUlZLazZ6eWFGV2hYZGU2YXFJNDhkT0dYRHJXclc1amxacmVMbkI1VW9McTRCQ1ZURTJnMkdWV1NHRndrblMreWI0dy8iLCJtYWMiOiIwODk1MDFiNjEzY2JiYjBiYmY0ZDBjNDRhYmQ5ZmYzMGU1ZjM2ODhkNjkyMzE4NjNmOGVmMDY4NWQwYzYwYzgxIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034148000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im4rTjFWVVdsU1phQ0xXY012SHVIbEE9PSIsInZhbHVlIjoiM0tPZHZQU0ppamdwRXBjK1daOENpM0RINzVYdCtpdDg3QW5VamlReHluZHpRZzNZQ1phSkQyTXFRWjNTUmVqWmZ6Rkh2cGJjUE0vQW9mN0RPdkwrZHI0WEYxMEhKUDdERGlNNERQUTBhS1cvS0EwY3d3cXg5M3hwZExlZHlZcS8iLCJtYWMiOiIxYTNiYzAxNmIxNzI4NGRkNjk2YTYzNzMyNzYzOThkNzE4MWE4YjUyMDAzZTM1ODVhOGE4YmNmOTEwYmJkZWI3In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Petr&quot;,&#10;  &quot;surname&quot; : &quot;Petrov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Petrovich&quot;,&#10;  &quot;group_id&quot;: 6&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034113000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImVXSS82RkFGM1lsL2Y5NE9GbHJJeVE9PSIsInZhbHVlIjoiUTJUQjRJRXZzRkZoZ3ZydWlVYjNLZXpDcEZNYjZYaTlXL1NTdWdkUFN3Q2FqVFl6YXpKMnBxck96ZUttYk1uTGxQK0JQZElwOENZMnJKdjZKcEZFVTJxM3ZRVm9TMXI3L3BYbENrclZZYTBIZlZZb0tSc1FoOTQxVE1XOElqTXYiLCJtYWMiOiIxODViZDI2YTcyMGU1OWJkZjZmM2RmMzMwYmUyYzVlYzNiZDE1ZDVlMzkxODY1ZDYwNWUwZmM5MDA0OGJhZmVhIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034113000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkkySzdCZFZ1MTQ4R2lyZjVZUjNUOVE9PSIsInZhbHVlIjoiaUQ3RWhnSVRBdVppS2ZRMWFYVUo0Nmpkck8xdlBPamF3b0JsemF1MmxXNWpVVXZFYTBGRUxxdHZzMnJZR3oyYmtSQS9wZmF4dElrSTdjOVZGTTFrakV0R3B4T1MxRjVLcWRjdlFqS2Q5dWFSeTlPMndCSDZsQ3drS3Y0c25BZ0EiLCJtYWMiOiIyYjU0MWIzMTQ0ZTI1OTZlYTAyYWM2YjY4YzYxMmRkYTE4OTk0NDFjZjUzODUyZjIzMmJjYzE3MmM1OGMxMjQ3In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 6&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611034028000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjNnUXdXemRub1ZyeE8rNEFPaEdyWEE9PSIsInZhbHVlIjoiM3ZGMzR1Mlh6ZDNIVnZvOUduSXZhU0VqNGk0b3liWFVZWGVHYXR0RXI0Q0c3NncyRkNWbUtTblVsQi8rUGZUNGtpTXg5aklSN25MdTN0Q0FxcmtZMTF1QU9YUXo1cWdINVFrd3Y5RnNZeG5WOVlhZ1ZCUHpHVkNEcGhLbndPU0wiLCJtYWMiOiJmMzU0YjY3MzcwZTU5MDI3MDc0ODY1ZGFmODllNzU5MWM1NmU0MDQwMmUzM2FhYzgwNTEzMWYyZTVlZDFhZDUwIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611034028000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjZyUVJYMXhLclZMWFdZMkVGeE9jMWc9PSIsInZhbHVlIjoiazFYdHc5VmdtNmg5WVI0QUNpTXFSY3lNOVdXb21pdW1RUzFQWER1bE1KYUlRS2JNcFR1K1Y2SjhCaTBXVXo3WEN1ZFJMYlAvZnE5Z0M3Nk4zSk5aUVVxaXZQcTA4VEZ6NGxraWllZmU1SDkrN1FlT0xSaFpZVDV2UzF5aWIyOVEiLCJtYWMiOiI1MjM0ZWU2ZjFhMjRjNmVlYTdkZGUyZmU5OTM0ZDQwNTE4Y2YyMzAwZDI5YmJhMmZkYmJhMWU5MDFkOWQ1YjhlIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 12&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611033939000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlJLbDlMQ0daclZ3Vm1ibWZnWDduVlE9PSIsInZhbHVlIjoiSUxqN2hSdGo4cFE2VkVtbk5nNGFKNDNFdFY3MDNTZVFOQ2tFR01ZZTZkUEIvb3RGL0Q2Z1FROVZmRFZnUDR5OVpzaDA4RFNrTnl1TDJweW5hcWxaalhrQjhXaU9OTzU4Wmczcno5Szl3NVJIVFVDdXdELythUm13dFJsZWJreG0iLCJtYWMiOiI1MTEyYmViOWM0OGFmN2Q0NTIxZGYxZGM0ZmRlODNiOWFmNzE2NDhhZDk4OWFmZjI1MzQ5ZDVhYTg5ZDg5Y2U2In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611033939000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjlMUzFPSTdQNDBQNTZEaUlYdkNvSEE9PSIsInZhbHVlIjoiR3FLU3h2TGJSUzlIWFNsTk1tZXJMUy80RW1USzlxd0xVMVNNTmtnMUtZc0pvZWtUQm1EMmVEalNMT0N1VE4rbEZBMmNwR1pEeit4OUI1anlCbXlnNG5uV3htU3hkVnZ5cFRESjZNM1VKTk0yT1dhK09ScTlRNTBBTlNueGpHZUciLCJtYWMiOiI5M2FkMGIwOTRhMmM0Y2I0ODY1MzlhN2Q2YTY5MWY0MTkwZThkM2JiMWQ2ZDVmOWNjMzFjZDVhZThjOGZkMGVlIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 12&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611033860000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjFoU1dXdVhHMWE3UkV5c0poMXVJV3c9PSIsInZhbHVlIjoiOEV4cnFnclpwNmhxYU1sZlhheThSS1FLQ1prclZ6TGZ3cm5zN3dVbDVuOXZpd2N1RW92a1prR2JIOTJpbnZFa2cyWmFHdjMrUFliQktBZXZycVBxb2FDa3VFNUg2NFh0RHJyaVBPdGtXemVCK3BucXFiUHFMamxrODBabmZ1dFIiLCJtYWMiOiIzMDNmODA0NjA4YzQzMWMxMzU2ZGY5NzJlZjY2NTRlYTlhOTNkMzQ3YzcwZTNiZDA5YTMxMGFhMzQ5MDM5OWY4In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611033860000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkRoRWNrS1krR3lCWnZJSG8yUmc0d2c9PSIsInZhbHVlIjoiUWlIS2xlcXpzOStiUHFaMUJPWkhnUWU5SVVyb2lMZjBKZTFkWVNQSy9TQmd0S280aml5WUc0dkdZbTBDY3BlZGVPa3d0MFB1U3hwVWZ6WCtDUjBWVmNSRmsxTU1sYXlyUlJsOWNpdHBDNHBXZW1wamppS0pDR2ZVQitWZnEya2QiLCJtYWMiOiI1OGQ3Njc0Mzg5ZDM4NmMyNWRmYTkxOTU0MWY3Y2RhYzI2MjhiZjA1MzQ4MTAyYTFhMDAxNzc1NjY1Mjc4YmNkIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611033822000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjdncElZbERzV0xMYjAxNlB6WnNobWc9PSIsInZhbHVlIjoiZDNuYlFSVTBha3NUcVlKUjFrOTMyTGxGdHdlbW5Eb3lhbGdsbVZQaFJxcFNjU3d1RGRzS000QlNsUjJJYzNkNU10ZkdSaHRsNmc2V01tdXl2T3ZDUjY1b2YxTXdFUG96L25NRDE4aU9Ic3JVZHdDeUx5Ymhpb0lHNnhYZUFRMjIiLCJtYWMiOiIzZDQwODM4Y2FmNzg4MmRkYTUyNTA4YTI5NmQ5ZjlmOGM4YmRkYTBjYTM4YjYyZGIyYjNhNjAwNjRlMjUxMzEzIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611033822000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImpxVnhCaS84R25hSWFUams0dWRDT3c9PSIsInZhbHVlIjoiQ0w0dVpJQU9xYTFkWnI3SDJvZTlXVzdjb2owZ0l0bXBHbnVXYWMzUmFROS9aUWJqN2NjVm1YalRTbmJSQlVpcGJ1N1VUN0REOU5UZGsvbGtOQmxycUNVRThYcTJEQjJVckJkTzNPL0NaZ1VTZVBKb3hSNm5ZNE9vMVorcitnRXgiLCJtYWMiOiIyMDM2ODM1YmJkYjgzNTVjOGEyYTgxYmQ5MzY0NDRjNGNkOTliM2I2ZTcxZGFhMmE1NTY1OWE4OWUzMWEyMTFlIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611033739000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkRxZ3NZQ0V5OEJ3YlNuemVpcEYvdHc9PSIsInZhbHVlIjoiZEZHMmFRZnZYem4yOHNiMjR6ZURwNGY5MEFYZEQ2UjBHVTV3REFNL3NmV3dNV241RHdGRGl3dDFHeG1BS1BraUpYTmdDRFQwRGlNL3gyNzZOTGpwK1R1RGJkRjBOMlBod3ZsM0ZEeVVrYlFieFJrenJLcDlFOUVKcEtiWjZvV0ciLCJtYWMiOiJhNjRjNzhmODE1MmZjODg1ZGRjZTliNzBlYWI3ZmFjNzFmYWUxMjY5YjlmYzY3ZTVlZGQzMTQxZjRhZTQ5YmRlIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611033739000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkdNbFJQcVp3ZjkxWDdidW55OHZvMGc9PSIsInZhbHVlIjoiWElENCtFZHFCdW9FNDAwZDZEOTd3NGQvNjE4Mm1QcFpsOUtERFhwcjVNTHptN3VKcC9yY1V1RHY1VXJLdlRKNk94dlcrdlAyZFR3cE4welNLOWZTNXcrVjBncXNEZjJhcXJpbXFTemxsWUNTUFRMZXJnWDhPVk1sSlJrUWRXU3giLCJtYWMiOiI4ZDBiY2I5ZDFlMDA4ZmUwZGE1NzBjZTlmN2Q1ZWMxMzgxYjU4OTYzM2JlYTQwNzU1MjNmYmNjMjJiY2RlMjQ4In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611033488000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik1wQlZ0YjI2bW1WcGxzT3JUUXZLSGc9PSIsInZhbHVlIjoiODJTMXFNcDFzM0ozT2tCbkhITklzYUxCdUFmdm15WnZ5MXNXcVRLMjZFTzlCZG5FQjhEU2FNUmxneXpIQmpQTk1IcE8zNmp0b0YwOFBUVG53c25mdTRpM0FPbGhkL2JhTWhCYUQrZHhYSzk0NCtYWkExOGtYcllkQXZRKzc0Z0giLCJtYWMiOiI2ZWY5NjQxYmNhYjA0NjAxMjMyMTUyYzlmNmM3YmMyMDYyMTFmZDYzYTQ5YzZlN2FjNjhkNjc4YjBkZDAyMDAzIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611033488000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImFVWmlha1BES0dlaHdqaDk4NUhvRmc9PSIsInZhbHVlIjoiSE9QZmxPREVnMHUzQzZaT3pEZHJkYjlWbHdaYWlSZTdwcXVQVlNZWjF1cVp3NTFNWm01M3RzNjV2RVp5cWNJMk4reFRaRXhUS3BUQjVqTGRJTzEvWWlrak55M1g1Y0RmM0hBU3NaL3NLYjFMblowZUJXRyt0QzRzV3A0Y0Y0Y24iLCJtYWMiOiIyMjkwYTM1ODYyMGNkY2UwYThlNWUxMDlkNGQ4YTAyZDMxODdhMDZiMzk4MWUxMDIxOWZmYWY1NmQ1NDA5ZGQwIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611033452000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlFEVnErcFRjL1ZlY0tyQU84aW4vSlE9PSIsInZhbHVlIjoiczhyaVVLYngxdU9TZUZkbHZwQ2RWdktLaEIrZnZXSUFlSmdUZm1lNUFwYnFneFd5eVd0blhsVWMxTXdxdW05REErczUzVEloR1gzMHVFL3I2ODZnZHpNVE1rZERMV3hWckM0QnlzWUFvTzZnankzWHNKcUxycUhWVEMwL2V5QXIiLCJtYWMiOiI1ZTQwYzZjYjEwZDY1NDhkNTAwNTNjM2U1MDNiNzE0NzNjMDdmZjRhNDViYWU4MTM2ZDMxZWVhODBjM2I1Yzg4In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611033452000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ijg5c2RVVlJSSUZnSExwY0ErNTVMbFE9PSIsInZhbHVlIjoiZi9kMXVxQ1RvMkZxMXZSNlk2NzVoTU9mL1VXT2hoak1zcmMyLzRHNUE2Y0JQNWtYeDIwNlJQTVBwandyNlFnVnpTM0V5WTA3WlBDWGVJOUxQQkVqSXdnQ1l1S3dXWG5GdVlnc2l6L1dFUDhvS3lyZ2prNlNXbzRYcklwOHZnak8iLCJtYWMiOiJlYjliODIxNGM2M2NhODhmZTM0M2VmMGMxMDM4ODdhMGQ0NTM4ZTA0MmIyNjJiZTNiYjg5OGQwOTg0ZDZjNDhmIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1611001872000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlpSam9DZW03eDBvN0NtdHZhb3grMGc9PSIsInZhbHVlIjoicmxBRWFUakN1ZGgwUGhnOVdaYzh3WExmWG11Rm5Tbm9QTWhIbG5QS1M4L1pmVHhPMU15OE9Lc3ZiblJPZkY3Vi80Y2xyY3JCdWRkWk5xaUg1bURFTmg3ZXdGYVRMeWswRU10UUxNMFNUdElJNk9GUkJNaERaendqL2RLZCtvZXkiLCJtYWMiOiIxMjkyODEyNGU0ZDRkYTZmYzk5MTM5OWNkZjM3ZDkyOTY0NDdjNjJlYjg0NGU5Mzg4ODU2NTBjMzRmZWNkZWYwIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1611001872000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjBybGw3YlRaLzJ1Q0Z6ZTVrQldlZGc9PSIsInZhbHVlIjoiNDNiYWY1bUpTTENtVTI3R0g4NXAvZDRib0VVSkQrSHJJNUhCbmVKUDFIb1R6S3oxT245cktyUVptWU5aYUM1MXVTQ2xpYnV4NUoyMzlYQ3N6YjVoSUJuK2hkM0RyTmxTQnZKNWJwN0pySzVsNExSMkN3Qno0YXJYaEdjdGZFTDQiLCJtYWMiOiI3YTcyMzI1NTgxNmRkOGE1ZWQ0ZjRkYjMzNjA5NmI4NTUzNmMxODQ0ZmE5ZGQwN2E1MWU2MTU5ZDhjM2Y3ODMwIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/student-api/getStudentsFromGroup/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610992398000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ii94NnAvanlVeXRZQXpDcDlVQTFRVUE9PSIsInZhbHVlIjoiYksrTzlUdkg4bmEvRUpkbm52d3NTaHlOSVpMMm4wejVVaUNNbjY3TE91R3RjdFhwblllNGNBKzRWV0luc0RNQmxjdTI0aDJYcDl6dFFEeXdnZlVlZEJwM2I4VEF4NzdXZjZCWVpiQUpjREtCbzYyUDY3YThXUHJqUWNLL01Tb3AiLCJtYWMiOiIzMzc3MWYzZGRiOGNiOTk5YjJlM2FiM2M0NTBiODUzYTNmZTU2NTdiNTVlZDgzOThmOTI0MWMwZGU2ODQ1ODNkIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610992398000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImsyaEJKT1Q5akdPM2s1WGxDUmQ0MGc9PSIsInZhbHVlIjoiakVpbDZyTHhHcDJzUkdqdFljbXZVUXdIKzVCMmZnS1haRU44Vm1SNjVnNkpWRnZIb2hKQVJxcngyZjZwMkZNNkFDbFZYUlZSTi9JaUcwemNkVnM4SGt6SU03ZldZdXkvSXlpbzZsSkdBY1hWRFNLbC9UdTk0KzhrQTFnVnRmV2siLCJtYWMiOiI0YWUxNjRhMDFiZDZmNmZjYzIyYjJhYTQ1ZDBjZGFjYzhkZDBlODI5MDA2MWFiNTMwOTQ5N2Y4ODZlNzAxM2RhIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/enrollment-api/addStudent" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Ivan&quot;,&#10;  &quot;surname&quot; : &quot;Ivanov&quot;,&#10;  &quot;patronomyc&quot;: &quot;Ivanovich&quot;,&#10;  &quot;group_id&quot;: 12&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610992139000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InhheXRQNXFpZWd5N2UwczJIYlFMRHc9PSIsInZhbHVlIjoiUVNqbVJuRjl5QnhKUEc0TUYxTjc5S3JyL0NmMFF4OFhSZGV5U3QreTZxcWdydDErZDNVZFY4cGpBY1IxR044MlUvVm9NdThqWFJqQnE2L1YxbVMveURjUThuV3NsMEF1UzdwSHVWMGdsRUVvUFFKZTdQQ0FueEpWVWhPL2R0YWgiLCJtYWMiOiIyYmRhYWIyZDMwMjEyZjBmMTFiYjZhMzhkMzNlNWJkODVlMGJiMGQ3MGE0ZWFkZDIyN2JhNzE5NDdmODBjMGYyIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610992139000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjVxRm9YcEJ5Z1h0L01HVlZ4NndlY2c9PSIsInZhbHVlIjoiRitxVlpGam13L0xZZ1F2REppMVRPZU1jZmwrZVZYTWRrdWlKci9HZUprNHlTMUxXTWJVczdKS2VvSS9vUmZxYjZLU0xWUUo3WVNFT2xCeHR5eVIxdFprUVFXd3dERTBFeXZFK2h0M3hsWnArdldDOGpsZDIwMDlBRkcrVWcybXIiLCJtYWMiOiIwZTM3MzYwNDU4YmEyMjNjOTY3NWU2ZjQ4NjEyMmY2ZDk0ZjExNWZmYWY2MzczM2FlZDgwZDdkYTBlN2ZhZjllIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610992114000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjhSaUF6eDZwR1N6SHBSaENxU1UreUE9PSIsInZhbHVlIjoieUVHMHpVZmVOc2g3N2VYYUN2Q3pFK3Q2byszUGtDRkpEQWhlcEtPeVRFR1Bid3pjYkpzSllBWkp3QkhMWVUvTXJicHhzOWp5TVk2M1BtT2RHL3pXK3pEOG53emRlY1Y2UStJYXppMTdDNVVCSFcrRjA1L1BCYm8xb0pZdjFtU1EiLCJtYWMiOiI5MWUxZjBkMDUzMzgwNDY4Y2Q1OTM2M2I1YmYzMjk5NmE1MjA2Zjg3ZWI1NTcyZjA1NmZlNzBiMzk2OWEwN2M0In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610992114000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjJLSkZKeHF1REFxSW5hdmo0d3hWUVE9PSIsInZhbHVlIjoiTjBsZkhwbkQ4enVncFlxeXptUjhkU005QkU0eHloR3c4UlcyWitMSWc0WGZqVEpvWTZMQzFQVnBPbkovSEJ3VkpkdHY2dTFDWG9OV0FrQVNEUlRsSzBuNnJNZDRPd20vcU1PRmpzSGRUdUZNNSs3N3lHWnRsMW90UURXWDZVcHkiLCJtYWMiOiI0YjA1ZWJhNGVhM2ExNTU0MTllNTI3ZmFmMjAwZWE3YThjN2I1MDFmMzY4NmRhODAzNzBlOGNjZTQ4Mzg0ODI0In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610992085000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InBWVWQvOTVUWVVTMXIyNjh1R08xZkE9PSIsInZhbHVlIjoiRVhPeXREZlo5d2VUNHBmL0crQVBxR2Q4YmtCT1NRTnZJdnk1Um1oRE1XOXlxcW1FdFBVWE5BRkM3SlZrci9oSVhOUXRoQXkzWVFRdzY1NXdsaVE3WFZRSmpvRGxuTWdOUzVHWUo2MGpyUE9tdDdvTWMvWjJDcmZVM293ekRZemgiLCJtYWMiOiI4NWQ2MmUzOGVkM2ZjMzUwYWQ4ZGEzMWI4YzIyOTZhNDg4NzU4M2NiOGI5YmE0NWRjZmUwZjY1ZGUwMTQ2YmJkIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610992085000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjFiR09aSXVzUlFUVTc3SDhic2ZmVXc9PSIsInZhbHVlIjoiU0Y4Sk5UMmx0Ykw1NjNUM2J5L0V3b2RudGhxSkdQOGZiMzBpeG5WZGM4aE9MT1J3M01ndFdxTEpFV3lCcWtCU3JmcklXSVo0WVhrTlJvdEhSMW5qNDNuUHgxbEdRMHpMZHJzZGh6eUVCWDFYdENkU2NGZkN3Y2FSVmROQkJCVmsiLCJtYWMiOiJkMWQwZTk3NzQxOWE1YzQ0MTNhYzM3ODE0YWY4MjE4YTJlM2FhOTljNDE1OTViMTA5YTY4NTkzN2Q1NTFjY2U4In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610992030000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InNLVnBIcVgrWW4vWTU5TVBrREtmTHc9PSIsInZhbHVlIjoiSG8vZ1ZnZnpPVTBsSjZ1eUNQZDVYbVJYREkzdWNmK0phdDNrVXBQdElQYWdoSUtVZ3krNm9ZY1pkRmczQlBpTFhRWWhKeHl2R2FDeWZwSTVjZnF5b0pRM2N3UVhtNy9LYTRNRk1UOCtxSHhndVdtN1lMMWxiWlBPY3hmanNRVCsiLCJtYWMiOiJiN2FhN2NkMzJkOTk3ZjM0MDllYmExMjMwNGVhMDI4N2I5ODZjYjExMTI0ZjE2NjdlOWRjY2IxYTJlN2FlNDE0In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610992030000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ijhmbmh3U3lDVUQxakFQWFRlK283R0E9PSIsInZhbHVlIjoiSDZYMmdpaDByZFNBVi9XM05ramJqT3Qwbzl3VVhNaHZScE8zTTM3eGFLY2plbkZDU2xKTFhhOExPTDlCbTBBOUNBemF5VFExbUFjUmFCOEcweElBNTNmM25RTFNDR2tDbmJtcS9HdGQ4ZURCakd1SlBGWXVqamxwaWZ1SThCdVUiLCJtYWMiOiJkZGEyYTJhMzJkMzliY2U3NGEyM2UyZmEwZTA1YjY5ZjllOWMzMjY5ZDBmODM2NGUxYjc1ZjQ1M2ZjZGNiYTNmIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610991871000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Imo4aHlWQThkR2NkMVpaMWQ5K3VpVkE9PSIsInZhbHVlIjoiWmthNWZRZmJMazJsbWdjdTlhaGxYaVVYSkMzRWd5Qm5Zc3FmdmtMaURWaVpwcDIvRm9NKzU0NXd6Nk5GQmVPZDJieVRQY2t3cG5jaEU5aTVldDd5MHpRSUNGNE9Qb1pUYlBQaTdUbk5UQ1VCTEFmK054TldUK2t1YUVNc1BUVnoiLCJtYWMiOiIxMzkzMzY4YjBmN2MyYzJkMTFkMTRlODZmYzJjNDg5Y2ZiYmE2NDI0OGFkZTU5NjYzYjNkN2NlYzRkNjhlZDk2In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610991871000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik9ZQWZrVVBrNDhkcXp2RGxHZUFkOVE9PSIsInZhbHVlIjoiM1NLakkwZ0tGZklyL0R0MkMzTEZoM1ZNYytDY1l6Y29OeDdFQVFocUdva2pOL0RvbmJiZFBKUjYwRjZ3ZmZnSlg3Sjc3aFozanA1Ry9UMEhncVBQTE13N0lFMGZ4Z3c2WGdiWW1lV0FQK2ZOaEpBZjFTdzlaYUFQdWVyTDFqaVMiLCJtYWMiOiI4OTUxNDBiNGI2NGE1M2EyM2E1YmNhMWM2OTMwZWYwZTYyNTVhNGQ1NTQ3ZTg2NTU4ZjNkM2UxY2RiN2YzYTQ4In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610991613000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InpObGk3QkI3RW9tbnlhK2lLWlZMZHc9PSIsInZhbHVlIjoibGJlL2hibWpDbWw4am5qaXVKMXRVOVhoUHFGUGswUGVkdWtwUXNWRi9XeUxpYkpWTTRwc2s2SGo1MGRVVSs5NWNXVDBpZ3RvVWtJWFpiMGlDUG1NQU45SGVqZUdxbytpS2ZQNE9SV25ManRYRXk5Ymx1NUFMYjhXTUN0SjRvUk8iLCJtYWMiOiJhNGY1NmMxODk5ODY0NmFiM2NiMDNmZjVkYTI1OTE1OWI1NmEzNDE5YzA2OTkyNGQ5N2ExOWMyNGNiZDIyY2NlIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610991613000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImNrSDdMZG9sVk12c0tzSW5RZ1N6M2c9PSIsInZhbHVlIjoiVXU2WUVLZjA5S0d4V0hBVytsMWdLRTBxT2h0MklEbHBaYjZqTXBQd3NERUJWZG1tbFk0YmIwQ0hLNEgwbTFSVGlkZGtDUWN6eTRNOXNuRi96OFNCdUlKU3I3MXAxRVN5YVdlVmk1WDUvOXZmWHlNSE5md09lbFJ3K2ZWcTVCMVUiLCJtYWMiOiJlOWYxZWVjOGExYjhhNDI1YzI3NmQ5OGRjNDRhN2YyNjViZGRhMGU4YjU3YzdlMzFiM2M3NzRjYjQ0ZTQ2Y2RjIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610947200000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im82TlQ4empkMDVIYXBJZjFpTU1MWlE9PSIsInZhbHVlIjoiZmIzTWZicTN3c0RXa25tNFBjRmp5Z0l0eTJKN252T2UyWm9FcGM2ak1oNERvTW50ZmM2T0dBaFpPU1QwV0xqemo0ME1oZTJOY244elN4VlpqU1dxSzlEc1VIRTdCV053RVQvVkgwaGhmbEU1a0ZTdHA4eVArZzNxZmtoYmFnT0kiLCJtYWMiOiI5MDcxOWI4ZWRmNTYyYjAxN2U1YmQ1OTM2N2E3ZGNhOGE2NDVkNzM4ZjU0OTk1N2JhMWYzNTM0NDkwYjQ5NTUyIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610947200000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImYvaWxROTUzSUtTSmx3VU0wN2l5Smc9PSIsInZhbHVlIjoiNVliN1BZRm1tUFV5Wm1RWlAzWlhNYXk5cU1CV0pXMU1kN0g0RDh1aW5PUncxeFp1b21iZ3k2RjFMMTZ0QTl3eUY3U0pxQ05mUGorRy84UDl6UGFlMnF4TlBPc05Ib2ZBQUs5K0Fzd2loZHYyQUNNbmI5WnJXdXhrZWRwbXFSOFEiLCJtYWMiOiI4MzViOTZiNDY1MzE5ODYzMmI3NTRkYWM3OGUxMDk5OWMxMDBkYTU4ZGFjZDllNjI3ZmM4M2ZmYWE2YjQ5MmFiIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610947188000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IndyQmdFNWh4a2FmcVI1ZU9xNnJBWUE9PSIsInZhbHVlIjoiQ1JURU1OVkhxWkJYSE9UeUdSYU9vV2NtdVVlcElSMXFZMUZVVkFKN3FVMHJ2dElyUjJMby8xaGYvK3JLRnBXeWEweUcxaUt0N21CckgzR1BzRlUwNnA0OUtWc2pMU09iMWJZOWlzbzMzUGgrY3ViU0huNGIrTWJhdVRrRUdlRXUiLCJtYWMiOiIxYjgyODIxYTYzYmI2MjNkMmE2N2Q5MDU0MjRmOWJmYTZmNDI0OWEwM2IwYTAwY2M3YTYzYTg0OGZkNjM2YTQxIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610947188000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IllodjNKRy9KYlprWFF1cVVsa3B2UGc9PSIsInZhbHVlIjoiOWluUWdoSjNERUoxU3hmc3c0cGcxL0p3QmlFbnlxc1RLaWs0am9OQzV3UkcwajBVSHJkTnhzOFNYblYrRWF6cXkwUGt3UWJvYnhSTTBPMFBjSTJ3WDFZMlA5QjBPZG9NSnU1UjFCNFRmMG10NUlUVlJyMTNqVk1YVnlvcGR4Y3YiLCJtYWMiOiI3N2YyZWVmZGQxMTFlYjBjZGU3NWMxYWQxNWViNmRiNzhkZDZhOGQ4ZWRhZWUyZTg2ZGI4MTA1ZjQ5ODE4YzczIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/createList" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610947154000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InpXMW5PUjNQQVYrTTQ1TUxDdXJ6ZHc9PSIsInZhbHVlIjoiVHRIUkx2SXhZK2FnYlcrMjR4Qis4a2NRaUh3YXoxMmRwT1MxbHhwd3hZY2JRMlVyemx2RUtQaXcxdUtmdHE2enFYbExHeE5IRWRsZWlGOGhvWjhsMXhhVVI0aEMzYzZvbi95Y3dIQkNXTzNsSlpPM3VxT3lmWkFnMi96dnRyS0EiLCJtYWMiOiI3OGViNjA2M2RhZWFjNmUwMTQ2NjNhODA3NTZhZDQyODFlOWQ4MTI5NDE0NTgzNjQ1YjY5NjgyODNiYTBkYmJlIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610947154000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InNtQmliWHlXaURKaGtlM2VOV0d3Y1E9PSIsInZhbHVlIjoiYjZDR3hZdjE3QVVibFhobEJBOW52Y25vNG1TN0l5U2JHTGFvQXpBbmJVZVlpVWQxQmo1TDlFK3NJRHgwd2VibmxMQWVKaHo0cTl4Z1ZyeTJ3aWo5ZTNJb1Awbmx0TmE3bEJybkpIaG9ZNkFob2lnQnlydXZmTjZXbXlIQmJuZ0YiLCJtYWMiOiJlNjdlMGU5MWI2NjcyN2U2NDU1MzZhZDc1NmYxOWRhMDUyMTlkNWVlZTk5MjFiMWNkOTBhZjUzNTk1MjA3YmEzIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610947047000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik10dTVpRjZSMm1vemJDMDhnQ2xkdlE9PSIsInZhbHVlIjoicURBVlBpWkFTdnlIYnl2WXFUNGNIR2lSUk5BOFhrVUhVQ1orbU5PU1ZnUElhbDVIUWtFQkNuc0pUZmJTNlVnUytWc3R3aFJxSzN1ald6VmRqc0pVaVRJOG5CRzlWcWFMV0ZhZEdSOUIvbGNyckNtVXFIT1Nmc1lKNnQwN3RrNDUiLCJtYWMiOiJjMTQ5ZmMwOTlmM2MyNWIzNTQ2MDM2MWRjZjVlYmNjYTdjZmY4MmExMzMwYjk1OTI0MGY2ZDFmMDBkMTg4ZjcyIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610947047000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik56d1oxSURKZlFEWFYxYk5OZnFiNEE9PSIsInZhbHVlIjoicDZMSlFYWGdkalFheXlnMis1QWhIVndubmxsTlpMUTlvS1ZVV1pHa2lsTGhqbURUa3hFdkJjb1dyZE04WnJFR1h0MTVZNGYwcUJ0TmlxQlk3Z2VrTnI5V3VEam8xQmFPeUFqcHBSNWRGTHp3SEhWbGtuNUg0K3pVYUtxVE04VlciLCJtYWMiOiI0Yjk0YmIyOTVlN2U3YjY3ZGViYWM0YjAyYWJlNDI5Njk3ZjZmMDdjNDViYTJlNDlmZTc5OWYzMzM5YmVhMmRjIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610946919000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im1rNWZpclpyZWZIMUk2SUorTGNhUGc9PSIsInZhbHVlIjoiRUIxMC8vaGpaSGlHNloxNU5DTGpGTFZ4SmpxcXNJdmtpd0ZLbG5maTc2YkxwaTAraEZHTXFEb0FqQkFpdWkrekp4MHVwRE5yV1BML3RXK2NJM0dXK09LbmVSZjFXZ0VMWmJQWEFjK0I3NE5KK3NlNWNaeEdkZFlHYXBaMFdDWmwiLCJtYWMiOiJmYzdlMWVhZGJiZGNmYmFlMmE4ZDRiODU3ZGQ1NmNhNmI2NTJjOWM4ZTE3MGQxM2Y1MzQxMmUyZTgzOGVkODc0In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610946919000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlBia1pjY2xacXdDbUhvT2lsT3BhWXc9PSIsInZhbHVlIjoiTjFYczBSd3oxTE1mWGFqUjVRNnU1N1M1THpaQVZ3UjNyQzNzeFQxbnByYlNoMUhFbCt3QmMvczZBc0hLSDJBc0tsNDZxS1lYUzF2a2c2Z2NzZllJUE5DaUswRjY2S0JUQkZxWDJkQkhxaEJMSHN4VU4vcklGSGdUQ1ZqbEhJYisiLCJtYWMiOiI4NGY4MmM2N2VmNDhjY2RiZjRhZTcxZWVhMGYyOWY1NzI4ODA0YzUzY2FkODJkNGNmYjJiYzk4NTRjOTg5Yjg4In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610946702000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkE1Ly9RN1FJdnl2RjNWeFhOM1I1SUE9PSIsInZhbHVlIjoiaXE3ck9VUkE5V3hxaWJVcFpSdFdxL0IrakZMTHpXdmJURnVHZHU4VVo5SjJxVk0wQVdDQys0OVJHaWxMWS9ySnBKNnNJR2Nwb3hoN3pHUlFKMjZ6akJ2bVV0R29zVTRueHZjZ2YzRW5iTVRqNUFqMHRYdWZtbTg3T1l2MnZRUlUiLCJtYWMiOiJiMTRlNjk0NjEwYjIzMjI5NTc4M2U1MThhYjAxY2NhMDVjMTE1NmE4YTkyMzY5MWJjODc1MmU2MTNmOThkZDFiIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610946702000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjBTWlZhd2I4dGFYY3Frbnh3MVQrT0E9PSIsInZhbHVlIjoieFFLUmhYUmIxZDBiYmRlOGNWV2kxMGhZOVpvQ05odmxPWnR6dzE2Sjd3cHp3S3RSajBodCtYb2dIbkVVdlh0SHhpbENZa1liTFN3eUE5UmhYeTNYZjUrb2FuR1U5NUNHbVpib3hhbUNTdC83Z2Y1Z0ZiSnhML3hHSC9KWHJvcGwiLCJtYWMiOiJhZDA3ZDMyNTQ2YWJiMTdhN2VlYjQxODg0ZTFhOWQwYzc3Mzc0YTI3MWI3NTE2MDEzOTA4YTYxZDBhZmE4YjRhIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610946611000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlRxczJBdVhUYnpubHYrMzFnempQWHc9PSIsInZhbHVlIjoiSkdPa2xtb3pSR2dkR1VwR1pObEJpalJjbVg3QmRGWEVJUTc0TUZwMm1RMFduekFrVnB4dVhmeHdJckNpV0JkQ2VscGNXZDdGYUZFdzhUZUZ4SXo2Yko1QkRNd1dLR1VkMjRBdWtYbkRvN014UzlhKzFjNlZLOTdQYjE4WkF3QzYiLCJtYWMiOiI2ZTk3ZjZiNDQ3Y2Y1YjE2NzE0MDg4Yjg4ZjQzZWIxOGRhY2MzMjk4YjM3YmQ5MmI3MmVmMDRkYmFhOGQ2MGU0In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610946611000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkRLajdBeFFUbmFid1YrNHhadlpBeVE9PSIsInZhbHVlIjoidUtOVFNsc1YwV0JXZ09LczBrRlBzQ3hHb2lveC9rc1phdmxxc0FjQml3NzVKd0puMEFyemxxQTJIZGtkdVltM2hUZER6RWlXdFRsWFc2c2NMR3lyMjBxa1QwRnhpVFg4akRtclVjRm1nWEFidlJRelVZNkxnNDVPNWJiSW5rQUwiLCJtYWMiOiJlNDUzOWVjYmEzMjM1NjE5NDdhZTZkMTJlYmNhZjllODMxNjQ4NGM2Mzk1ODIzMjA5NzI4ODU5YzJlMDEwODM3In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610946552000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InZFMXBCK3FUNkZZMklSMmVLeVk3cEE9PSIsInZhbHVlIjoid2NkSVZxMVVWVWFoN1NJRjZGdXliWHRUalpFak9CTEJSb0llTGtZNXRQc3Y4NUE1N3pWOSsycmVub3QySCtlY2ltamZHdk5nOTA3UWJMRGc1R2ZKV1Z4WjVoMVljbk9UbjlvZkI5UWt4RzlldGdCOEx3UEYxcEVROE1WRDZiK0YiLCJtYWMiOiI4ZjVmZmMxOGIxNTcwMzIwYTBmN2ZjOTc4NzRkNzI0MzRlYjQ5ZDA0MGQ4MjQyYTQxZjE1NWRhYmE2NzVjZWVmIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610946552000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik5zbjByOWwza2phMFBCVWdadjNVU0E9PSIsInZhbHVlIjoiZGRia1hhS2g3ME1OOVlmSmJGYk5obDhuczE0K3Z3TytsYjROUmcwTDBaWXN6U2NoS0h2WkdnZitaT2J1M3ZtdXkyeEhvTm5LV09zdVdFbGtaUjJvaVZjN2Y0YkxVYTN1WmY2UFNia3hxSFNITGx3dFBzS3VVZDlicjh3ZDVwaGkiLCJtYWMiOiI3OTVmNzVhMTZmMDBmYjg2NjM4YzFlNzdhMTI0ZjNmOTExZWRkMmY0NzU0N2VlOGMyZmIzNThjNDFkZmQ3ZjE5In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610945903000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkI1bElIYmY5NHhVZVd2NnIwOGtEOVE9PSIsInZhbHVlIjoiTDdHLzNMTHhWQ0FzQnpRT3NmWEJ5T3RjSDVsV1BCbGs2K0h4VTF1WllxZ1h3SFZVcGFBb2VaaWI0VDl5cGZOV3dQbG9IZ3lEaXVuVkdGQnZvZmlQa3FuY0YzbVFlU016ZkdkZDhydUMzSmh3MmszbU9NdE1WbGM1RW12T0pxM3AiLCJtYWMiOiI0MGMwYWRmNjk1ZGE0YzhjMWQ2ZjNiYTg2MzY2MzI2YTI0ZDQyZTU1ZGIzYTI4YTg1YWQ2ZTkxOTMxZGIyOTJhIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610945903000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6InhDdjJxM3dCSEZxNC9TMDU3TGZ3dVE9PSIsInZhbHVlIjoieEYzZkxUU0l4MmgzUi80TkYzZlA3Ui9mZ3libTFzZE1XL2tad1kzcXNCL1YxZlFPVnpQUjA0b05Wb1VROEFodUM3Q3NudCtuWDBTR0dSeHVXL0JRdTNLVk5YVDRqOFNxY1hncldVOHR2UWV1Q2dhZHRQYXAvMkwrVlkyUDRVbUYiLCJtYWMiOiI5ZmZjNDAxM2JiNjI1MGJiYmEyMmMxMTZlOWI4MWFiNzMwMGQzMDlmN2U5ZTZmN2I5NDQ4NzdhYmVhMTc1NTkwIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610945664000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjhSMXh4aVM3UktzTmpldmFrbnA3Ync9PSIsInZhbHVlIjoiTXdhOHA2bXdnQ0puUnZ6aStVMldzOGVIUVQzSXBzenlacngxbW1Xa2NDeUtMU0ovZGhuSHlaSjRGUVBEaGhTZ0Q3Smd2YWUrT0JlMGlIK2dGa3hRQmFMdmoyRkpKTmV6Q3ZQV2FKdkpNYkN2d1J5TGpyTEtrZ200UHI3a005ZUQiLCJtYWMiOiI1ZWZhMDE1Njg3ZTI4OTM5Mzk5MWEyOTViYzQ3ODIxMTczMTA2ZTNmZWVlNTlmZWY5MzIzMmQ2NDlhYThkNGExIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610945664000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjRjWkgyQVpNQ2dHTUtsM1VmOUNORHc9PSIsInZhbHVlIjoiVnlsV1IwNTJuNjhjUlpoS1hmdGVpNW9Gby9CcktXaksrcFhRNGo2OVlkRllnZW9VSEdkNnZZYmlNTVQzS1dOTVN4U2pFcWp1Q0ZjTy92NkNCdGk3UWNQUit3RDM0amJ2RnNBRjlEQ0x6WE85MjFwSmtoa2pUSXZJaHZZWHFRYjIiLCJtYWMiOiJiMTk5M2IyMGE3MDMzODU3OTI0Y2MxNTUyMTI3N2NjOWQ2MGUzNmE4MWQ1NGM4OTkwN2VlZDdhNDUxZTU0NmMwIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610945628000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im5qTERYOWV1blJKWEZxZFNtZWNhY1E9PSIsInZhbHVlIjoiWTBSV0tvTG5hY0xwU1pTOEVTU3g0R3dpbFQyQnpiOXl3VG1TTDdpRnJtQ2s1UTMwNWdBVnczK2dGc0R6b25mTmJiQW4rWVJyQzJLdzVxdnl6S0QrQ21VOTNtSzc3bGJDQTYrU3IvdWFtMTgxNFlrdVZGNzBoRFJlUEFhUGE5K20iLCJtYWMiOiIyZTdjYmZhMTgyMTdiYzVlOTNjNDQ1MTc4NTgyNTk5Y2I2MmI4ZjQzOGMyYzQzNjFkODY5NmRhYzFmMDE1MjM0In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610945628000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IktZaDBUU1hGZ2RjaGRReXBmTnJDYUE9PSIsInZhbHVlIjoibGp2elhUa0pxRzMvdHpNWjZqMFNaU3FNZzkvTDk4TnAwYkpiYnY2bDBzNDArbXpDRWROamNneFFTZHZ3aW84Qk82bHBVVWtlSHhhT0ROMzRJVGMvbGFmQ0YzL05YTFpSV1Q2NXpJdG8veWZFYkRvL2VSa0QvU2tWYUdNblRRQ3EiLCJtYWMiOiJmMzE5N2Q2MGYwZWQwY2Y2NGY3NmZiZDExYmIxMjQxYjgxMjYyMDQzOTdkZjQ0NTVkODUyMGExOGZjMmFkYTg1In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610944824000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImduNVJyWmo4L284Qmc0NmU5aE0xVFE9PSIsInZhbHVlIjoiT0RtbWY5YlcxM3FNaGV4K0RXdFBSMTlBdXFGcFBaV3NOUm5USmlNeXhnODJ6MzZkczBhUEhKbHVMSkVkcFpiMG1BNkpRdGZaZW5lODA0Q0kwN2pCSkxRVlQ4TDBtdXBkTUZJWis3YkRtOTFaRkx1Z2J5ZVJKLzhZV2h0dkM0NloiLCJtYWMiOiI3YTI5MWFhNTM5ZjNjZDViOTQ1ZDA4NWI4MzQwNDU4NGQyNmVjMTM4N2YyY2QzOTU3MWM3NjEyNzdjODZkNGY1In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610944824000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjM2dWhXaHRQdFpreHpNdnlNbENNVlE9PSIsInZhbHVlIjoiMWUyK3NqNldHT203L2ROVUxKUk5XMFZvMTRiU1N4LzA4K3FvVGU1SWRMK3ZqbXBnQzZvSlVJOURyK3c0cUszNjFzZnRRQ2xJYldMNk1lOGdRcU16emdNeElEU1F5ZjZyZmIxd0xGMEZadzl0bWgwWlRWSko2dXlzaldFZzVjbHAiLCJtYWMiOiI2ZTJjYjZlZDNjNjU0MjQ4NzljMmI3ZGE1Njk2Njg3NTBkZmI0MzMzYzU1ZTQ1Mjk5ZmEyZTIwMTA1NzQ2MWJmIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610944810000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImlKMkZIcS9QUDE3RFQ0TGRqUzdyY1E9PSIsInZhbHVlIjoicHBLTWtvbkFpTXFZTWFsdTMzUE11YTVaNjd5RHhyK2tNUHk3dXd3YWI1aHlzTGRQWWlNck81WVFjcjJad2lWWXZZTm1seGNONng5WnlkRHVPT0dlNXpIdWFQNFJoTml0T1g3Z292NGpOaDZKbTR1cEdoR0p2Vk8rUXlKVFllSXEiLCJtYWMiOiI0NGVkOWNjMjRlYWNkMGE0OGFiNzZmNjczOWUwZDY5NWQ4ZmQ3YTY0MDdkNDM1N2QwOTgwOWNjODM2MzVjZTg1In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610944810000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkhnYnpGVVlObGpyRUdUZ0dYbHpaWFE9PSIsInZhbHVlIjoiWUcvSUIxQldWdVNXTVRtamZkTS8zR09aL2lSWlJSWm4yRVo4c1lqK1pIK3F6Szg5elpleXgxcGxqNVpzZWlud1NXM0dpWHNMWkFTaTNKemtGNWhPeHpZcnoraVI2YUE2WmM2NENBWWEraUQ5V1R3Zm5zakNBdStzcHZDaFVuazIiLCJtYWMiOiJlZDI4OTA4MTliMWY5ZmE3MzE2NzYxODA1ZDgwZjA2Yzg2ZjExZDA0NmJiNGRiN2JlY2Y2OTM3MjhlOWM2ODZiIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610944791000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkhaaXU5UzcvbDhIeGJQbDYwN0ZVaWc9PSIsInZhbHVlIjoiR0lUVDlBdFo0bjU2aGVCMjI0a2NYaWNlK2w5djlQb0t2dHNickt2R0tRVUhQS1cxbjUwZTZiMS8vWDZzZ1VPSTJNQmZ3dWtkRWlweThHQXYyTmI4dTAyOGtzTS91dWNXZmdIdm1ISW4vMkpDRWIvbUoxbXc1eWw5aFE1VUI2bDQiLCJtYWMiOiJjOTkzZWRlYjJlMzZkNGMzM2I5NGQyNmFkZjM4ZThkYTMxODBlMjBhNjYzZWZkZTcyYTZjOTQzNWNkNzEwZjllIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610944791000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjN4dWlCdHpBdGF0UjkvdUVxejFodXc9PSIsInZhbHVlIjoieFNmdFk3UlR5dGN0R2VQK1FFNG50NkJWQ2grUHIrMmpvSlVRNFhYaTZ6b0xueE9oVzRsNUw3UnlXRHd4cWNPVE9hRzBFakhuMyt0TDIxSTZydDF0OFYwd0RINUlOR0JEL2NQMWxuSG52Mld6djBTTFNZd2VmTnhyYklBR0NCeFgiLCJtYWMiOiJkZWQ5ZDMyNDE1N2Q2ZmNlNmU0ZmFiMjBlYzY4MmU0NTg5ZDg0ZTQzZWU1ZjM5Njc0OTM1YTVlOWM0NmM1YmM0In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610944774000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImN5cyttUTdVWjVuS1A3aFd3a3VJTkE9PSIsInZhbHVlIjoiUDB1YjFhVGhMYVg1bFhxSm5BMXhVU0xIeWd6OTU4Q1VJZnljZkFUVGNLc3dLUFRXdWZnamo2L2FLajMzZFdLNU1WdmRaYmVLRlF5MnJ5TWUrNnhpYlo4bmp6b2FSSU5YU1NFNDR6RE1SdUJ2RE1nODVuL1hUV2VRei9vdGxjaHMiLCJtYWMiOiJjMTRhZDkxOTNmZDBlODE0ODFiNTZlZjliNWRiNzg5OWY0YzQ4OTE3ZjM1NzFiMTQxNWE0MzA4NzhhNmExYTIyIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610944774000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ikp6UVpCTkJxUCtVWnRPaXd1eEhxWnc9PSIsInZhbHVlIjoidjNvLzBMeVBMQ1Q4MzZzYldjc05UUG1mcFBYbTdIZXlXRmo5YkZEWmN6MXZTcHB6anc5YStOdFJGQit0a0VDSmNIaEpZdUFYNDlHaitUNWdUWTRoQkwwSHVDOW04bnU5eWdQNEJaRHRUL293WE5jNERiNWdna1dJYm4zRklDMjkiLCJtYWMiOiI2NGQyYmUxOWFlN2I5ZjM4NDRmZmE0OWQ2MWVlOTcxZTI1Njg0NTA1MGZlMGIzMDljYmEyMDQyNDY3N2E2OWZmIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610944437000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im5qV3Fydmt3T1BUOUZsaFBvS3JMUFE9PSIsInZhbHVlIjoiVEZXVXI1LzRlczQ1YVNxQTZpaGRHdzZ1MG42enhnSHBGcDVaVjlWQXBEUlRCQjUvWmhIa3hoOCtuZUVCLzdxNGovQ2k2QU00dEVIaWRPRWUzaHI0RVZ3bEswRlAwUS9EaEdUTStxUFRxTXlhWFg0aFJuWmVDZUh2WDNxTVZjeUMiLCJtYWMiOiI1YTcyNzlhNDI1ZDJmY2RlY2EyNTdlYTdiMjA1ZDFmMjA5NGQ5NTdkNTBhZmM5OWFjODQ5MjY4YzliNTE5OTkzIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610944437000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkpySzRpZyttb0hnUE96ZENqOUYxeFE9PSIsInZhbHVlIjoiUFNkOGNVZWdJajVsMm1PL0pYNFNrRFJwcDVEbUp3ck52d2dKYmpNOVo4UDJ1QSsyalN5cjU3eXc5OGdtcmppMGVyNDNTeTdlYTAxeGE0aE1yMk11SlBsUW81QUdXY3VXcm4xMFlRUnNCb0JCT3hkMFV2S2JtKzNHRWtLaU96L0kiLCJtYWMiOiI3ZTk1ZmVkMzRiZjVkOTA2N2RkM2VkODgyYWVmMTdiZjMyYmRhYzVkNzRhYzU2YjY2NzZkOGJhMTg4YmI1MDBkIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1610944359000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImV1d3lYaitrSm5ycXM2dG1SNEwyS2c9PSIsInZhbHVlIjoic0lVbSsxdHE2bThFcHRsSFFTRlJJREtnTFpiL1pacDZOaCtML2l6eTlGMVMrd0Y4dStNeGdTcEdPdFdkWmZzNXdkQTlLbGJwQWJwSy9oQWdTSnJuYnZFZCt5NkUxUDJnNnkxaVBwNlB5RGE5TkR1OWlMeHpHWmd5Z3FSL09SWjYiLCJtYWMiOiJkM2Y1ZDdiYzM3ZmMyZDgxOWFkMTA1ODI1ZDM3YjY5YjMwODQ0ZDc3M2U1OTIyNGFjODlhZjZjZTljY2UwMjhjIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1610944359000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik1LVDBSOUw5TktlOWQyeTljbHdDWnc9PSIsInZhbHVlIjoiLzdnaXlGMG1iQjR6MGFMWXJ0NDYrNU9mdnR5YWwrbnFhRUhRTElyR29ocFZ5WVZlMUVFWWs1OWYveTVMcHZBQzNnTEJmSnJKRGtQVEpzRzBRWCt4VllaeE9nNjZtdkhmQnhXTC9JMWV2aS83U0U2N2JIb2hpMVNCU1IvZWFKcmciLCJtYWMiOiJlM2E5NWI2NzYyNjkzMTc2NzJiZWY0NjIwNzMxMTUzYTI4N2NiZGRjNWFmNDdkZmYwN2ZkMGM1NzZjNGViNjE0In0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000/expulsion-api/student/4" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.enrollment-api#1">
+    <configuration name="enrollment-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/enrollment-api.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="AddStudentsTest.testAddingToIdenticalStudents" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testAddingToIdenticalStudents" scope="Method" />
+    <configuration name="expulsion-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/expulsion-api.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="AddStudentsTest.testCorrectStudent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testCorrectStudent" scope="Method" />
+    <configuration name="expulsion-api#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/expulsion-api.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="AddStudentsTest.testEmptyRequest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AddStudentsTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/AddStudentsTest.php" method="testEmptyRequest" scope="Method" />
+    <configuration name="student-api#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/student-api.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ExampleTest" file="$PROJECT_DIR$/Turitsyna/tests/Feature/ExampleTest.php" method="testBasicTest" scope="Method" />
+    <configuration name="student-api#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/student-api.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="PHPUnit.AddStudentsTest" />
-      <item itemvalue="PHPUnit.AddStudentsTest.testEmptyRequest" />
-      <item itemvalue="PHPUnit.AddStudentsTest.testCorrectStudent" />
-      <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
-      <item itemvalue="PHPUnit.AddStudentsTest.testAddingToIdenticalStudents" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.AddStudentsTest.testCorrectStudent" />
-        <item itemvalue="PHPUnit.AddStudentsTest.testAddingToIdenticalStudents" />
-        <item itemvalue="PHPUnit.AddStudentsTest.testEmptyRequest" />
-        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
-        <item itemvalue="PHPUnit.AddStudentsTest" />
+        <item itemvalue="HTTP Request.enrollment-api#1" />
+        <item itemvalue="HTTP Request.student-api#3" />
+        <item itemvalue="HTTP Request.student-api#2" />
+        <item itemvalue="HTTP Request.expulsion-api#3" />
+        <item itemvalue="HTTP Request.expulsion-api#1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Fork\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e618af39-29df-4f52-985d-92854e5880d3" name="Default Changelist" comment="" />
-      <created>1604227164944</created>
+      <changelist id="92beb458-4276-474e-b1c4-693d048169cd" name="Default Changelist" comment="" />
+      <created>1606312123848</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604227164944</updated>
-      <workItem from="1604227170080" duration="1268000" />
-      <workItem from="1610010216044" duration="4462000" />
-      <workItem from="1610544204258" duration="7809000" />
-      <workItem from="1610630828973" duration="697000" />
-      <workItem from="1610699411881" duration="2350000" />
-      <workItem from="1610899146456" duration="4913000" />
-      <workItem from="1610911499294" duration="2678000" />
-      <workItem from="1610914187529" duration="545000" />
-      <workItem from="1610914740650" duration="3249000" />
-      <workItem from="1610970193373" duration="7391000" />
-      <workItem from="1610993947701" duration="7746000" />
-      <workItem from="1611040765572" duration="3117000" />
+      <updated>1606312123848</updated>
+      <workItem from="1606312126824" duration="1153000" />
+      <workItem from="1606720873807" duration="1082000" />
+      <workItem from="1606726211530" duration="2962000" />
+      <workItem from="1606848126913" duration="1933000" />
+      <workItem from="1606856249986" duration="918000" />
+      <workItem from="1606895543210" duration="2632000" />
+      <workItem from="1606899364361" duration="1678000" />
+      <workItem from="1606903687496" duration="2505000" />
+      <workItem from="1606911992091" duration="119000" />
+      <workItem from="1606912139057" duration="3015000" />
+      <workItem from="1606924345887" duration="4926000" />
+      <workItem from="1606942267386" duration="770000" />
+      <workItem from="1606944232127" duration="184000" />
+      <workItem from="1606944482222" duration="14990000" />
+      <workItem from="1606966632733" duration="599000" />
+      <workItem from="1607275647844" duration="16000" />
+      <workItem from="1608045306424" duration="611000" />
+      <workItem from="1608048864881" duration="773000" />
+      <workItem from="1608161976492" duration="51000" />
+      <workItem from="1608162146762" duration="8000" />
+      <workItem from="1608181960998" duration="7339000" />
+      <workItem from="1609270386563" duration="158000" />
+      <workItem from="1610060416487" duration="1068000" />
+      <workItem from="1610116321132" duration="593000" />
+      <workItem from="1610277533840" duration="17000" />
+      <workItem from="1610289390995" duration="8450000" />
+      <workItem from="1610490964474" duration="2868000" />
+      <workItem from="1610535694047" duration="4709000" />
+      <workItem from="1610620928327" duration="3607000" />
+      <workItem from="1610662015016" duration="7892000" />
+      <workItem from="1610710497500" duration="14812000" />
+      <workItem from="1610756094198" duration="5457000" />
+      <workItem from="1610785379481" duration="7290000" />
+      <workItem from="1610803904395" duration="102000" />
+      <workItem from="1610804108238" duration="675000" />
+      <workItem from="1610804823762" duration="53608000" />
+      <workItem from="1610885080630" duration="12951000" />
+      <workItem from="1610915951490" duration="22444000" />
+      <workItem from="1610953861213" duration="33923000" />
+      <workItem from="1611041848725" duration="5202000" />
     </task>
+    <task id="LOCAL-00001" summary="Созданы миграции для последней версии бд. Исправлена модель данных в соответсвии с новой бд. Добавлены контроллеры для трех этапов системы + дополнительные. Почти сделан этап зачисления">
+      <created>1606965654278</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606965654278</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Переделан порядок запуска миграции для устранения ошибок связанных со вненими ключами">
+      <created>1610294130046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610294130046</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Убрана таблица education_form. Убрана поддержка Period за ненадобностью. &#10;Контроллер для работы с зачислением ожидает проверки работоспособности. &#10;Добавлен контроллер и методы для работы со студентами, в частности получение списка студентов их групп с учетом фильтрации.&#10;Исправлена ошибка связи ORM с бд. Исправлена ошибка, при которой php не мог использовать стандартные методы.">
+      <created>1610850078032</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610850078032</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1. Создан метод для создания списка на отчисления.&#10;2. Добавлен StudentGroupService.php для прослойки между бд и клиентом, содержит в себе общие методы для нескольких контроллеров.&#10;3. Изменены EnrollmentController.php, GroupController.php, StudentController.php в связи с пунктом 2.&#10;4. Добавлены проверки на наличие объектов при создании нового">
+      <created>1610856885737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610856885737</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1. Сделаны методы отчисления: студента, группы, 4-го курса&#10;2. ExpulsionController.php ожидает проверки">
+      <created>1610862942623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610862942623</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1. Исправлен StudentController.php, json возвращается нормальный&#10;2. Исправлен сделан и првоерен метод createTransferList() в TransferController.php&#10;3. Убраны timestomps в модели&#10;4. Исправлены массовые ошибки, связанные с типами данных">
+      <created>1610904192573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610904192573</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1. Добавлены роуты для всего функционала&#10;2. Методы GroupController.php проверены и исправлены&#10;3. Удалены файлы с роутами за ненадобностью (все лежит в одном файле)">
+      <created>1610932145778</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610932145778</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1. Проверены и исправлены методы EnrollmentController.php">
+      <created>1610934302329</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610934302329</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1. Проверены и исправлены методы StudentController.php">
+      <created>1610936702453</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610936702453</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1. Исправлены миграции к базе данных&#10;2. Исправлен метод отчисления одного студента">
+      <created>1610979810573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610979810573</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1. Теперь исправлены до конца х)">
+      <created>1610979890607</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610979890607</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1. Ну теперь точно до конца">
+      <created>1610986948876</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610986948876</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Исправлены методы получения списка групп">
+      <created>1611040863923</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611040863923</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Smth wrong">
+      <created>1611041508624</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611041508624</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +2221,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/prototype1" />
+                        <option value="prototype1" />
                       </list>
                     </value>
                   </entry>
@@ -287,101 +2234,22 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1056" y="167" key="#CLI_Interpreters" timestamp="1610991092922">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1056" y="167" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1610991092922" />
-    <state x="79" y="178" key="#Deployment" timestamp="1610912923821">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="79" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1610912923821" />
-    <state x="674" y="163" key="#PHP" timestamp="1610018990910">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="674" y="163" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1610018990910" />
-    <state x="540" y="175" key="#Test_Frameworks" timestamp="1610019060166">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="175" key="#Test_Frameworks/0.0.1920.1040@0.0.1920.1040" timestamp="1610019060166" />
-    <state x="60" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610987692603">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="60" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610987692603" />
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1610997257025">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610997257025" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611041023440">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611041023440" />
-    <state x="196" y="362" width="589" height="353" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1610991505962">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="196" y="362" width="589" height="353" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1920.1040@0.0.1920.1040" timestamp="1610991505962" />
-    <state x="256" y="436" width="447" height="265" key="ComposerInitDialogKey" timestamp="1610901371168">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="256" y="436" width="447" height="265" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1610901371168" />
-    <state x="259" y="310" key="FileChooserDialogImpl" timestamp="1610991455355">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="259" y="310" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610991455355" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1611008057636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611008057636" />
-    <state x="964" y="156" width="956" height="710" key="SettingsEditor" timestamp="1610991226189">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="964" y="156" width="956" height="710" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610991226189" />
-    <state x="327" y="433" key="VCS.ChangelistChooser" timestamp="1610020303415">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="327" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610020303415" />
-    <state x="247" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1610912220754">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="247" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610912220754" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Turitsyna/routes/web.php</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Созданы миграции для последней версии бд. Исправлена модель данных в соответсвии с новой бд. Добавлены контроллеры для трех этапов системы + дополнительные. Почти сделан этап зачисления" />
+    <MESSAGE value="Переделан порядок запуска миграции для устранения ошибок связанных со вненими ключами" />
+    <MESSAGE value="Убрана таблица education_form. Убрана поддержка Period за ненадобностью. &#10;Контроллер для работы с зачислением ожидает проверки работоспособности. &#10;Добавлен контроллер и методы для работы со студентами, в частности получение списка студентов их групп с учетом фильтрации.&#10;Исправлена ошибка связи ORM с бд. Исправлена ошибка, при которой php не мог использовать стандартные методы." />
+    <MESSAGE value="1. Создан метод для создания списка на отчисления.&#10;2. Добавлен StudentGroupService.php для прослойки между бд и клиентом, содержит в себе общие методы для нескольких контроллеров.&#10;3. Изменены EnrollmentController.php, GroupController.php, StudentController.php в связи с пунктом 2.&#10;4. Добавлены проверки на наличие объектов при создании нового" />
+    <MESSAGE value="1. Сделаны методы отчисления: студента, группы, 4-го курса&#10;2. ExpulsionController.php ожидает проверки" />
+    <MESSAGE value="1. Исправлен StudentController.php, json возвращается нормальный&#10;2. Исправлен сделан и првоерен метод createTransferList() в TransferController.php&#10;3. Убраны timestomps в модели&#10;4. Исправлены массовые ошибки, связанные с типами данных" />
+    <MESSAGE value="1. Добавлены роуты для всего функционала&#10;2. Методы GroupController.php проверены и исправлены&#10;3. Удалены файлы с роутами за ненадобностью (все лежит в одном файле)" />
+    <MESSAGE value="1. Проверены и исправлены методы EnrollmentController.php" />
+    <MESSAGE value="1. Проверены и исправлены методы StudentController.php" />
+    <MESSAGE value="1. Исправлены миграции к базе данных&#10;2. Исправлен метод отчисления одного студента" />
+    <MESSAGE value="1. Теперь исправлены до конца х)" />
+    <MESSAGE value="1. Ну теперь точно до конца" />
+    <MESSAGE value="Исправлены методы получения списка групп" />
+    <MESSAGE value="Smth wrong" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smth wrong" />
   </component>
 </project>

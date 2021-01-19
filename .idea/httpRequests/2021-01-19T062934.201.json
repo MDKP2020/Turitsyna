@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Petr",
+    "surname": "Petrov",
+    "patronomyc": "Petrovich",
+    "id": 9
+  },
+  {
+    "date": "19-01-2021",
+    "student_id": 9,
+    "group_id": 6,
+    "status_id": 2,
+    "id": 13
+  }
+]

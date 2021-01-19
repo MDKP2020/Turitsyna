@@ -1,0 +1,7 @@
+{
+  "message": "Cannot use App\\Models\\Group as Group because the name is already in use",
+  "exception": "Symfony\\Component\\ErrorHandler\\Error\\FatalError",
+  "file": "C:\\Users\\Fork\\PhpstormProjects\\Turitsyna\\Turitsyna\\app\\Models\\StudentList.php",
+  "line": 8,
+  "trace": []
+}
