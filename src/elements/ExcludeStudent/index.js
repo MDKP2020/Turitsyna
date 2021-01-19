@@ -10,7 +10,7 @@ import axios from 'axios'
 export class ExcludeStudent extends React.Component {
 
     componentDidMount() {
-        axios.get("http://turitsyna.test1.seschool.ru/student-api/getGroupStudentsList")
+        axios.get("http://127.0.0.1:8000/student-api/getGroupStudentsList")
             .then(result => console.log("response", result.data))
     }
 

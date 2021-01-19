@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
 import IconButton from '@material-ui/core/IconButton';
@@ -18,6 +17,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import CloseIcon from '@material-ui/icons/Close';
+import { Student } from '../Student'
 
 export class StudentTableList extends React.Component {
     constructor(props) {
@@ -136,10 +136,9 @@ export class StudentTableList extends React.Component {
         //TO DO: КОСТЫЛЬ ОГРОМНЫЙ!
         let showStudentGroup = this.state.showGroup === "ПрИн-466" ?
             <List dense={true}>
-                <ListItem><ListItemText primary="1. Сассов Дмитрий Александрович" /> </ListItem>
-                <ListItem><ListItemText primary="2. Турицына Алина Витальевна" /> </ListItem>
-                <ListItem><ListItemText primary="3. Чечёткин Павел Александрович" />
-                </ListItem>
+                <Student surname="Сасов" name="Дмитрий" patronomyc="Александрович" studentId="1" />
+                <Student surname="Турицына" name="Алина" patronomyc="Витальевна" studentId="2" />
+                <Student surname="Чечеткин" name="Павел" patronomyc="Александрович" studentId="3" />
             </List>
             : null
 
@@ -190,7 +189,7 @@ export class StudentTableList extends React.Component {
                         </Grid>
                     </Grid>
                     <DialogContent>
-                        <TextField label="ФИО" className="dialogAddItem"/>
+                        <TextField label="ФИО" className="dialogAddItem" />
                         <FormControl className="dialogAddItem">
                             <InputLabel id="demo-simple-select-label">Группа</InputLabel>
                             <Select
