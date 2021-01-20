@@ -24,6 +24,13 @@ class EnrollmentController extends Controller
             return response()->json(['Not enough information'], 400);
         }
 
+        if (gettype($request["name"]) != 'string' ||
+            gettype($request["surname"]) != 'string' ||
+            gettype($request["patronomyc"]) != 'string' ||
+            gettype($request["group_id"]) != 'integer' ) {
+            return response()->json(['Invalid request params type'], 400);
+        }
+
         //Создаем студента
         $student = new Student();
         $student->name = $request["name"];
@@ -62,10 +69,30 @@ class EnrollmentController extends Controller
 
 
     // Для ошибочно занесенных
-    public function deleteStudentFromGroup(int $student_id,int $group_id){
+    public function deleteStudentFromGroup($student_id, $group_id){
         if($student_id == null || $group_id == null){
             return response()->json(['Not enough information'], 400);
         }
+
+        $student_id = intval($student_id);
+        $group_id = intval($group_id);
+        if ($student_id < 1){
+            return response()->json(['Invalid student id'], 404);
+        }
+        if ($group_id < 1){
+            return response()->json(['Invalid group id'], 404);
+        }
+
+
+        if (Student::find($student_id) == null) {
+            return response()->json(['There is no student with such id'], 400);
+        }
+
+        if (Group::find($group_id) == null) {
+            return response()->json(['There is no group with such id'], 400);
+        }
+
+
         StudentGroup::all()
                 ->where("student_id", '=', $student_id )
                 ->where("group_id", '=', $group_id )
@@ -73,9 +100,34 @@ class EnrollmentController extends Controller
                 ->delete();
     }
 
+
+
     //
-    public function changeStudentsGroup(int $student_id,int  $old_group_id,int  $new_group_id )
-    {
+    public function changeStudentsGroup($student_id, $old_group_id, $new_group_id) {
+        if($student_id == null || $old_group_id == null || $new_group_id == null){
+            return response()->json(['Not enough information'], 400);
+        }
+
+        $student_id = intval($student_id);
+        $old_group_id = intval($old_group_id);
+        $new_group_id = intval($new_group_id);
+
+        // проверяем, что id это числа и они заданы правильно
+        if ($student_id < 1 || $old_group_id < 1 || $new_group_id < 1) {
+            return response()->json(['Invalid request parameters'], 404);
+        }
+
+        // Проверяем, что в базе есть студенты и группы по заданным id
+        if (Student::find($student_id) == null) {
+            return response()->json(['There is no student with such id'], 400);
+        }
+        if (Group::find($old_group_id) == null) {
+            return response()->json(['There is no previous group with such id'], 400);
+        }
+        if (Group::find($new_group_id) == null) {
+            return response()->json(['There is no new group with such id'], 400);
+        }
+
         $stud_groups = StudentGroup::all();
 
         $tmp = $stud_groups->first(function ($item) use ($student_id, $old_group_id) {
