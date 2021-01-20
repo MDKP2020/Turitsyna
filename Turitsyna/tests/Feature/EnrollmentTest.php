@@ -23,6 +23,22 @@ class AddStudentsTest extends TestCase
     }
 
     /**
+     * Тест на добавление студента с частичными данными о студенте
+     *
+     * @return void
+     */
+    public function testPartialStudentData()
+    {
+        $response = $this->post('/enrollment-api/addStudent',
+            ['name' => 'Ivan',
+            'surname' => 'Ivanov'],
+            []);
+
+        $response->assertStatus(400);
+        $response->assertJson(['Not enough information']);
+    }
+
+    /**
      * Тест на добавление студента
      *
      * @return void
@@ -44,11 +60,47 @@ class AddStudentsTest extends TestCase
     }
 
     /**
-     * Тест на добавление студента повторно
+     * Тест на добавление студента в несуществующую группу
      *
      * @return void
      */
-    public function testAddingToIdenticalStudents()
+    public function testCorrectStudentIntoUnknownGroup()
+    {
+        $response = $this->post('/enrollment-api/addStudent', [
+            'name' => 'Ivan',
+            'surname' => 'Ivanov',
+            'patronomyc' => 'Ivanovich',
+            'group_id' => 10
+        ], []);
+
+        $response->assertStatus(404);
+        $response->assertJson(['Not Found Group']);
+
+    }
+
+    /**
+     * Тест на добавление уже существующего студента несуществующую группу
+     *
+     * @return void
+     */
+    public function testAddingOfExistingStudentToUnknownGroup()
+    {
+        $response = $this->post('/enrollment-api/addStudent', [
+            'name' => 'Иван',
+            'surname' => 'Иванов',
+            'patronomyc' => 'Иванович',
+            'group_id' => 10
+        ], []);
+        $response->assertStatus(400);
+        $response->assertJson(['Student is studying']);
+    }
+
+    /**
+     * Тест на добавление студента повторно в ту же группу
+     *
+     * @return void
+     */
+    public function testAddingOfIdenticalStudent()
     {
         $response = $this->post('/enrollment-api/addStudent', [
             'name' => 'Иван',
@@ -61,7 +113,24 @@ class AddStudentsTest extends TestCase
     }
 
     /**
-     * Тест на удаление студента
+     * Тест на добавление студента повторно в другую группу
+     *
+     * @return void
+     */
+    public function testAddingOfIdenticalStudentToAnotherGroup()
+    {
+        $response = $this->post('/enrollment-api/addStudent', [
+            'name' => 'Иван',
+            'surname' => 'Иванов',
+            'patronomyc' => 'Иванович',
+            'group_id' => 2
+        ], []);
+        $response->assertStatus(400);
+        $response->assertJson(['Student is studying']);
+    }
+
+    /**
+     * Тест на удаление студента из существующей группы
      *
      * @return void
      */
@@ -75,6 +144,20 @@ class AddStudentsTest extends TestCase
             'group_id' => 1
         ],
         );
+    }
+
+    /**
+     * Тест на удаление студента из несуществующей группы
+     *
+     * @return void
+     */
+    public function testDeleteStudentFromUnknownGroup()
+    {
+
+        $response = $this->delete('/enrollment-api/delStudFromGroup/1/10', [], []);
+
+        $response->assertStatus(400);
+        $response->assertJson(['Invalid group id']);
     }
 
     /**
