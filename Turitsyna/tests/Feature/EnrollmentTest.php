@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class AddStudentsTest extends TestCase
+class EnrollmentTest extends TestCase
 {
     use DatabaseTransactions;
     /**
@@ -57,6 +57,24 @@ class AddStudentsTest extends TestCase
             'surname' => 'Ivanov',
             'patronomyc' => 'Ivanovich']);
 
+    }
+
+    /**
+     * Тест на добавление студента с данными json в неподходящем формате
+     *
+     * @return void
+     */
+    public function testAddStudentWithInvalidData()
+    {
+        $response = $this->post('/enrollment-api/addStudent', [
+            'name' => 54,
+            'surname' => 29,
+            'patronomyc' => 89,
+            'group_id' => "first"
+        ], []);
+
+        $response->assertStatus(400);
+        $response->assertJson(['Invalid request params type']);
     }
 
     /**
@@ -157,11 +175,11 @@ class AddStudentsTest extends TestCase
         $response = $this->delete('/enrollment-api/delStudFromGroup/1/10', [], []);
 
         $response->assertStatus(400);
-        $response->assertJson(['Invalid group id']);
+        $response->assertJson(['There is no group with such id']);
     }
 
     /**
-     * Тест на удаление несуществующего студента
+     * Тест на удаление несуществующего студента из существующей группы
      *
      * @return void
      */
@@ -170,11 +188,26 @@ class AddStudentsTest extends TestCase
 
         $response = $this->delete('/enrollment-api/delStudFromGroup/33/1', [], []);
 
-        $response->assertStatus(500);
+        $response->assertStatus(400);
+        $response->assertJson(['There is no student with such id']);
     }
 
     /**
-     * Тест на удаление студента по нулевым данным
+     * Тест на удаление несуществующего студента из несуществующей группы
+     *
+     * @return void
+     */
+    public function testDeleteUnknownStudentFromUnknownGroup()
+    {
+
+        $response = $this->delete('/enrollment-api/delStudFromGroup/33/32', [], []);
+
+        $response->assertStatus(400);
+        $response->assertJson(['There is no student with such id']);
+    }
+
+    /**
+     * Тест на удаление студента по некорректным данным
      *
      * @return void
      */
@@ -182,7 +215,8 @@ class AddStudentsTest extends TestCase
     {
         $response = $this->delete('/enrollment-api/delStudFromGroup/null/null', [], []);
 
-        $response->assertStatus(500);
+        $response->assertStatus(404);
+        $response->assertJson(['Invalid student id']);
     }
 
     /**
@@ -203,16 +237,68 @@ class AddStudentsTest extends TestCase
     }
 
     /**
+     * Тест на изменение группы студента по некорректным параметрам
+     *
+     * @return void
+     */
+    public function testChangeStudentGroupInvalidRequestData()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/null/null/null',
+            [], []);
+
+        $response->assertStatus(404);
+        $response->assertJson(['Invalid request parameters']);
+    }
+
+    /**
      * Тест на изменение группы несуществующего студента
      *
      * @return void
      */
-    public function testChangeUnknownStudentGroup()
+    public function testChangeGroupOfUnknownStudent()
     {
         $response = $this->post('/enrollment-api/changeStudGroup/15/1/2',
             [], []);
 
-        $response->assertStatus(500);
+        $response->assertStatus(400);
+        $response->assertJson(['There is no student with such id']);
+    }
+
+    /**
+     * Изменить несуществующую группу у студента на существующую
+     *
+     * @return void
+     */
+    public function testChangeUnknownStudentGroupToExistingGroup()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/1/10/1',
+            [], []);
+
+        $response->assertStatus(400);
+        $response->assertJson(['There is no previous group with such id']);
+    }
+
+    /**
+     * Изменить группу у студента на точно такую же
+     *
+     * @return void
+     */
+    public function testChangeToTheSameGroup()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/1/1/1',
+            [], []);
+
+        $response->assertStatus(200);
+        $this->assertDatabaseHas('student_group',
+            ['id' => 1, 'student_id' => 1, 'group_id' => 1]);
+        $this->assertDatabaseMissing('student_group',
+            ['id' => 2, 'student_id' => 1, 'group_id' => 1]);
+        $this->assertDatabaseMissing('student_group',
+            ['id' => 3, 'student_id' => 1, 'group_id' => 1]);
+        $this->assertDatabaseMissing('student_group',
+            ['id' => 4, 'student_id' => 1, 'group_id' => 1]);
+        $this->assertDatabaseMissing('student_group',
+            ['id' => 5, 'student_id' => 1, 'group_id' => 1]);
     }
 
     /**
@@ -225,6 +311,21 @@ class AddStudentsTest extends TestCase
         $response = $this->post('/enrollment-api/changeStudGroup/1/1/10',
             [], []);
 
-        $response->assertStatus(500);
+        $response->assertStatus(400);
+        $response->assertJson(['There is no new group with such id']);
+    }
+
+    /**
+     * Изменить несуществующую группу у несуществующего студента на другую несуществующую группу
+     *
+     * @return void
+     */
+    public function testChangeUnknownGroupOfUnknownStudentToUnknownGroup()
+    {
+        $response = $this->post('/enrollment-api/changeStudGroup/6/7/9',
+            [], []);
+
+        $response->assertStatus(400);
+        $response->assertJson(['There is no student with such id']);
     }
 }
