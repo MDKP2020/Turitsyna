@@ -17,11 +17,11 @@ class StudentTest extends TestCase
      */
     public function testGetStudentInfo()
     {
-        $response = $this->get('/student-api/getStudent/', [
+        $response = $this->post('/student-api/getStudent/', [
             'name' => 'Иван',
             'surname' => 'Иванов',
             'patronomyc' => 'Иванович',
-        ]);
+        ], []);
 
         $response->assertStatus(200);
         $response->assertJson([
@@ -38,14 +38,13 @@ class StudentTest extends TestCase
      */
     public function testGetUnknownStudentInfo()
     {
-        $response = $this->get('/student-api/getStudent/', [
+        $response = $this->post('/student-api/getStudent/', [
             'name' => 'Иван1',
             'surname' => 'Иванов1',
             'patronomyc' => 'Иванович1',
         ]);
 
-        $response->assertStatus(400);
-        $response->assertJson(['Not enough information']);
+        $response->assertJson([]);
     }
 
     /**
@@ -82,6 +81,7 @@ class StudentTest extends TestCase
     {
         $response = $this->get('/student-api/getStudentsFromGroup/6',[]);
 
-        $response->assertStatus(500);
+        $response->assertStatus(400);
+        $response->assertJson(['There is no group with such id']);
     }
 }
