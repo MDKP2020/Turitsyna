@@ -23,6 +23,10 @@ class StudentController extends Controller
     public function getStudentsFromGroup(int $group_id){
         $group = Group::find($group_id);
 
+        if ($group == null) {
+            return response()->json(['There is no group with such id'], 400);
+        }
+
         $student_list = StudentList::createStudList($group);
 
         if($student_list == null) return response()->json([
