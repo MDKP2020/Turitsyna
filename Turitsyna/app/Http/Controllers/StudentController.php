@@ -16,11 +16,24 @@ class StudentController extends Controller
         if($request['name'] == null || $request['surname'] == null || $request['patronomyc'] == null){
             return response()->json(['Not enough information'], 400);
         }
+
+        if (gettype($request['name']) != 'string' ||
+            gettype($request['surname']) != 'string' ||
+            gettype($request['patronomyc']) != 'string') {
+            return response()->json(['Invalid parameters type'], 400);
+        }
+
         return response()->json($this->service->getStudentByFIO($request['name'], $request['surname'], $request['patronomyc']));
     }
 
     //
-    public function getStudentsFromGroup(int $group_id){
+    public function getStudentsFromGroup($group_id){
+
+        $group_id = intval($group_id);
+        if ($group_id < 1){
+            return response()->json(['Invalid group id'], 404);
+        }
+
         $group = Group::find($group_id);
 
         if ($group == null) {
