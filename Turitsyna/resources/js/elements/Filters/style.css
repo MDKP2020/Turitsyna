@@ -1,0 +1,8 @@
+.MuiFormControl-root {
+    width: 160px;
+}
+
+.MuiFormControl-marginNormal {
+    margin-right: 25px !important;
+}
+
