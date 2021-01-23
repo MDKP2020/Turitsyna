@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .search {
+    margin: 10px 0px;
+    width: 98%;
+    border: 1px solid #CCC;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchArea {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+  }
