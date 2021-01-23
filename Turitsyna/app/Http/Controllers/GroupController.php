@@ -39,7 +39,7 @@ class GroupController extends Controller
     public function getGroupByNameYear(string $name, int $study_year_id){
         $group = Group::whereName($name)->where('study_year_id', '=', $study_year_id)->first();
         if( $group == null ){
-            return response()->json(['Group Not Found']);
+            return response()->json(['Group Not Found'], 404);
         }
         return response()->json($group);
     }
