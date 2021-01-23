@@ -127,7 +127,7 @@ class StudentTest extends TestCase
      */
     public function testGetStudentsFromUnknownGroup()
     {
-        $response = $this->get('/student-api/getStudentsFromGroup/6',[]);
+        $response = $this->get('/student-api/getStudentsFromGroup/12',[]);
 
         $response->assertStatus(400);
         $response->assertJson(['There is no group with such id']);
@@ -360,7 +360,21 @@ class StudentTest extends TestCase
         $response->assertStatus(200);
         $response->assertJson([
             "PRIN" => [],
-            'IVT' => [],
+            'IVT' => [
+                [
+                    "group" => "IVT-263",
+                    "students" => [
+                        [
+                            "id" => 6,
+                            "name" => "Евгения",
+                            "surname" => "Евгеньева",
+                            "patronomyc" => "Евгеньевна",
+                            "created_at" => null,
+                            "updated_at" => null
+                        ]
+                    ]
+                ]
+            ],
             'IIT' => [],
             'FIZ' => []
         ]);
@@ -436,7 +450,60 @@ class StudentTest extends TestCase
                             ]
                     ]
                 ],
-            'IVT' => [],
+            'IVT' => [
+                [
+                    "group" => "IVT-163",
+                    "students" => [
+                        [
+                            "id" => 5,
+                            "name" => "Александра",
+                            "surname" => "Александрова",
+                            "patronomyc" => "Александровна",
+                            "created_at" => null,
+                            "updated_at" => null
+                        ]
+                    ]
+                ],
+                [
+                    "group" => "IVT-263",
+                    "students" => [
+                        [
+                            "id" => 6,
+                            "name" => "Евгения",
+                            "surname" => "Евгеньева",
+                            "patronomyc" => "Евгеньевна",
+                            "created_at" => null,
+                            "updated_at" => null
+                        ]
+                    ]
+                ],
+                [
+                    "group" => "IVT-363",
+                    "students" => [
+                        [
+                            "id" => 7,
+                            "name" => "Марина",
+                            "surname" => "Дмитриева",
+                            "patronomyc" => "Александровна",
+                            "created_at" => null,
+                            "updated_at" => null
+                        ]
+                    ]
+                ],
+                [
+                    "group" => "IVT-463",
+                    "students" => [
+                        [
+                            "id" => 8,
+                            "name" => "Мария",
+                            "surname" => "Артемова",
+                            "patronomyc" => "Артемовна",
+                            "created_at" => null,
+                            "updated_at" => null
+                        ]
+                    ]
+                ]
+            ],
             'IIT' => [],
             'FIZ' => []
         ]);
@@ -492,7 +559,21 @@ class StudentTest extends TestCase
                             ]
                     ]
                 ],
-            'IVT' => [],
+            'IVT' => [
+                [
+                    "group" => "IVT-263",
+                    "students" => [
+                        [
+                            "id" => 6,
+                            "name" => "Евгения",
+                            "surname" => "Евгеньева",
+                            "patronomyc" => "Евгеньевна",
+                            "created_at" => null,
+                            "updated_at" => null
+                        ]
+                    ]
+                ]
+            ],
             'IIT' => [],
             'FIZ' => []
         ]);

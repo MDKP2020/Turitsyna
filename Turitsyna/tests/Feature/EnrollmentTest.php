@@ -322,7 +322,7 @@ class EnrollmentTest extends TestCase
      */
     public function testChangeUnknownGroupOfUnknownStudentToUnknownGroup()
     {
-        $response = $this->post('/enrollment-api/changeStudGroup/6/7/9',
+        $response = $this->post('/enrollment-api/changeStudGroup/12/21/9',
             [], []);
 
         $response->assertStatus(400);
