@@ -67,10 +67,9 @@ class StudentController extends Controller
 
         $list = $this->service->getStudentsAndGroups($groups);
 
-        $direction_id = $request["direction_id"] != null ? $request["direction_id"] : array();
 
-
-        return response()->json([
+        return response(json_encode($list));
+        /*return response()->json([
             "PRIN" => [
                 'name' => in_array( 1, $direction_id) ? array_values(array_values($list)[0])[0]->group : null,
                 'students' => in_array( 1, $direction_id) ? array_values(array_values($list)[0])[0]->students : null],
@@ -83,6 +82,6 @@ class StudentController extends Controller
             "FIZ" => [
                 'name' => in_array( 4, $direction_id) ? array_values(array_values($list)[3])[0]->group : null,
                 'students' => in_array( 4, $direction_id) ? array_values(array_values($list)[3])[0]->students : null]
-        ]);
+        ]);*/
     }
 }

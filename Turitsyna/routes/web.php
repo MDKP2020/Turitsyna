@@ -40,9 +40,9 @@ Route::get('/transfer-api/createList', [TransferController::class, 'createTransf
 Route::post('/transfer-api/transfer', [TransferController::class, 'transferStudents']);
 
 //Студенты
-Route::post('/student-api/getStudent', [StudentController::class, 'getStudentByFIO']);
+Route::get('/student-api/getStudent', [StudentController::class, 'getStudentByFIO']);
 Route::get('/student-api/getStudentsFromGroup/{group_id}', [StudentController::class, 'getStudentsFromGroup']);
-Route::post('/student-api/getGroupStudentsList', [StudentController::class, 'getStudentsAndGroups']);
+Route::get('/student-api/getGroupStudentsList', [StudentController::class, 'getStudentsAndGroups']);
 
 //Группы и прочее
 Route::post('/group-api/create', [GroupController::class, 'createGroup']);
