@@ -77,7 +77,7 @@ class StudentGroupService
             foreach($groups->where('direction_id','=',$direction->id) as $group){
 
                 $tmp_list = StudentList::createStudList($group);
-
+                if($tmp_list == null) continue;
                 $pos = strpos($tmp_list->getGroup(), '-');
                 $tmp_list->setGroup(substr_replace($tmp_list->getGroup(), strval($group->course + 1),  $pos+1, 1));
 

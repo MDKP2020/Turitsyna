@@ -14,8 +14,8 @@ class DirectionSeeder extends Seeder
      */
     public function run()
     {
-        $arr = [['id'=> 1, 'name' => 'PRIN'], ['id'=> 2, 'name' => 'IVT'],
-            ['id'=> 3, 'name' => 'IIT'], ['id'=> 4, 'name' => 'FIZ'],];
+        $arr = [['id'=> 1, 'name' => 'ПрИн'], ['id'=> 2, 'name' => 'ИВТ'],
+            ['id'=> 3, 'name' => 'ИИТ'], ['id'=> 4, 'name' => 'Ф'],];
 
         foreach ($arr as &$element) {
             DB::table('direction')->insert($element);

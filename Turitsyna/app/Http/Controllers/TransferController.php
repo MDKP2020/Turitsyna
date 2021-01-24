@@ -16,11 +16,16 @@ class TransferController extends Controller
 {
     public function createTransferList(){
         $this->service = new StudentGroupService();
+        $graduate_groups = $this->service->getStudentsAndGroups(
+                        Group::all()->where('course','=',4)
+                        ->where('study_year_id','=', $this->service->currentYear()->id));
 
-        if( Group::all()->where('course','=',4)
-                ->where('study_year_id','=', $this->service->currentYear()->id)
-                ->count() != 0){
-            response()->json(['Cant transfer students'], 400);
+        foreach ($graduate_groups as $graduate_group){
+
+            if($graduate_group != null && empty($graduate_group->students)){
+
+                return response()->json(['Cant transfer students'], 400);
+            }
         }
 
         // Выбирем группы 4-го курса
@@ -46,7 +51,7 @@ class TransferController extends Controller
 
         // Получить группы до 4-го курса
         $old_groups = Group::all()->where('course','<',4)
-            ->where('study_year_id','=', $this->service->currentYear()->id)->get();
+            ->where('study_year_id','=', $this->service->currentYear()->id);
         if($old_groups == null){
             return response()->json(['Not found 1-3 course groups'],404);
         }
@@ -69,8 +74,10 @@ class TransferController extends Controller
             $new_group->save();
             $new_groups[]=$new_group;
 
+            $old_group_studList = StudentList::createStudList($old_group);
+            if($old_group_studList == null) continue;
 
-            foreach (StudentList::createStudList($old_group)->getStudents() as $student) {
+            foreach ($old_group_studList->getStudents() as $student) {
                 // Сделать привязку зачисления к новой группе
                 $new_student_group = new StudentGroup();
                 $new_student_group->group_id = $new_group->id;
@@ -88,6 +95,6 @@ class TransferController extends Controller
                 $old_student_group->save();
             }
         }
-        return response()->json([''], 201);
+        return response()->json([], 201);
     }
 }

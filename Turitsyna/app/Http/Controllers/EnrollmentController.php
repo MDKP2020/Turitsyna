@@ -47,6 +47,7 @@ class EnrollmentController extends Controller
             if($enrolled_cnt > $expelled_cnt){
                 return response()->json(['Student is studying'], 400);
             }
+            $student = $tmp_student;
         }
         else {
             $student->save();

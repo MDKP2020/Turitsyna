@@ -51,3 +51,4 @@ Route::get('/group-api/getDirection/{name}', [GroupController::class, 'getDirect
 Route::get('/group-api/getStudyYear/{year}', [GroupController::class, 'getStudyYearByYear']);
 Route::get('/group-api/getLeveEduc/{name}', [GroupController::class, 'getLevelEducation']);
 Route::post('/group-api/changeGroupName/{group_id}/{name}', [GroupController::class, 'changeGroupName']);
+Route::get('/group-api/getDirections', [GroupController::class, 'getDirections']);
