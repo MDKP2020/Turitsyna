@@ -22,6 +22,7 @@ export class Student extends React.Component {
     }
 
     handleDialogDeleteStudent = () => {
+        console.log(this.props.studentId)
         axios.post("/expulsion-api/student/" + this.props.studentId)
             .catch(function (error) {
                 console.log(error);

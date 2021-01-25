@@ -140,7 +140,7 @@ export class ApplicantsPage extends React.Component {
                         </Grid>
 
                         <StudentTableList ivt={this.state.groupList.ИВТ} prin={this.state.groupList.ПрИн}
-                                          fiz={this.state.groupList.ИИТ} iit={this.state.groupList.Ф}/>
+                                          fiz={this.state.groupList.ИИТ} iit={this.state.groupList.Ф} redact={true}/>
                     </Paper>
                     <Dialog open={this.state.addGroupOpen} aria-labelledby="form-dialog-add-student">
                         <Grid container spacing={0}>

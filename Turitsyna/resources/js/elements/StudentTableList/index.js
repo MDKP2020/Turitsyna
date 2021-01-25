@@ -190,6 +190,7 @@ export class StudentTableList extends React.Component {
                 </Grid >
             )
         }): null
+        console.log("Говно на палке ",this.state.redact)
         let listGridIit = this.state.iit.length !== 0 ?
             <Grid container item xs={12} spacing={1}>
                 {listIit}
