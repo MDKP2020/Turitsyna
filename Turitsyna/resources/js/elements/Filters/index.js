@@ -7,10 +7,28 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import axios from "axios";
 
 export class Filters extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            direction: [],
+        };
+    }
+
+    componentDidMount() {
+        axios.get("/group-api/getDirections")
+            .then(result => this.setState({
+                direction: result.data
+            }))
+    }
+
     render() {
         const { academicYear, course, trainingProgrammes } = this.props;
+        let directionSelection = this.state.direction.map(direction => (
+            <MenuItem value={direction.id}>{direction.name}</MenuItem>
+        ))
         return (<div>
             <Typography variant="h5" noWrap>
                 Фильтры
@@ -58,16 +76,13 @@ export class Filters extends React.Component {
                             onChange={event => this.props.onChange(academicYear, course, event.target.value)}
                             label="Направление"
                         >
-                            <MenuItem value="IVT">ИВТ</MenuItem>
-                            <MenuItem value="PRIN">ПрИн</MenuItem>
-                            <MenuItem value="F">Физика</MenuItem>
-                            <MenuItem value="IIT">ИИТ</MenuItem>
+                            {directionSelection}
                         </Select>
                     </FormControl>
                 </Grid>
 
                 <Grid item xs={1} spacing={2}>
-                    <Button variant="contained" color="primary" onClick={this.props.onClick}>
+                    <Button variant="contained" color="primary" onClick={this.props.onClick} disabled>
                         Применить
                     </Button>
                 </Grid>

@@ -22,7 +22,8 @@ export class Student extends React.Component {
     }
 
     handleDialogDeleteStudent = () => {
-        axios.post("http://127.0.0.1:8000/expulsion-api/student/" + this.props.studentId)
+        console.log(this.props.studentId)
+        axios.post("/expulsion-api/student/" + this.props.studentId)
             .catch(function (error) {
                 console.log(error);
             });
@@ -46,7 +47,7 @@ export class Student extends React.Component {
                 <ListItem button onClick={this.handleClickChangeStudent}>
                     <ListItemText  primary={this.props.surname + " " + this.props.name + " " + this.props.patronomyc} />
                 </ListItem>
-                
+
 
                 <Dialog fullWidth="false" open={this.state.changeStudentDialog} aria-labelledby="form-dialog-change-student">
                     <Grid container spacing={0}>

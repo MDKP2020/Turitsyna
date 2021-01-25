@@ -15,22 +15,39 @@ import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import TextField from '@material-ui/core/TextField';
-
+import CircularProgress from '@material-ui/core/CircularProgress';
 import axios from 'axios'
 
 export class TransferStudent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            groupList: [],
+            load: true,
             transferStudentDialogOpen: false,
             renameGroupDialog: false,
-            currentGroup: "ИВТ-160",
+            currentGroup: "",
+            transferGroup: []
         };
     }
 
     componentDidMount() {
-        axios.get("http://127.0.0.1:8000/student-api/getGroupStudentsList")
-            .then(result => console.log("response", result.data))
+        axios.get("/student-api/getGroupStudentsList",{
+            params: {
+                study_year_id: null,
+                course:[1,2,3],
+                direction_id:null
+            }
+        })
+            .then(result => this.setState({
+                groupList: result.data,
+                load: false
+            }))
+
+        axios.get("/transfer-api/createLis")
+            .then(result => this.setState({
+                transferGroup: result.data,
+            }))
     }
 
     handleClickDialogTransfer = () => {
@@ -40,12 +57,20 @@ export class TransferStudent extends React.Component {
     }
 
     handleCloseDialogTransfer = () => {
+        axios.get("/transfer-api/createLis")
+            .then(result => this.setState({
+                transferGroup: result.data,
+            }))
         this.setState({
             transferStudentDialogOpen: false,
         })
     }
 
     handleDialogTransferStudent = () => {
+        axios.post("/transfer-api/transfer")
+            .catch(function (error) {
+                console.log(error);
+            });
         this.setState({
             transferStudentDialogOpen: false,
         })
@@ -60,7 +85,7 @@ export class TransferStudent extends React.Component {
     handleDialogRenameGroup = () => {
         this.setState({
             renameGroupDialog: false,
-        }) 
+        })
     }
 
     handleCloseDialogRename = () => {
@@ -71,90 +96,97 @@ export class TransferStudent extends React.Component {
 
     handleChangeGroup = (event) => {
         this.setState({
-            currentGroup: event.value,
+            currentGroup: event.target.value,
         })
     }
 
     render() {
-        return (
-            <Paper elevation={3} className="paperContainer">
-                <Grid container spacing={0}>
-                    <Grid item xs={9} spacing={0}>
-                        <Typography variant="h5" noWrap>
-                            Список групп
-                        </Typography>
-                    </Grid>
-                </Grid>
-
-                <StudentTableList ivt={["ИВТ-260", "ИВТ-261", "ИВТ-262", "ИВТ-263", "ИВТ-360", "ИВТ-363", "ИВТ-364", "ИВТ-365",
-                    "ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
-                    prin={["ПрИн-266", "ПрИн-267", "ПрИн-366", "ПрИн-367", "ПрИн-466", "ПрИн-467"]}
-                    fiz={["Ф-269", "Ф-369", "Ф-469"]}
-                    iit={["ИИТ-273", "ИИТ-373", "ИИТ-473"]} />
-
-                <Grid item spacing={2} container justify="center">
-                    <Button variant="contained" onClick={this.handleClickDialogTransfer} color="primary" className='tranferButton'> Перевести студентов </Button>
-                </Grid>
-
-                <Dialog open={this.state.transferStudentDialogOpen} aria-labelledby="form-dialog-tranfer-student">
+        console.log(this.state.transferGroup)
+        if (this.state.load) {
+            return (<CircularProgress/>)
+        } else {
+            return (
+                <Paper elevation={3} className="paperContainer">
                     <Grid container spacing={0}>
-                        <Grid item xs={10} spacing={0}>
-                            <DialogTitle>Список группы:</DialogTitle>
-                        </Grid>
-                        <Grid item xs={1} spacing={0} justify='flex-end'>
-                            <IconButton className="dialogAddCloseButton">
-                                <CloseIcon onClick={this.handleCloseDialogTransfer} />
-                            </IconButton>
+                        <Grid item xs={9} spacing={0}>
+                            <Typography variant="h5" noWrap>
+                                Список групп
+                            </Typography>
                         </Grid>
                     </Grid>
-                    <DialogContent>
-                        <FormControl className="dialogAddItem">
-                            <InputLabel id="demo-simple-select-label">Группа</InputLabel>
-                            <Select
-                                labelId="demo-simple-select-label"
-                                id="demo-simple-select"
-                                value={this.state.currentGroup}
-                                onChange={event => this.handleChangeGroup(event)}
-                            >
-                                <MenuItem value={"ИВТ-160"}>ИВТ-160</MenuItem>
-                                <MenuItem value={"ИВТ-161"}>ИВТ-161</MenuItem>
-                                <MenuItem value={"ИВТ-162"}>ИВТ-162</MenuItem>
-                            </Select>
-                        </FormControl>
 
-                        <Grid container spacing={2}>
-                            <Grid item xs={6} spacing={0} container justify="center">
-                                <Button variant="contained" color="primary" className='tranferButton' onClick={this.handleClickDialogRename}> Переименовать </Button>
+                    <StudentTableList ivt={this.state.groupList.ИВТ} prin={this.state.groupList.ПрИн}
+                                      fiz={this.state.groupList.ИИТ} iit={this.state.groupList.Ф}/>
+
+                    <Grid item spacing={2} container justify="center">
+                        <Button variant="contained" onClick={this.handleClickDialogTransfer} color="primary"
+                                className='tranferButton'> Перевести студентов </Button>
+                    </Grid>
+
+                    <Dialog open={this.state.transferStudentDialogOpen} aria-labelledby="form-dialog-tranfer-student">
+                        <Grid container spacing={0}>
+                            <Grid item xs={10} spacing={0}>
+                                <DialogTitle>Список группы:</DialogTitle>
                             </Grid>
-
-                            <Grid item xs={6} spacing={0} container justify="center">
-                                <Button variant="contained" color="primary" className='tranferButton' onClick={this.handleDialogTransferStudent}> Перевести студентов </Button>
+                            <Grid item xs={1} spacing={0} justify='flex-end'>
+                                <IconButton className="dialogAddCloseButton">
+                                    <CloseIcon onClick={this.handleCloseDialogTransfer}/>
+                                </IconButton>
                             </Grid>
                         </Grid>
+                        <DialogContent>
+                            <FormControl className="dialogAddItem">
+                                <InputLabel id="demo-simple-select-label">Группа</InputLabel>
+                                <Select
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={this.state.currentGroup}
+                                    onChange={event => this.handleChangeGroup(event)}
+                                >
+                                    {this.state.transferGroup.map(group => (
+                                        <MenuItem value={group.id}>{group.group}</MenuItem>
+                                    ))}
+                                </Select>
+                            </FormControl>
 
-                    </DialogContent>
-                </Dialog>
+                            <Grid container spacing={2}>
+                                <Grid item xs={6} spacing={0} container justify="center">
+                                    <Button variant="contained" color="primary" className='tranferButton'
+                                            onClick={this.handleClickDialogRename}> Переименовать </Button>
+                                </Grid>
 
-                <Dialog open={this.state.renameGroupDialog} aria-labelledby="form-dialog-rename-group" fullWidth="true" maxWidth="xs">
-                    <Grid container spacing={0}>
-                        <Grid item xs={10} spacing={0}>
-                            <DialogTitle>Переименовать группу</DialogTitle>
-                        </Grid>
-                        <Grid item xs={1} spacing={0} justify='flex-end'>
-                            <IconButton className="dialogAddCloseButton">
-                                <CloseIcon onClick={this.handleCloseDialogRename} />
-                            </IconButton>
-                        </Grid>
-                    </Grid>
-                    <DialogContent>
-                        <TextField label="Группа" defaultValue={this.state.currentGroup} className="dialogAddItem"/>
+                                <Grid item xs={6} spacing={0} container justify="center">
+                                    <Button variant="contained" color="primary" className='tranferButton'
+                                            onClick={this.handleDialogTransferStudent}> Перевести студентов </Button>
+                                </Grid>
+                            </Grid>
 
-                        <Grid item spacing={0} container justify="center">
-                            <Button variant="contained" color="primary" className='tranferButton' onClick={this.handleDialogRenameGroup}> Переименовать </Button>
+                        </DialogContent>
+                    </Dialog>
+
+                    <Dialog open={this.state.renameGroupDialog} aria-labelledby="form-dialog-rename-group"
+                            fullWidth="true" maxWidth="xs">
+                        <Grid container spacing={0}>
+                            <Grid item xs={10} spacing={0}>
+                                <DialogTitle>Переименовать группу</DialogTitle>
+                            </Grid>
+                            <Grid item xs={1} spacing={0} justify='flex-end'>
+                                <IconButton className="dialogAddCloseButton">
+                                    <CloseIcon onClick={this.handleCloseDialogRename}/>
+                                </IconButton>
+                            </Grid>
                         </Grid>
-                    </DialogContent>
-                </Dialog>
-            </Paper>
-        )
+                        <DialogContent>
+                            <TextField label="Группа" defaultValue={this.state.currentGroup} className="dialogAddItem"/>
+
+                            <Grid item spacing={0} container justify="center">
+                                <Button variant="contained" color="primary" className='tranferButton'
+                                        onClick={this.handleDialogRenameGroup}> Переименовать </Button>
+                            </Grid>
+                        </DialogContent>
+                    </Dialog>
+                </Paper>
+            )
+        }
     }
 }

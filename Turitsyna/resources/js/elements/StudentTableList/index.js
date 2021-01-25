@@ -3,8 +3,6 @@ import './style.css'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
 import IconButton from '@material-ui/core/IconButton';
@@ -17,7 +15,38 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import CloseIcon from '@material-ui/icons/Close';
-import { Student } from '../Student'
+import {StudentList} from "../StudentList";
+
+class StudentShowList extends React.Component {
+    render() {
+        let studentListGroupButton = this.props.redact === true ?
+            <Grid container spacing={0}>
+                <Grid item xs={1} spacing={0}>
+                    <IconButton >
+                        <AddRoundedIcon color="primary" fontSize="large" />
+                    </IconButton>
+
+                </Grid>
+                <Grid item xs={1} spacing={0}>
+                    <IconButton>
+                        <DeleteRoundedIcon color="primary" fontSize="large" />
+                    </IconButton>
+                </Grid>
+            </Grid>
+            : null
+        return(
+            this.props.showGroup ?
+                <div>
+                    <Typography variant="h6" noWrap>
+                        Список группы {this.props.currentGroup}
+                    </Typography>
+                    {studentListGroupButton}
+                    <StudentList students={this.props.studentInCurrentGroup} />
+                </div>
+                : null
+        )
+    }
+}
 
 export class StudentTableList extends React.Component {
     constructor(props) {
@@ -28,20 +57,53 @@ export class StudentTableList extends React.Component {
             prin: this.props.prin,
             fiz: this.props.fiz,
             iit: this.props.iit,
-            showGroup: "",
+            studentInCurrentGroup: [],
+            currentGroup: "",
             addStudentOpen: false,
+            showGroup: false
         };
     }
 
-    groupHandleClick = (group) => {
-        if (this.state.showGroup !== group) {
-            this.setState({
-                showGroup: group
+    groupHandleClick = (name, direction) => {
+        if(direction === 'ivt'){
+            this.state.ivt.forEach(group =>{
+                if (group.group === name){
+                    this.setState({
+                        studentInCurrentGroup:group.students,
+                        showGroup: true,
+                        currentGroup: group.group
+                    })
+                }
             })
-        }
-        else {
-            this.setState({
-                showGroup: ""
+        }else if (direction === 'prin'){
+            this.state.prin.forEach(group =>{
+                if (group.group === name){
+                    this.setState({
+                        studentInCurrentGroup:group.students,
+                        showGroup: true,
+                        currentGroup: group.group
+                    })
+                }
+            })
+        }else if (direction === 'fiz'){
+            this.state.fiz.forEach(group =>{
+                if (group.group === name){
+                    this.setState({
+                        studentInCurrentGroup:group.students,
+                        showGroup: true,
+                        currentGroup: group.group
+                    })
+                }
+            })
+        }else {
+            this.state.iit.forEach(group =>{
+                if (group.group === name){
+                    this.setState({
+                        studentInCurrentGroup:group.students,
+                        showGroup: true,
+                        currentGroup: group.group
+                    })
+                }
             })
         }
     }
@@ -70,15 +132,16 @@ export class StudentTableList extends React.Component {
 
     render() {
         //Группы ИВТ
-        let listIvt = this.state.ivt.map((group) => {
+        let listIvt = this.state.ivt.length !== 0 ? this.state.ivt.map((group) => {
             return (
                 < Grid item xs={1} >
-                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group)}>
-                        {group}
+                    <Button variant="contained" color="primary" className="groupButton"
+                            onClick={() => this.groupHandleClick(group.group, 'ivt')}>
+                        {group.group}
                     </Button>
                 </Grid >
             )
-        })
+        }) : null
         let listGridIvt = this.state.ivt.length !== 0 ?
             <Grid container item xs={12} spacing={1}>
                 {listIvt}
@@ -86,15 +149,15 @@ export class StudentTableList extends React.Component {
             null
 
         //Группы ПрИн
-        let listPrin = this.state.prin.map((group) => {
+        let listPrin = this.state.prin.length !== 0 ? this.state.prin.map((group) => {
             return (
                 < Grid item xs={1} >
-                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group)}>
-                        {group}
+                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group.group, 'prin')}>
+                        {group.group}
                     </Button>
                 </Grid >
             )
-        })
+        }) : null
         let listGridPrin = this.state.prin.length !== 0 ?
             <Grid container item xs={12} spacing={1}>
                 {listPrin}
@@ -102,15 +165,15 @@ export class StudentTableList extends React.Component {
             null
 
         //Группы Физики
-        let listFiz = this.state.fiz.map((group) => {
+        let listFiz = this.state.fiz.length !== 0 ? this.state.fiz.map((group) => {
             return (
                 < Grid item xs={1} >
-                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group)}>
-                        {group}
+                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group.group,'fiz')}>
+                        {group.group}
                     </Button>
                 </Grid >
             )
-        })
+        }) : null
         let listGridFiz = this.state.fiz.length !== 0 ?
             <Grid container item xs={12} spacing={1}>
                 {listFiz}
@@ -118,56 +181,21 @@ export class StudentTableList extends React.Component {
             null
 
         //Группы ИИТ
-        let listIit = this.state.iit.map((group) => {
+        let listIit = this.state.iit.length !== 0 ? this.state.iit.map((group) => {
             return (
                 < Grid item xs={1} >
-                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group)}>
-                        {group}
+                    <Button variant="contained" color="primary" className="groupButton" onClick={() => this.groupHandleClick(group.group,'iit')}>
+                        {group.group}
                     </Button>
                 </Grid >
             )
-        })
+        }): null
+        console.log("Говно на палке ",this.state.redact)
         let listGridIit = this.state.iit.length !== 0 ?
             <Grid container item xs={12} spacing={1}>
                 {listIit}
             </Grid> :
             null
-
-        //TO DO: КОСТЫЛЬ ОГРОМНЫЙ!
-        let showStudentGroup = this.state.showGroup === "ПрИн-466" ?
-            <List dense={true}>
-                <Student surname="Сасов" name="Дмитрий" patronomyc="Александрович" studentId="1" />
-                <Student surname="Турицына" name="Алина" patronomyc="Витальевна" studentId="2" />
-                <Student surname="Чечеткин" name="Павел" patronomyc="Александрович" studentId="3" />
-            </List>
-            : null
-
-        let studentListGroupButton = this.state.redact === true ?
-            <Grid container spacing={0}>
-                <Grid item xs={1} spacing={0}>
-                    <IconButton onClick={this.handleClickAdd}>
-                        <AddRoundedIcon color="primary" fontSize="large" />
-                    </IconButton>
-
-                </Grid>
-                <Grid item xs={1} spacing={0}>
-                    <IconButton>
-                        <DeleteRoundedIcon color="primary" fontSize="large" />
-                    </IconButton>
-                </Grid>
-            </Grid>
-            : null
-
-        let showGroup = this.state.showGroup !== "" ?
-            <div>
-                <Typography variant="h6" noWrap>
-                    Список группы {this.state.showGroup}
-                </Typography>
-                {studentListGroupButton}
-                {showStudentGroup}
-            </div>
-            : null
-
         return (
             <div className="studentListGrid">
                 <Grid container spacing={3}>
@@ -176,7 +204,11 @@ export class StudentTableList extends React.Component {
                     {listGridFiz}
                     {listGridIit}
                 </Grid>
-                {showGroup}
+                <StudentShowList showGroup={this.state.showGroup}
+                                 currentGroup={this.state.currentGroup}
+                                 studentInCurrentGroup={this.state.studentInCurrentGroup}
+                                 redact={this.state.redact}
+                                 />
                 <Dialog open={this.state.addStudentOpen} aria-labelledby="form-dialog-add-student">
                     <Grid container spacing={0}>
                         <Grid item xs={10} spacing={0}>
