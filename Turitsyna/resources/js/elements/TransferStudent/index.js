@@ -26,7 +26,8 @@ export class TransferStudent extends React.Component {
             load: true,
             transferStudentDialogOpen: false,
             renameGroupDialog: false,
-            currentGroup: "ИВТ-160",
+            currentGroup: "",
+            transferGroup: []
         };
     }
 
@@ -42,6 +43,11 @@ export class TransferStudent extends React.Component {
                 groupList: result.data,
                 load: false
             }))
+
+        axios.get("/transfer-api/createLis")
+            .then(result => this.setState({
+                transferGroup: result.data,
+            }))
     }
 
     handleClickDialogTransfer = () => {
@@ -51,12 +57,20 @@ export class TransferStudent extends React.Component {
     }
 
     handleCloseDialogTransfer = () => {
+        axios.get("/transfer-api/createLis")
+            .then(result => this.setState({
+                transferGroup: result.data,
+            }))
         this.setState({
             transferStudentDialogOpen: false,
         })
     }
 
     handleDialogTransferStudent = () => {
+        axios.post("/transfer-api/transfer")
+            .catch(function (error) {
+                console.log(error);
+            });
         this.setState({
             transferStudentDialogOpen: false,
         })
@@ -82,11 +96,12 @@ export class TransferStudent extends React.Component {
 
     handleChangeGroup = (event) => {
         this.setState({
-            currentGroup: event.value,
+            currentGroup: event.target.value,
         })
     }
 
     render() {
+        console.log(this.state.transferGroup)
         if (this.state.load) {
             return (<CircularProgress/>)
         } else {
@@ -128,9 +143,9 @@ export class TransferStudent extends React.Component {
                                     value={this.state.currentGroup}
                                     onChange={event => this.handleChangeGroup(event)}
                                 >
-                                    <MenuItem value={"ИВТ-160"}>ИВТ-160</MenuItem>
-                                    <MenuItem value={"ИВТ-161"}>ИВТ-161</MenuItem>
-                                    <MenuItem value={"ИВТ-162"}>ИВТ-162</MenuItem>
+                                    {this.state.transferGroup.map(group => (
+                                        <MenuItem value={group.id}>{group.group}</MenuItem>
+                                    ))}
                                 </Select>
                             </FormControl>
 
