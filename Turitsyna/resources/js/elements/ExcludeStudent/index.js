@@ -4,36 +4,63 @@ import { StudentTableList } from '../StudentTableList'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-
+import CircularProgress from '@material-ui/core/CircularProgress';
 import axios from 'axios'
 
 export class ExcludeStudent extends React.Component {
-
-    componentDidMount() {
-        axios.get("http://127.0.0.1:8000/student-api/getGroupStudentsList")
-            .then(result => console.log("response", result.data))
+    constructor(props) {
+        super(props);
+        this.state = {
+            groupList: [],
+            load: true,
+        };
     }
 
-    render(){
-         return(
-            <Paper elevation={3} className="paperContainer">
-            <Grid container spacing={0}>
-                <Grid item xs={9} spacing={0}>
-                    <Typography variant="h5" noWrap>
-                        Список групп
-                    </Typography>
-                </Grid>
-            </Grid>
+    componentDidMount() {
+        axios.get("/student-api/getGroupStudentsList",{
+            params: {
+                study_year_id: null,
+                course:[4],
+                direction_id:null
+            }
+        })
+            .then(result => this.setState({
+                groupList: result.data,
+                load: false
+            }))
+    }
 
-            <StudentTableList ivt={["ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
-                prin={["ПрИн-466", "ПрИн-467"]}
-                fiz={["Ф-469"]}
-                iit={["ИИТ-473"]} />
+    handleClickExclude = () => {
+        axios.post("/expulsion-api/graduates")
+            .then(result => {})
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
 
-            <Grid item spacing={2} container justify="center">
-                <Button variant="contained" color="primary" className='tranferButton'> Отчислить студентов </Button>
-            </Grid>
-        </Paper>
-         )
+    render() {
+        if (this.state.load) {
+            return (<CircularProgress/>)
+        } else {
+            return (
+                <Paper elevation={3} className="paperContainer">
+                    <Grid container spacing={0}>
+                        <Grid item xs={9} spacing={0}>
+                            <Typography variant="h5" noWrap>
+                                Список групп
+                            </Typography>
+                        </Grid>
+                    </Grid>
+
+                    <StudentTableList ivt={this.state.groupList.ИВТ} prin={this.state.groupList.ПрИн}
+                                      fiz={this.state.groupList.ИИТ} iit={this.state.groupList.Ф}/>
+
+                    <Grid item spacing={2} container justify="center">
+                        <Button variant="contained" color="primary" className='tranferButton' onClick={this.handleClickExclude}> Отчислить
+                            студентов </Button>
+                    </Grid>
+                </Paper>
+            )
+        }
     }
 }

@@ -1,3 +1,7 @@
 .MuiDialog-paper {
     overflow: hidden;
 }
+
+.DirectionSelected {
+    width: 100px;
+}
