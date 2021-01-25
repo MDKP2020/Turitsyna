@@ -56,6 +56,7 @@ class TransferController extends Controller
             return response()->json(['Not found 1-3 course groups'],404);
         }
         $study_year = new StudyYear();
+        $study_year->id = StudyYear::max('id')+1;
         $study_year->start_year = $this->service->currentYear()->start_year + 1;
         $study_year->save();
 
@@ -63,7 +64,7 @@ class TransferController extends Controller
         $new_groups = array(new Group());
         foreach($old_groups as $old_group){
             $new_group = new Group();
-
+            $new_group->id = Group::max('id')+1;
             // Создаем новую группу на основе старой
             $pos = strpos($old_group->name, '-');
             $new_group->name = substr_replace($old_group->name, strval($old_group->course + 1),  $pos+1, 1);
@@ -80,17 +81,19 @@ class TransferController extends Controller
             foreach ($old_group_studList->getStudents() as $student) {
                 // Сделать привязку зачисления к новой группе
                 $new_student_group = new StudentGroup();
+                $new_student_group->id = StudentGroup::max('id')+1;
                 $new_student_group->group_id = $new_group->id;
                 $new_student_group->status_id = Status::whereName('Enrolled')->first()->id;
-                $new_student_group->date = Carbon::now()->format('d-m-Y');
+                $new_student_group->date = Carbon::now();
                 $new_student_group->student_id = $student->id;
                 $new_student_group->save();
 
                 // Сделать привязки отчисления к старой группе
                 $old_student_group = new StudentGroup();
+                $old_student_group->id = StudentGroup::max('id')+1;
                 $old_student_group->group_id = $old_group->id;
                 $old_student_group->status_id = Status::whereName('Expelled')->first()->id;
-                $old_student_group->date = Carbon::now()->format('d-m-Y');
+                $old_student_group->date = Carbon::now();
                 $old_student_group->student_id = $student->id;
                 $old_student_group->save();
             }

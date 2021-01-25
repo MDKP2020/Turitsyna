@@ -16,7 +16,6 @@ class CreateStudentGroupTable extends Migration
         Schema::create('student_group', function (Blueprint $table) {
             $table->id();
             $table->Date('date');
-            $table->timestamps();
         });
     }
 

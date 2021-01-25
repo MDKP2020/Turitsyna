@@ -17,7 +17,6 @@ class CreateLevelEducationTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('period_of_study');
-            $table->timestamps();
         });
     }
 

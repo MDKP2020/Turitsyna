@@ -19,7 +19,7 @@ class GroupController extends Controller
         $group = new Group();
         $group->name = $request["name"];
         $group->lvl_education_id = $request["lvl_education_id"];
-        $group->study_year_id = $this->service->currentYear();
+        $group->study_year_id = $this->service->currentYear()->id;
         $group->course = $request["course"];
         $group->direction_id = $request["direction_id"];
 

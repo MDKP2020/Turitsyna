@@ -59,7 +59,8 @@ class EnrollmentController extends Controller
 
         //Создаем  привязку к группе
         $student_group = new StudentGroup();
-        $student_group->date = Carbon::now()->format('d-m-Y');
+        $student_group->id = StudentGroup::max('id')+1;
+        $student_group->date = Carbon::now();
         $student_group->student_id = $student->id;
         $student_group->group_id = $request['group_id'];
         $student_group->status_id = Status::whereName('Enrolled')->first()->id;

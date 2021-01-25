@@ -18,7 +18,6 @@ class CreateStudentsTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('patronomyc');
-            $table->timestamps();
         });
     }
 

@@ -34,13 +34,14 @@ class ExpulsionController extends Controller
 
         // Создаем запись о том, что студент был отчислен
         $student_group = new StudentGroup();
-        $student_group->date = Carbon::now()->format('d-m-Y');
+        $student_group->id = StudentGroup::max('id')+1;
+        $student_group->date = Carbon::now();
         $student_group->student_id = $student->id;
         $student_group->group_id = $this->service->lastStudentGroup($student)->group->id;
         $student_group->status_id = Status::whereName('Expelled')->first()->id;
         $student_group->save();
 
-        return response()->json(['']);
+        return response()->json([]);
     }
 
     //
@@ -51,13 +52,16 @@ class ExpulsionController extends Controller
         }
 
         //Получаем список студентов для группы
-        $students = StudentList::createStudList($group)->getStudents();
+        $st_list = StudentList::createStudList($group);
+        if($st_list == null) return response()->json([], 404);
+        $students = $st_list->getStudents();
 
         //Для каждого студента, который не отчислился, создаем запись об отчислении
         foreach ($students as $student){
             if($student->student_group()->count() % 2 == 1){
                 $student_group = new StudentGroup();
-                $student_group->date = Carbon::now()->format('d-m-Y');
+                $student_group->id = StudentGroup::max('id')+1;
+                $student_group->date = Carbon::now();
                 $student_group->student_id = $student->id;
                 $student_group->group_id = $group_id;
                 $student_group->status_id = Status::whereName('Expelled')->first()->id;
@@ -81,13 +85,16 @@ class ExpulsionController extends Controller
 
         foreach ($groups as $group){
             //Получаем список студентов
-            $students = StudentList::createStudList($group)->getStudents();
+            $st_list = StudentList::createStudList($group);
+            if($st_list == null) continue;
+            $students = $st_list->getStudents();
 
             //Для каждого студента, который не отчислился, создаем запись об отчислении
             foreach ($students as $student){
                 if($student->student_group()->count() % 2 == 1){
                     $student_group = new StudentGroup();
-                    $student_group->date = Carbon::now()->format('d-m-Y');
+                    $student_group->id = StudentGroup::max('id')+1;
+                    $student_group->date = Carbon::now();
                     $student_group->student_id = $student->id;
                     $student_group->group_id = $group->id;
                     $student_group->status_id = Status::whereName('Expelled')->first()->id;

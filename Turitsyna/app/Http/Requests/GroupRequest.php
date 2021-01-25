@@ -16,7 +16,6 @@ class GroupRequest extends FormRequest
         return [
             'name' => 'required',
             'lvl_education_id' => 'required',
-            'study_year_id' => 'required',
             'course' => 'required'
         ];
     }

@@ -17,7 +17,6 @@ class CreateGroupsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('course');
-            $table->timestamps();
         });
     }
 
