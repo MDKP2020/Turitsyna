@@ -48,6 +48,7 @@ export class Search extends React.Component {
                 }}
             >
                 <input
+                    disabled
                     type="text"
                     value={this.state.inputValue}
                     onChange={this.updateInputValue}

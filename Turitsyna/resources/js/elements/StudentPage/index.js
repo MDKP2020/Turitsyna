@@ -9,6 +9,7 @@ import CreateIcon from '@material-ui/icons/Create';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import { Link } from 'react-router-dom';
 
 import axios from 'axios'
@@ -17,6 +18,8 @@ export class StudentPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            groupList: [],
+            load: true,
             academicYear: 0,
             course: [],
             trainingProgrammes: []
@@ -24,8 +27,17 @@ export class StudentPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("http://127.0.0.1:8000/student-api/getGroupStudentsList")
-            .then(result => console.log("response", result.data))
+        axios.get("/student-api/getGroupStudentsList",{
+            params: {
+                study_year_id: null,
+                course:null,
+                direction_id:null
+            }
+        })
+            .then(result => this.setState({
+                groupList: result.data,
+                load: false
+            }))
     }
 
 
@@ -38,45 +50,58 @@ export class StudentPage extends React.Component {
     }
 
     handleClickFilters = () => {
-        console.log(this.state)
+        let course = this.state.course.length !== 0 ? this.state.course : null
+        let direction_id = this.state.trainingProgrammes.length !== 0 ? this.state.trainingProgrammes : null
+        axios.get("/student-api/getGroupStudentsList",{
+            params: {
+                study_year_id: null,
+                course:course,
+                direction_id:direction_id
+            }
+        })
+            .then(result => this.setState({
+                groupList: result.data,
+                load: false
+            }))
     }
 
     render() {
-        const { academicYear, course, trainingProgrammes } = this.state;
-        return (<div>
-            <Paper elevation={3} className="paperContainer">
-                <Grid container spacing={0}>
-                    <Grid item xs={9} spacing={0}>
-                        <Typography variant="h5" noWrap>
-                            Список групп
-                        </Typography>
-                    </Grid>
+        const {academicYear, course, trainingProgrammes, load} = this.state;
+        if (load) {
+            return (<CircularProgress/>)
+        } else {
+            return (<div>
+                <Paper elevation={3} className="paperContainer">
+                    <Grid container spacing={0}>
+                        <Grid item xs={9} spacing={0}>
+                            <Typography variant="h5" noWrap>
+                                Список групп
+                            </Typography>
+                        </Grid>
 
-                    <Grid item xs={3} spacing={0} justify='flex-end'>
-                        <Link to='/applicants'>
-                            <IconButton>
-                                <CreateIcon />
-                                <div className="iconButtonLabel"> Редактировать список зачисления</div>
-                            </IconButton>
-                        </Link>
+                        <Grid item xs={3} spacing={0} justify='flex-end'>
+                            <Link to='/applicants'>
+                                <IconButton>
+                                    <CreateIcon/>
+                                    <div className="iconButtonLabel"> Редактировать список зачисления</div>
+                                </IconButton>
+                            </Link>
+                        </Grid>
                     </Grid>
-                </Grid>
-                <Search />
-                <Divider variant="middle" />
-                <Filters
-                    academicYear={academicYear}
-                    course={course}
-                    trainingProgrammes={trainingProgrammes}
-                    onClick={this.handleClickFilters}
-                    onChange={(academicYear, course, trainingProgrammes) => this.filterChange(academicYear, course, trainingProgrammes)} />
-                <Divider variant="middle" />
+                    <Search/>
+                    <Divider variant="middle"/>
+                    <Filters
+                        academicYear={academicYear}
+                        course={course}
+                        trainingProgrammes={trainingProgrammes}
+                        onClick={this.handleClickFilters}
+                        onChange={(academicYear, course, trainingProgrammes) => this.filterChange(academicYear, course, trainingProgrammes)}/>
+                    <Divider variant="middle"/>
 
-                <StudentTableList ivt={["ИВТ-160", "ИВТ-161", "ИВТ-162", "ИВТ-163", "ИВТ-260", "ИВТ-261", "ИВТ-262",
-                    "ИВТ-263", "ИВТ-360", "ИВТ-363", "ИВТ-364", "ИВТ-365", "ИВТ-460", "ИВТ-463", "ИВТ-464", "ИВТ-465"]}
-                    prin={["ПрИн-166", "ПрИн-167", "ПрИн-266", "ПрИн-267", "ПрИн-366", "ПрИн-367", "ПрИн-466", "ПрИн-467"]}
-                    fiz={["Ф-169", "Ф-269", "Ф-369", "Ф-469"]}
-                    iit={["ИИТ-173", "ИИТ-273", "ИИТ-373", "ИИТ-473"]} />
-            </Paper>
-        </div>)
+                    <StudentTableList ivt={this.state.groupList.ИВТ} prin={this.state.groupList.ПрИн}
+                                      fiz={this.state.groupList.ИИТ} iit={this.state.groupList.Ф}/>
+                </Paper>
+            </div>)
+        }
     }
 }
